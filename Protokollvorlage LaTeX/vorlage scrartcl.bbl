@@ -1,0 +1,103 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{mbuch}{book}{}
+      \name{author}{2}{}{%
+        {{hash=894b5cc379a110a77ed56e3f20342ee2}{%
+           family={Mustermann},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef2be60b9efac7c5827782fda55836b2}{%
+           family={Musterfrau},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Musterstadt}%
+      }
+      \list{publisher}{1}{%
+        {Musterverlag}%
+      }
+      \strng{namehash}{46985dbea3d66cd0cbfc0990c1893b68}
+      \strng{fullhash}{46985dbea3d66cd0cbfc0990c1893b68}
+      \strng{authornamehash}{46985dbea3d66cd0cbfc0990c1893b68}
+      \strng{authorfullhash}{46985dbea3d66cd0cbfc0990c1893b68}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1. Ausgabe}
+      \field{title}{Lehrbuch des haarsträubenden Unsinns}
+      \field{year}{2018}
+    \endentry
+    \entry{skript}{book}{}
+      \name{author}{1}{}{%
+        {{hash=bb9130b6e72eca6f065798c3cf63b140}{%
+           family={Hartenbach},
+           familyi={H\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stuttgart}%
+      }
+      \strng{namehash}{bb9130b6e72eca6f065798c3cf63b140}
+      \strng{fullhash}{bb9130b6e72eca6f065798c3cf63b140}
+      \strng{authornamehash}{bb9130b6e72eca6f065798c3cf63b140}
+      \strng{authorfullhash}{bb9130b6e72eca6f065798c3cf63b140}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Praktikumsskript}
+      \field{year}{2018}
+    \endentry
+    \entry{link}{online}{}
+      \name{author}{1}{}{%
+        {{hash=91cce034f86e2410ecb67f3c6a6f6078}{%
+           family={Astley},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{91cce034f86e2410ecb67f3c6a6f6078}
+      \strng{fullhash}{91cce034f86e2410ecb67f3c6a6f6078}
+      \strng{authornamehash}{91cce034f86e2410ecb67f3c6a6f6078}
+      \strng{authorfullhash}{91cce034f86e2410ecb67f3c6a6f6078}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Never Gonna Give You Up}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb www.youtube.com/watch?v=oHg5SJYRHA0
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
