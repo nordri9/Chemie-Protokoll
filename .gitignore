@@ -1,0 +1,29 @@
+
+Protokollvorlage LaTeX.zip
+
+# LaTeX build files
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# PDF output (Only in specific build folders)
+latex.out/**/*.pdf
+build/**/*.pdf
+output/**/*.pdf
+
+# Minted (Python syntax highlighting)
+_minted/
+*.pyg
+
+# Temporary directories
+latex.out/
+build/
+output/
