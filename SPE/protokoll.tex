@@ -1,0 +1,81 @@
+\documentclass[12pt]{scrartcl} %Dokumentklasse, bestimmt Teile des Layouts
+\usepackage[utf8]{inputenc} %Ermöglicht Unicode, absolut notwendig
+\usepackage[ngerman]{babel} %Ermöglicht deutsche Sonderzeichen, z. B. Umlaute
+\usepackage[T1]{fontenc} %Ermöglicht Unicode, absolut notwendig
+\usepackage{amsmath} %Wichtige Mathe-Möglichkeiten
+\usepackage{amssymb} %Wichtige Mathe-Möglichkeiten
+\usepackage{graphicx} %Bessere Bilder
+\usepackage{array} %Bessere Formatierung / Umgebung für mehrzeilige Formeln
+\usepackage{upgreek} %Für nicht kursive griechische Buchstaben, z. B. \upmu statt \mu
+\usepackage{float} %Großes H zum fixieren von Abbildungen/Tabellen
+%\usepackage{csquotes}% Anführungszeichen etc.
+\usepackage{chemformula}% mächtiges Chemiepaket(Rkt. Gl., Oxidationszahlen etc.)
+\usepackage{chemgreek}% für chemformula
+%\usepackage{chemmacros}% für chemformula
+\usepackage{geometry} %Für Einstellungen zum Rand etc.
+\usepackage[font=small]{caption} %Bestimmt die Schriftgröße von Tabellenüberschriften und Bildunterschriften, optional
+\usepackage[backend=biber, style=chem-angew]{biblatex} %Literaturverzeichnis
+\usepackage{csquotes} % Added to fix the biblatex warning
+
+%\usepackage{amssymb}
+%\sisetup{
+%  per-mode=symbol,
+%  separate-uncertainty
+%}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+\usepackage{authblk}
+
+\addbibresource{lit.bib} %Literaturverzeichnis, zu finden als Datei lit.bib im selben Ordner wie diese .tex-Datei
+\captionsetup{format=plain}
+\geometry{bottom=100pt} \geometry{top=100pt} %Definiert den oberen und unteren Rand, optional
+\parindent0pt %Kein Einzug am Anfang von Absätzen
+\sloppy %Besserer Blocksatz
+\renewcaptionname{ngerman}{\figurename}{Abb.} %Umbenennung Abbildungen, optional
+\renewcaptionname{ngerman}{\tablename}{Tab.} %Umbenennung Tabellen, optional
+
+\newcommand{\celsius}{^{\circ}\mathrm{C}} %Ermöglicht es, \celsius für die Einheit °C zu verwenden
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \vspace*{2cm}
+    \begin{LARGE}
+      \vspace*{1cm}
+      \textbf{\textsf{Versuch 2\\}}
+    \end{LARGE}
+    \vspace*{1cm}
+    \textbf{\textsf{Integriertes Praktikum}}\\
+    \vspace*{1.5cm}
+    \begin{table}[H]
+      \sffamily
+      \hspace*{3cm}
+      \begin{tabular}{>{\bfseries}l>{\bfseries}l}
+        Verfasser: & Robin Kühnberger, Felix Naraschewski\\
+        Matrikelnummer: & 3714445, ---\\
+        E-Mail-Adresse: & st189389@stud.uni-stuttgart.de, ---\\
+        Assistent: & Erwir Dzakulic\\
+        Abgabedatum: & \today\\
+      \end{tabular}
+    \end{table}
+  \end{center}
+\end{titlepage}
+\renewcommand{\thepage}{\Roman{page}}\setcounter{page}{1}
+\tableofcontents %Generiert ein Inhaltsverzeichnis, optional
+\newpage
+\renewcommand{\thepage}{\arabic{page}}\setcounter{page}{1}
+
+%%%% acctual content %%%%
+\input{chapters/theorie.tex}
+
+\input{chapters/versuche.tex}
+
+\newpage
+\renewcommand{\thepage}{\roman{page}}\setcounter{page}{1}
+\printbibliography
+\end{document}
