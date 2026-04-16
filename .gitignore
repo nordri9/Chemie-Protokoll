@@ -14,6 +14,7 @@ Protokollvorlage LaTeX.zip
 *.fls
 *.fdb_latexmk
 
+
 # PDF output (Only in specific build folders)
 latex.out/**/*.pdf
 build/**/*.pdf
@@ -27,3 +28,5 @@ _minted/
 latex.out/
 build/
 output/
+SPE/protokoll.pdf
+SPE/protokoll.bcf
