@@ -1,0 +1,13 @@
+[General]
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+lastDocument=
+
+[item:protokoll.tex]
+open=false
+order=-1
+
+[item:spe.kilepr]
+open=false
+order=-1

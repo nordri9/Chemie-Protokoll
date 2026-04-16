@@ -17,11 +17,14 @@
 \usepackage[backend=biber, style=chem-angew]{biblatex} %Literaturverzeichnis
 \usepackage{csquotes} % Added to fix the biblatex warning
 
-%\usepackage{amssymb}
-%\sisetup{
-%  per-mode=symbol,
-%  separate-uncertainty
-%}
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead{Gruppe 9a: Robin Kühnberger, Felix Naraschewski}
+\ohead{\today}
+\ifoot{9a}
+\ofoot{Seite \pagemark}
+\KOMAoptions{headsepline=true}
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
@@ -40,6 +43,7 @@
 \renewcaptionname{ngerman}{\tablename}{Tab.} %Umbenennung Tabellen, optional
 
 \newcommand{\celsius}{^{\circ}\mathrm{C}} %Ermöglicht es, \celsius für die Einheit °C zu verwenden
+\newcommand{\datepraktikum}{15.04.2026}
 
 \begin{document}
 \begin{titlepage}
@@ -55,20 +59,20 @@
     \begin{table}[H]
       \sffamily
       \hspace*{3cm}
-      \begin{tabular}{>{\bfseries}l>{\bfseries}l}
+      \begin{tabular}{>{\bfseries}p{4cm}p{8cm}}
         Verfasser: & Robin Kühnberger, Felix Naraschewski\\
         Matrikelnummer: & 3714445, ---\\
-        E-Mail-Adresse: & st189389@stud.uni-stuttgart.de, ---\\
+        E-Mail-Adresse: & \href{mailto:st189389@stud.uni-stuttgart.de}{st189389@stud.uni-stuttgart.de}, ---\\
         Assistent: & Erwir Dzakulic\\
         Abgabedatum: & \today\\
       \end{tabular}
     \end{table}
   \end{center}
 \end{titlepage}
-\renewcommand{\thepage}{\Roman{page}}\setcounter{page}{1}
+\pagenumbering{Roman}
 \tableofcontents %Generiert ein Inhaltsverzeichnis, optional
 \newpage
-\renewcommand{\thepage}{\arabic{page}}\setcounter{page}{1}
+\pagenumbering{arabic}
 
 %%%% acctual content %%%%
 \input{chapters/theorie.tex}
@@ -76,6 +80,8 @@
 \input{chapters/versuche.tex}
 
 \newpage
-\renewcommand{\thepage}{\roman{page}}\setcounter{page}{1}
-\printbibliography
+%\renewcommand{\thepage}{\roman{page}}\setcounter{page}{1}
+%\pagenumbering{roman}
+
+%\printbibliography
 \end{document}
