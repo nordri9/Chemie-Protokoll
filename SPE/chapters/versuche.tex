@@ -12,10 +12,12 @@ Es sollen die Wellenlängen der $H_{\alpha}$,$H_{\beta}$,$H_{\gamma}$-Linien der
 \end{figure}
 Zunächst hat man ein Blatt Papier Hinter die erste Sammellinse ($f=\SI{50}{mm}$ Brennweite) gehalten um deren Höhe optimal einzustellen. Dies wurde hinter dem verstellbaren Spalt, der zweiten Sammellinse ($f=\SI{100}{mm}$ Brennweite) und dem optischen Gitter wiederholt. Wodurch bei jedem Element auf der optischen bank möglichst wenig Intensität verloren geht. Da das Interferenzmuster auf dem Schirm ohnehin schon schwach war.
 \subsubsection{Versuchsdurchführung}
-Gemessen wurde
+Nach dem Einstellen des Schirmabstandes $l \approx \SI{12,5}{cm}$ wurden die Abstände der Maxima auf einem Papier markiert, das auf dem Schirm angebracht war. Diese Messung wurde einige mahle wiederholt unter leichtem verschieben der Sammellinsen um ein möglichst scharfes Bild zu bekommen und Messfehler zu vermeiden.
 \subsubsection{Beobachtung}
+Auf dem Schirm war zunächst das $0.$ Maximum im Zentrum des Interferenzmusters zu erkenne. Symmetrisch darum angeordnet befanden sich die $1.$ Hauptmaxima. Die wiederum aus von Innen nach Außen die Farben Violett, Indigo und Rot hatten. Wobei Violett und Indigo fast den Identischen Abstand zum $0. $ Maximum hatten.
+
 \subsubsection{Versuchsauswertung}
-Die theoretischen Emissionslinien können mit \eqref{} wie folgt berechnet werden.\\
+Die theoretischen Emissionslinien können mit \eqref{eq:balmer-frequenz} und \eqref{eq:wavelength} wie folgt berechnet werden.\\ \\
 Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird gerechnet
 
 \begin{equation}
@@ -24,17 +26,61 @@ Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird gerechnet
     \frac{c}{\SI{4.569e11}{1/ \s}}= \SI{656e-9}{m}=\SI{656}{nm}
   \end{aligned}
 \end{equation}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ c|cc  }
+    \hline
+    $H_{x}$-Line&$n$ &Wellenlänge in $\SI{}{nm}$\\
+    \hline
+    $H_{\alpha}$   & 3    &\SI{656}{}\\
+    $H_{\beta}$ &   4  & \SI{486}{}  \\
+    $H_{\gamma}$ &5 & \SI{433}{}\\
 
-\begin{tabular}{ |c||c|c|  }
-  \hline
-  $H_{x}$-Line&$n$ &Wellenlänge in $\SI{}{nm}$\\
-  \hline
-  Afghanistan   & AF    &AFG\\
-  Aland Islands&   AX  & ALA   \\
-  Albania &AL & ALB  008\\
-  Algeria    &DZ & DZA  012\\
-  \hline
-\end{tabular}
+    \hline
+  \end{tabular}
+  \caption{Aus \eqref{eq:balmer-frequenz} und \eqref{eq:wavelength} berechnete Wellenlängen $\lambda$ es Emissionsspektrums von Wasserstoff}
+
+\end{table}
+
+Um die Wellenlängen aus den gemessenen Maxima Abständen zu bestimmen verwendet man die Formeln für die Beugung des Lichtes am optischen Gitter
+
+\begin{align}
+  \tan(\alpha)&=\frac{x}{l} \\
+  \sin(\alpha)&=\frac{k \cdot \lambda}{g} \\
+  \implies \lambda = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}.
+  \label{eq:optisches-gitter}
+\end{align}
+
+\begin{itemize}
+  \item $\lambda \ \hat{=}$ Wellenlänge [\si{\meter}],
+  \item $\alpha \ \hat{=}$ Winkel von $0.$Maximum bis $k.$Maximum  [\si{\meter/s}],
+  \item $l \ \hat{=}$ Abstand Schirm zu Gitter [\si{\meter}],
+  \item $x \ \hat{=}$ Abstand von $0.$Maximum bis $k.$Maximum  [\si{\meter}],
+  \item $g \ \hat{=}$ Gitterkonstante [\si{\meter}],
+  \item $k \ \hat{=}$ Ordnung des Hauptmaxima.
+\end{itemize}
+
+Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmaximum ($k=1$)
+
+\begin{align}
+  \sin\left(\arctan\left(\frac{\SI{5,07}{cm}}{\SI{12,5}{cm}}\right) \right) \cdot \frac{1}{600}\cdot 10^{-3} \si{\meter}&= \SI{6,264e-7}{m}\\
+  &=\SI{626,4}{nm}.
+\end{align}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ cccc  }
+    \hline
+    $H_{x}$-Line&Farbe &Abstand zum $0.$Maximum $x$ in \si{cm}&Berechnete Wellenlänge $\lambda$ in \si{nm}\\
+    \hline
+    $H_{\alpha}$   & Rot&\SI{5,07}{}    &\SI{626,4}{}\\
+    $H_{\beta}$ &  Indigo &\SI{3,65}{}  & \SI{467,2}{}  \\
+    $H_{\gamma}$ &Violett &\SI{3,41}{} & \SI{438,6}{}\\
+    \hline
+  \end{tabular}
+  \caption{Messwerte und aus diesen berechneten Wellenlängen mittels \eqref{eq:optisches-gitter}.}
+
+\end{table}
 
 \subsubsection{Fehlerbetrachtung}
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}

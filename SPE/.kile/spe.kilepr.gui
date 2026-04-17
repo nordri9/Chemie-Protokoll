@@ -1,13 +1,39 @@
 [General]
 kile_livePreviewEnabled=true
-kile_livePreviewStatusUserSpecified=false
+kile_livePreviewStatusUserSpecified=true
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=
+lastDocument=chapters/versuche.tex
+
+[item:chapters/theorie.tex]
+open=true
+order=1
+
+[item:chapters/versuche.tex]
+open=true
+order=2
+
+[item:lit.bib]
+open=true
+order=3
 
 [item:protokoll.tex]
-open=false
-order=-1
+open=true
+order=0
 
 [item:spe.kilepr]
 open=false
 order=-1
+
+[view-settings,view=0,item:chapters/theorie.tex]
+CursorColumn=51
+CursorLine=2
+
+[view-settings,view=0,item:chapters/versuche.tex]
+CursorColumn=25
+CursorLine=12
+
+[view-settings,view=0,item:protokoll.tex]
+CursorColumn=15
+CursorLine=57
+Dynamic Word Wrap=false
+ScrollLine=45

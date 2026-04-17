@@ -1,6 +1,6 @@
 {
   "latex-workshop.chktex.enabled": false,
-  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
   "latex-workshop.latex.recipe.default": "latexmk",
   "latex-workshop.latex.outDir": "./output",
   "latex-workshop.latex.autoClean.run": "never",
@@ -39,6 +39,6 @@
     }
   },
   "editor.inlineSuggest.syntaxHighlightingEnabled": false,
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "cSpell.language": "en,de-de",
 }
