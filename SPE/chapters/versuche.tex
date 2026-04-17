@@ -47,7 +47,7 @@ Um die Wellenlängen aus den gemessenen Maxima Abständen zu bestimmen verwendet
 \begin{align}
   \tan(\alpha)&=\frac{x}{l} \\
   \sin(\alpha)&=\frac{k \cdot \lambda}{g} \\
-  \implies \lambda = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}.
+  \implies \lambda& = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}.
   \label{eq:optisches-gitter}
 \end{align}
 
@@ -69,20 +69,40 @@ Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmax
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{ cccc  }
+  \begin{tabular}{cccc}
     \hline
     $H_{x}$-Line&Farbe &Abstand zum $0.$Maximum $x$ in \si{cm}&Berechnete Wellenlänge $\lambda$ in \si{nm}\\
     \hline
     $H_{\alpha}$   & Rot&\SI{5,07}{}    &\SI{626,4}{}\\
-    $H_{\beta}$ &  Indigo &\SI{3,65}{}  & \SI{467,2}{}  \\
+    $H_{\beta}$ &  Indigo &\SI{3,65}{}  & \SI{467,2}{}\\
     $H_{\gamma}$ &Violett &\SI{3,41}{} & \SI{438,6}{}\\
     \hline
   \end{tabular}
   \caption{Messwerte und aus diesen berechneten Wellenlängen mittels \eqref{eq:optisches-gitter}.}
 
 \end{table}
+\subsubsection*{Ionisierungsenergie}
+
+Die Ionisierungsenergie wird über die Rydberg-Energie berechnet
+
+\begin{align}
+  R_{y} &=hR =hcR_{\infty} \\
+  &= \SI{6,626e-34}{J \cdot s} \cdot \SI{2.998e8}{\meter/s} \cdot \SI{1.097e7}{1/\meter}\\
+  &= \SI{2.18e-18}{\joule}=\SI{13.61}{eV}
+\end{align}
+
+\begin{itemize}
+  \item $R_{y} \ \hat{=}$ Rydberg-Energie [\si{\joule}],
+  \item $R_{\infty} \ \hat{=}$ Rydberg-Konstante  [\si{1/\meter}],
+
+\end{itemize}
+
+\subsubsection*{Bohrscher Radius}
+
+
 
 \subsubsection{Fehlerbetrachtung}
+
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}
 \subsubsection{Aufgabenstellung}
 \subsubsection{Versuchsdurchführung}
