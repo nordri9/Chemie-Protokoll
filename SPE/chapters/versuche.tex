@@ -83,24 +83,38 @@ Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmax
 \end{table}
 \subsubsection*{Ionisierungsenergie}
 
-Die Ionisierungsenergie wird über die Rydberg-Energie berechnet
-
+Die Ionisierungsenergie eines Wasserstoff Atoms wird mit Hilfe der Rydberg-Energie Formel berechnet
 \begin{align}
   R_{y} &=hR =hcR_{\infty} \\
-  &= \SI{6,626e-34}{J \cdot s} \cdot \SI{2.998e8}{\meter/s} \cdot \SI{1.097e7}{1/\meter}\\
-  &= \SI{2.18e-18}{\joule}=\SI{13.61}{eV}
+  &= \SI{6,626e-34}{J \cdot s} \cdot \SI{2.998e8}{\meter/s} \cdot \SI{1.097e7}{1/\meter} \nonumber\\
+  &= \SI{2.18e-18}{\joule}=\SI{13.61}{eV}, \nonumber
 \end{align}
 
 \begin{itemize}
   \item $R_{y} \ \hat{=}$ Rydberg-Energie [\si{\joule}],
-  \item $R_{\infty} \ \hat{=}$ Rydberg-Konstante  [\si{1/\meter}],
+  \item $R_{\infty} \ \hat{=}$ Rydberg-Konstante  [\si{1/\meter}].
 
 \end{itemize}
 
 \subsubsection*{Bohrscher Radius}
 
+Der Bohrsche Radius lässt sich mit Hilfe folgender Formel berechnen
 
+\begin{align}
+  a_{0}=\frac{4 \pi \cdot \epsilon_{0} \cdot \hbar^{2}}{e^{2}\cdot m_{e}},
+\end{align}
 
+\begin{itemize}
+  \item $\varepsilon_{0} \ \hat{=}$ Elektrische Feldkonstante $\left[\si{\frac{As}{Vm}}\right]$,
+  \item $\hbar \ \hat{=}$ Reduziertes Plancksches Wirkungsquantum $\left[\si{J \cdot s}\right]$,
+  \item $e \ \hat{=}$ Elementarladung $\left[\si{C}\right]$,
+  \item $m_{e} \ \hat{=}$ Elektronenmasse $\left[\si{kg}\right]$,
+  \item $a_{0} \ \hat{=}$ Bohrscher Radius $\left[\si{m}\right]$.
+\end{itemize}
+Durch einsetzen der konstanten erhalten wir
+\begin{align}
+  a_{0}=\frac{4\pi \cdot \SI{8,854e-12}{\frac{As}{Vm}} \cdot \left(\SI{1.055e-34}{\joule s}\right) ^{2}}{\left(\SI{1.602e-19}{C}\right)^{2} \cdot\SI{9.109e-31}{kg} }
+\end{align}
 \subsubsection{Fehlerbetrachtung}
 
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}
