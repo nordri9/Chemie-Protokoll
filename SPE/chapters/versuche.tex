@@ -114,17 +114,108 @@ Der Bohrsche Radius lässt sich mit Hilfe folgender Formel berechnen
 Durch einsetzen der konstanten erhalten wir
 \begin{align}
   a_{0}=\frac{4\pi \cdot \SI{8,854e-12}{\frac{As}{Vm}} \cdot \left(\SI{1.055e-34}{\joule s}\right) ^{2}}{\left(\SI{1.602e-19}{C}\right)^{2} \cdot\SI{9.109e-31}{kg} }
+  = \SI{5,292e-11}{m} = \SI{52,92}{pm}.
 \end{align}
-\subsubsection{Fehlerbetrachtung}
 
+\subsubsection{Fehlerbetrachtung}
+Die aus den Messwerten berechneten Wellenlängen weichen von den theoretisch berechneten Werten ab.
+Die relativen Abweichungen ergeben sich zu:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|ccc}
+    \hline
+    $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} & Abweichung in \si{\percent}\\
+    \hline
+    $H_{\alpha}$ & \SI{656}{} & \SI{626,4}{} & \SI{4,5}{}\\
+    $H_{\beta}$  & \SI{486}{} & \SI{467,2}{} & \SI{3,9}{}\\
+    $H_{\gamma}$ & \SI{433}{} & \SI{438,6}{} & \SI{1,3}{}\\
+    \hline
+  \end{tabular}
+  \caption{Vergleich der theoretisch und experimentell bestimmten Wellenlängen der Balmer-Serie.}
+\end{table}
+
+Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximaposition auf dem Schirm zurückzuführen.
+Da die Linien bereits sehr schwach waren, war eine genaue Positionsbestimmung schwierig.
+Weitere Fehlerquellen sind die ungenaue Kenntnis des Schirmabstandes $l$ sowie eine mögliche Dejustierung des optischen Aufbaus.
+Da die Abweichungen bei allen drei Linien im ähnlichen Bereich liegen, ist ein systematischer Fehler (z.\,B. ein leicht falsch abgelesener Schirmabstand) wahrscheinlich.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}
 \subsubsection{Aufgabenstellung}
+Es soll das Absorptionsspektrum einer $\beta$-Carotin-Lösung gemessen und die Länge des
+$\pi$-Elektronensystems mit Hilfe des Modells des eindimensionalen Potentialtopfs bestimmt
+werden.
+
 \subsubsection{Versuchsdurchführung}
+Zur Messung wurde zunächst das Spektrometer UV-Winlab gestartet und die Messparameter
+(Wellenlängenbereich: $\SI{350}{nm}$ bis $\SI{700}{nm}$, Schrittweite: $\SI{1}{nm}$, Absorptionsmodus)
+eingestellt.
+Danach wurde eine Basislinie mit dem reinen Lösungsmittel (Cyclohexan) in beiden Küvetten
+aufgenommen.
+Anschließend wurde die Probenküvette mit der $\beta$-Carotin-Lösung in Cyclohexan befüllt
+und das Absorptionsspektrum im angegebenen Wellenlängenbereich aufgenommen.
+Das Absorptionsmaximum $\lambda_{\text{max}}$ wurde aus dem aufgenommenen Spektrum abgelesen.
+
+\subsubsection{Beobachtung}
+Die $\beta$-Carotin-Lösung zeigte eine intensive orange-gelbe Färbung.
+Im Absorptionsspektrum war ein deutliches Maximum im Bereich von $\lambda_{\text{max}} \approx \SI{450}{nm}$
+im blauen Spektralbereich zu erkennen, was der Komplementärfarbe Orange entspricht.
+
 \subsubsection{Versuchsauswertung}
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{figures/fitten-von-funktionen.pdf}
-  \caption{Absorbtionsspektrum}
+  \caption{Absorptionsspektrum der $\beta$-Carotin-Lösung in Cyclohexan. Das Maximum liegt bei
+  $\lambda_{\text{max}} \approx \SI{450}{nm}$.}
   \label{img:absorbtionsspektrum}
 \end{figure}
+
+$\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N = 22$
+$\pi$-Elektronen im delokalisierten System.
+Nach dem Modell des eindimensionalen Kastens ergibt sich die Energie des HOMO-LUMO-Übergangs
+gemäß Gleichung aus dem Theorieteil:
+
+\begin{align}
+  \Delta E &= \frac{h^{2}}{8 m_{e} L^{2}} \cdot (N+1)
+  \label{eq:kasten-energie}
+\end{align}
+
+Da die Energie des absorbierten Lichtes $\Delta E = \frac{hc}{\lambda_{\text{max}}}$ beträgt,
+kann die Kastenlänge $L$ durch Umstellen bestimmt werden:
+
+\begin{align}
+  \frac{hc}{\lambda_{\text{max}}} &= \frac{h^{2}}{8 m_{e} L^{2}} \cdot (N+1) \\
+  \implies L &= \sqrt{\frac{h \cdot \lambda_{\text{max}} \cdot (N+1)}{8 m_{e} c}}
+  \label{eq:kastenlänge}
+\end{align}
+
+Mit den Werten $\lambda_{\text{max}} = \SI{450}{nm}$, $N = 22$, $h = \SI{6,626e-34}{J\cdot s}$,
+$m_{e} = \SI{9,109e-31}{kg}$ und $c = \SI{2,998e8}{m/s}$ ergibt sich:
+
+\begin{align}
+  L &= \sqrt{\frac{\SI{6,626e-34}{J\cdot s} \cdot \SI{450e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{m/s}}} \nonumber \\
+  &= \sqrt{\frac{\SI{6,854e-42}{J\cdot s\cdot m}}{\SI{2,185e-21}{kg\cdot m/s}}} \nonumber \\
+  &= \sqrt{\SI{3,136e-21}{m^{2}}} \nonumber \\
+  &= \SI{1,77}{nm}.
+\end{align}
+
+Zum Vergleich: Der Bindungsabstand in einem konjugierten System beträgt ca.
+$\SI{0,14}{nm}$ pro Bindung. Für 22 Elektronen (11 Doppelbindungen, 22 Bindungen) ergibt sich
+ein abgeschätzter Literaturwert von $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$.
+Der experimentelle Wert von $L = \SI{1,77}{nm}$ ist geringer als diese einfache Abschätzung,
+da das Modell des idealen Kastens die realen Bindungsverhältnisse und die endlichen
+Potentialwände nicht berücksichtigt.
+
 \subsubsection{Fehlerbetrachtung}
+Die größte Fehlerquelle bei diesem Versuch ist die Genauigkeit beim Ablesen von
+$\lambda_{\text{max}}$ aus dem Absorptionsspektrum.
+Da das Absorptionsmaximum von $\beta$-Carotin ein relativ breites Band aufweist, ist die
+Exaktheit der Wellenlängenbestimmung auf etwa $\pm\SI{5}{nm}$ beschränkt.
+Nach \eqref{eq:kastenlänge} geht $\lambda_{\text{max}}$ mit einer Wurzelfunktion in die
+Kastenlänge ein, was den relativen Fehler von $L$ im Vergleich zu dem von $\lambda_{\text{max}}$
+ethwa halbiert.
+Ein weiterer systematischer Fehler ergibt sich aus der Näherung des Modells selbst:
+Das Teilchen-im-Kasten-Modell vernachlässigt Wechselwirkungen zwischen den Elektronen
+sowie die endliche Höhe der Potentialwände, was zu einer systematischen Unterschätzung von
+$L$ führt.
