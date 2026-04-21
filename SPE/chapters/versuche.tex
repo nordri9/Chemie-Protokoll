@@ -30,7 +30,7 @@ Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird gerechnet
   \centering
   \begin{tabular}{ c|cc  }
     \hline
-    $H_{x}$-Line&$n$ &Wellenlänge in $\SI{}{nm}$\\
+    $H_{x}$-Line&$n$ &$\lambda_{\text{theo}}$ in $\SI{}{nm}$\\
     \hline
     $H_{\alpha}$   & 3    &\SI{656}{}\\
     $H_{\beta}$ &   4  & \SI{486}{}  \\
@@ -39,6 +39,7 @@ Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird gerechnet
     \hline
   \end{tabular}
   \caption{Aus \eqref{eq:balmer-frequenz} und \eqref{eq:wavelength} berechnete Wellenlängen $\lambda$ es Emissionsspektrums von Wasserstoff}
+  \label{tab:theoretische-werte}
 
 \end{table}
 
@@ -71,7 +72,7 @@ Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmax
   \centering
   \begin{tabular}{cccc}
     \hline
-    $H_{x}$-Line&Farbe &Abstand zum $0.$Maximum $x$ in \si{cm}&Berechnete Wellenlänge $\lambda$ in \si{nm}\\
+    $H_{x}$-Line&Farbe &Abstand zum $0.$Maximum $x$ in \si{cm}&Berechnete Wellenlänge $\lambda_{\text{exp}}$ in \si{nm}\\
     \hline
     $H_{\alpha}$   & Rot&\SI{5,07}{}    &\SI{626,4}{}\\
     $H_{\beta}$ &  Indigo &\SI{3,65}{}  & \SI{467,2}{}\\
@@ -79,6 +80,7 @@ Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmax
     \hline
   \end{tabular}
   \caption{Messwerte und aus diesen berechneten Wellenlängen mittels \eqref{eq:optisches-gitter}.}
+  \label{tab:gemessene-werte}
 
 \end{table}
 \subsubsection*{Ionisierungsenergie}
@@ -118,20 +120,27 @@ Durch einsetzen der konstanten erhalten wir
 \end{align}
 
 \subsubsection{Fehlerbetrachtung}
-Die aus den Messwerten berechneten Wellenlängen weichen von den theoretisch berechneten Werten ab. Die relativen Abweichungen ergeben sich zu
+Die aus den Messwerten berechneten Wellenlängen \ref{tab:gemessene-werte} weichen von den theoretisch berechneten Werten \ref{tab:theoretische-werte} ab. Die absoluten Abweichungen ergeben sich zu:
 
 \begin{align}
-  ss
+  \Delta \lambda = \lambda_{\text{exp}}- \lambda_{\text{theo}}\\
+  \SI{626,4}{nm}- \SI{656}{nm}=\SI{29,6}{nm} \nonumber
 \end{align}
+Die relativen Abweichungen zu:
+\begin{align}
+  p = \frac{\lambda_{\text{exp}}- \lambda_{\text{theo}}}{\lambda_{\text{theo}}}\cdot 100 \\
+  \frac{\SI{626,4}{nm}- \SI{656}{nm}}{\SI{656}{nm}} \cdot 100 = \SI{4,5}{\percent} \nonumber
+\end{align}
+
 \begin{table}[H]
   \centering
-  \begin{tabular}{c|ccc}
+  \begin{tabular}{c|cccc}
     \hline
-    $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} & Abweichung in \si{\percent}\\
+    $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} &Abweichung in \si{nm}& Abweichung in \si{\percent}\\
     \hline
-    $H_{\alpha}$ & \SI{656}{} & \SI{626,4}{} & \SI{4,5}{}\\
-    $H_{\beta}$  & \SI{486}{} & \SI{467,2}{} & \SI{3,9}{}\\
-    $H_{\gamma}$ & \SI{433}{} & \SI{438,6}{} & \SI{1,3}{}\\
+    $H_{\alpha}$ & \SI{656}{} & \SI{626,4}{} & \SI{29,6}{}&\SI{4,5}{}\\
+    $H_{\beta}$  & \SI{486}{} & \SI{467,2}{} & \SI{18,8}{}&\SI{3,9}{}\\
+    $H_{\gamma}$ & \SI{433}{} & \SI{438,6}{} & \SI{5,6}{}&\SI{1,3}{}\\
     \hline
   \end{tabular}
   \caption{Vergleich der theoretisch und experimentell bestimmten Wellenlängen der Balmer-Serie.}
