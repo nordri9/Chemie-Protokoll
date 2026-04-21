@@ -7,18 +7,18 @@ Es sollen die Wellenlängen der $H_{\alpha}$,$H_{\beta}$,$H_{\gamma}$-Linien der
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{figures/image28.pdf}
-  \caption{Versuchsaufbau zur Balmer-Serie}
+  \caption{Versuchsaufbau zur Balmer-Serie \cite{skript}}
   \label{img:versuchsaufbau}
 \end{figure}
 Zunächst hat man ein Blatt Papier Hinter die erste Sammellinse ($f=\SI{50}{mm}$ Brennweite) gehalten um deren Höhe optimal einzustellen. Dies wurde hinter dem verstellbaren Spalt, der zweiten Sammellinse ($f=\SI{100}{mm}$ Brennweite) und dem optischen Gitter wiederholt. Wodurch bei jedem Element auf der optischen bank möglichst wenig Intensität verloren geht. Da das Interferenzmuster auf dem Schirm ohnehin schon schwach war.
 \subsubsection{Versuchsdurchführung}
 Nach dem Einstellen des Schirmabstandes $l \approx \SI{12,5}{cm}$ wurden die Abstände der Maxima auf einem Papier markiert, das auf dem Schirm angebracht war. Diese Messung wurde einige mahle wiederholt unter leichtem verschieben der Sammellinsen um ein möglichst scharfes Bild zu bekommen und Messfehler zu vermeiden.
 \subsubsection{Beobachtung}
-Auf dem Schirm war zunächst das $0.$ Maximum im Zentrum des Interferenzmusters zu erkenne. Symmetrisch darum angeordnet befanden sich die $1.$ Hauptmaxima. Die wiederum aus von Innen nach Außen die Farben Violett, Indigo und Rot hatten. Wobei Violett und Indigo fast den Identischen Abstand zum $0. $ Maximum hatten.
+Auf dem Schirm war zunächst das $0.$ Maximum im Zentrum des Interferenzmusters zu erkennen. Symmetrisch darum angeordnet befanden sich die $1.$ Hauptmaxima. Die wiederum aus von Innen nach Außen die Farben Violett, Indigo und Rot hatten. Wobei Violett und Indigo fast den Identischen Abstand zum $0. $ Maximum hatten.
 
 \subsubsection{Versuchsauswertung}
-Die theoretischen Emissionslinien können mit \eqref{eq:balmer-frequenz} und \eqref{eq:wavelength} wie folgt berechnet werden.\\ \\
-Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird gerechnet
+Die theoretischen Emissionslinien können mit \eqref{eq:balmer-frequenz} und \eqref{eq:wavelength} wie folgt berechnet werden.\\
+Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird, wie folgt gerechnet:
 
 \begin{equation}
   \begin{aligned}
@@ -43,29 +43,29 @@ Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird gerechnet
 
 \end{table}
 
-Um die Wellenlängen aus den gemessenen Maxima Abständen zu bestimmen verwendet man die Formeln für die Beugung des Lichtes am optischen Gitter
+Um die Wellenlängen aus den gemessenen Maxima Abständen zu bestimmen verwendet man die Formeln für die Beugung des Lichtes am optischen Gitter \cite{noauthor_vielfachspalt_nodate}:
 
 \begin{align}
   \tan(\alpha)&=\frac{x}{l} \\
   \sin(\alpha)&=\frac{k \cdot \lambda}{g} \\
-  \implies \lambda& = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}.
+  \implies \lambda& = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}
   \label{eq:optisches-gitter}
 \end{align}
 
 \begin{itemize}
-  \item $\lambda \ \hat{=}$ Wellenlänge [\si{\meter}],
-  \item $\alpha \ \hat{=}$ Winkel von $0.$Maximum bis $k.$Maximum  [\si{\meter/s}],
-  \item $l \ \hat{=}$ Abstand Schirm zu Gitter [\si{\meter}],
-  \item $x \ \hat{=}$ Abstand von $0.$Maximum bis $k.$Maximum  [\si{\meter}],
-  \item $g \ \hat{=}$ Gitterkonstante [\si{\meter}],
-  \item $k \ \hat{=}$ Ordnung des Hauptmaxima.
+  \item $\lambda \ \hat{=}$ Wellenlänge [\si{\meter}]
+  \item $\alpha \ \hat{=}$ Winkel von $0.$Maximum bis $k.$Maximum  [\si{\meter/s}]
+  \item $l \ \hat{=}$ Abstand Schirm zu Gitter [\si{\meter}]
+  \item $x \ \hat{=}$ Abstand von $0.$Maximum bis $k.$Maximum  [\si{\meter}]
+  \item $g \ \hat{=}$ Gitterkonstante [\si{\meter}]
+  \item $k \ \hat{=}$ Ordnung des Hauptmaxima
 \end{itemize}
 
-Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmaximum ($k=1$)
+Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmaximum ($k=1$):
 
 \begin{align}
   \sin\left(\arctan\left(\frac{\SI{5,07}{cm}}{\SI{12,5}{cm}}\right) \right) \cdot \frac{1}{600}\cdot 10^{-3} \si{\meter}&= \SI{6,264e-7}{m}\\
-  &=\SI{626,4}{nm}.
+  &=\SI{626,4}{nm}
 \end{align}
 
 \begin{table}[H]
@@ -85,7 +85,7 @@ Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmax
 \end{table}
 \subsubsection*{Ionisierungsenergie}
 
-Die Ionisierungsenergie eines Wasserstoff Atoms wird mit Hilfe der Rydberg-Energie Formel berechnet
+Die Ionisierungsenergie eines Wasserstoff Atoms wird mit Hilfe der Rydberg-Energie Formel berechnet:
 \begin{align}
   R_{y} &=hR =hcR_{\infty} \\
   &= \SI{6,626e-34}{J \cdot s} \cdot \SI{2.998e8}{\meter/s} \cdot \SI{1.097e7}{1/\meter} \nonumber\\
@@ -100,20 +100,20 @@ Die Ionisierungsenergie eines Wasserstoff Atoms wird mit Hilfe der Rydberg-Energ
 
 \subsubsection*{Bohrscher Radius}
 
-Der Bohrsche Radius lässt sich mit Hilfe folgender Formel berechnen
+Der Bohrsche Radius \cite{noauthor_bohrsches_2026} lässt sich mit Hilfe folgender Formel berechnet:
 
 \begin{align}
-  a_{0}=\frac{4 \pi \cdot \epsilon_{0} \cdot \hbar^{2}}{e^{2}\cdot m_{e}},
+  a_{0}=\frac{4 \pi \cdot \epsilon_{0} \cdot \hbar^{2}}{e^{2}\cdot m_{e}}
 \end{align}
 
 \begin{itemize}
-  \item $\varepsilon_{0} \ \hat{=}$ Elektrische Feldkonstante $\left[\si{\frac{As}{Vm}}\right]$,
-  \item $\hbar \ \hat{=}$ Reduziertes Plancksches Wirkungsquantum $\left[\si{J \cdot s}\right]$,
-  \item $e \ \hat{=}$ Elementarladung $\left[\si{C}\right]$,
-  \item $m_{e} \ \hat{=}$ Elektronenmasse $\left[\si{kg}\right]$,
-  \item $a_{0} \ \hat{=}$ Bohrscher Radius $\left[\si{m}\right]$.
+  \item $\varepsilon_{0} \ \hat{=}$ Elektrische Feldkonstante $\left[\si{\frac{As}{Vm}}\right]$
+  \item $\hbar \ \hat{=}$ Reduziertes Plancksches Wirkungsquantum $\left[\si{J \cdot s}\right]$
+  \item $e \ \hat{=}$ Elementarladung $\left[\si{C}\right]$
+  \item $m_{e} \ \hat{=}$ Elektronenmasse $\left[\si{kg}\right]$
+  \item $a_{0} \ \hat{=}$ Bohrscher Radius $\left[\si{m}\right]$
 \end{itemize}
-Durch einsetzen der konstanten erhalten wir
+Durch einsetzen der konstanten erhalten wir:
 \begin{align}
   a_{0}=\frac{4\pi \cdot \SI{8,854e-12}{\frac{As}{Vm}} \cdot \left(\SI{1.055e-34}{\joule s}\right) ^{2}}{\left(\SI{1.602e-19}{C}\right)^{2} \cdot\SI{9.109e-31}{kg} }
   = \SI{5,292e-11}{m} = \SI{52,92}{pm}.
@@ -124,12 +124,12 @@ Die aus den Messwerten berechneten Wellenlängen \ref{tab:gemessene-werte} weich
 
 \begin{align}
   \Delta \lambda = \lambda_{\text{exp}}- \lambda_{\text{theo}}\\
-  \SI{626,4}{nm}- \SI{656}{nm}=\SI{29,6}{nm} \nonumber
+  \SI{626,4}{nm}- \SI{656}{nm}=\SI{-29,6}{nm} \nonumber
 \end{align}
 Die relativen Abweichungen zu:
 \begin{align}
   p = \frac{\lambda_{\text{exp}}- \lambda_{\text{theo}}}{\lambda_{\text{theo}}}\cdot 100 \\
-  \frac{\SI{626,4}{nm}- \SI{656}{nm}}{\SI{656}{nm}} \cdot 100 = \SI{4,5}{\percent} \nonumber
+  \frac{\SI{626,4}{nm}- \SI{656}{nm}}{\SI{656}{nm}} \cdot 100 = \SI{-4,5}{\percent} \nonumber
 \end{align}
 
 \begin{table}[H]
@@ -138,8 +138,8 @@ Die relativen Abweichungen zu:
     \hline
     $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} &Abweichung in \si{nm}& Abweichung in \si{\percent}\\
     \hline
-    $H_{\alpha}$ & \SI{656}{} & \SI{626,4}{} & \SI{29,6}{}&\SI{4,5}{}\\
-    $H_{\beta}$  & \SI{486}{} & \SI{467,2}{} & \SI{18,8}{}&\SI{3,9}{}\\
+    $H_{\alpha}$ & \SI{656}{} & \SI{626,4}{} & \SI{-29,6}{}&\SI{-4,5}{}\\
+    $H_{\beta}$  & \SI{486}{} & \SI{467,2}{} & \SI{-18,8}{}&\SI{-3,9}{}\\
     $H_{\gamma}$ & \SI{433}{} & \SI{438,6}{} & \SI{5,6}{}&\SI{1,3}{}\\
     \hline
   \end{tabular}
@@ -151,31 +151,30 @@ Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}
 \subsubsection{Aufgabenstellung}
-Es sollte ein Absorptionsspektrum einer in Cyclohexan gelösten $\beta$-Carotinlösung gemessen und die Länge des $\pi$-Systems mit dem Modell des eindimensionalen Potentialtopfs bestimmt werden.
+Die Messung des Absorptionsspektrums einer $\beta$-Carotinlösung in Cyclohexan, sowie die Bestimmung der Länge des $\pi$-Systems nach dem Modell des eindimensionalen Potentialtopfs.
+
 \subsubsection{Versuchsdurchführung}
 
-Zur Messung wurde zunächst das Spektrometer UV-Winlab gestartet und die Messparameter (Wellenlängenbereich: $\SI{350}{nm}$ bis $\SI{700}{nm}$, Schrittweite: $\SI{1}{nm}$, Absorptionsmodus) eingestellt. Danach wurde eine Basislinie mit dem reinen Lösungsmittel (Cyclohexan) in beiden Küvetten aufgenommen. Anschließend wurde die Probenküvette mit der $\beta$-Carotin-Lösung in Cyclohexan befüllt und das Absorptionsspektrum im angegebenen Wellenlängenbereich aufgenommen. Das Absorptionsmaximum $\lambda_{\text{max}}$ wurde aus dem aufgenommenen Spektrum abgelesen.
+Zur Messung wurde zunächst eine Basislinie mit dem reinen Lösungsmittel (Cyclohexan) in einer Küvette aufgenommen. Anschließend wurde die zweite Küvette mit der $\beta$-Carotin-Lösung befüllt und das Absorptionsspektrum im angegebenen Wellenlängenbereich aufgenommen.
 
 \subsubsection{Beobachtung}
-Die $\beta$-Carotin-Lösung zeigte eine intensive orange-gelbe Färbung. Im Absorptionsspektrum war ein deutliches Maximum im Bereich von $\lambda_{\text{max}} \approx \SI{450}{nm}$ im blauen Spektralbereich zu erkennen, was der Komplementärfarbe Orange entspricht.
+Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspektrum war ein deutliches Maximum im Bereich von $\lambda_{\text{max}} \approx \SI{455}{nm}$ im blauen Spektralbereich zu erkennen, was der Komplementärfarbe Orange entspricht.
 
 \subsubsection{Versuchsauswertung}
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{figures/fitten-von-funktionen.pdf}
-  \caption{Absorptionsspektrum der $\beta$-Carotin-Lösung in Cyclohexan. Das Maximum liegt bei
-  $\lambda_{\text{max}} \approx \SI{450}{nm}$.}
+  \caption{Absorptionsspektrum der $\beta$-Carotin-Lösung in Cyclohexan. Im Bereich $\SI{325}{nm}$ bis $\SI{500}{nm}$.}
   \label{img:absorbtionsspektrum}
 \end{figure}
 
-$\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N = 22$ $\pi$-Elektronen im delokalisierten System. Nach dem Modell des eindimensionalen Kastens ergibt sich die Energie des HOMO-LUMO-Übergangs gemäß Gleichung aus dem Theorieteil:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/Struktur_Beta-Carotin.svg.png}
+  \caption{$\beta$-Carotin Molekülstruktur \cite{noauthor_carotine_2026}}
+\end{figure}
 
-\begin{align}
-  \Delta E &= \frac{h^{2}}{8 m_{e} L^{2}} \cdot (N+1)
-  \label{eq:kasten-energie}
-\end{align}
-
-Da die Energie des absorbierten Lichtes $\Delta E = \frac{hc}{\lambda_{\text{max}}}$ beträgt, kann die Kastenlänge $L$ durch Umstellen bestimmt werden:
+$\beta$-Carotin besitzt 11  Doppelbindungen und damit $N=22$ $\pi$-Elektronen im delokalisierten System. Nach dem Modell des eindimensionalen Kastens ergibt sich die Energie des HOMO-LUMO-Übergangs gemäß Gleichung \eqref{eq:energie-Potentialtopf}. Da die Energie des absorbierten Lichtes durch \eqref{eq:absorbtionsenergie} definiert ist, kann die Kastenlänge $L$ durch folgende Umstellung bestimmt werden:
 
 \begin{align}
   \frac{hc}{\lambda_{\text{max}}} &= \frac{h^{2}}{8 m_{e} L^{2}} \cdot (N+1) \\
@@ -183,16 +182,13 @@ Da die Energie des absorbierten Lichtes $\Delta E = \frac{hc}{\lambda_{\text{max
   \label{eq:kastenlänge}
 \end{align}
 
-Mit den Werten $\lambda_{\text{max}} = \SI{450}{nm}$, $N = 22$, $h = \SI{6,626e-34}{J\cdot s}$, $m_{e} = \SI{9,109e-31}{kg}$ und $c = \SI{2,998e8}{m/s}$ ergibt sich:
+Mit den Werten $\lambda_{\text{max}} = \SI{455}{nm}$, $N = 22$, $m_{e} = \SI{9,109e-31}{kg}$ ergibt sich:
 
 \begin{align}
-  L &= \sqrt{\frac{\SI{6,626e-34}{J\cdot s} \cdot \SI{450e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{m/s}}} \nonumber \\
-  &= \sqrt{\frac{\SI{6,854e-42}{J\cdot s\cdot m}}{\SI{2,185e-21}{kg\cdot m/s}}} \nonumber \\
-  &= \sqrt{\SI{3,136e-21}{m^{2}}} \nonumber \\
-  &= \SI{1,77}{nm}.
+  L = \sqrt{\frac{\SI{6,626e-34}{J\cdot s} \cdot \SI{455e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{m/s}}} = \SI{1,782}{nm}.
 \end{align}
 
-Zum Vergleich: Der Bindungsabstand in einem konjugierten System beträgt ca. $\SI{0,14}{nm}$ pro Bindung. Für 22 Elektronen (11 Doppelbindungen, 22 Bindungen) ergibt sich ein abgeschätzter Literaturwert von $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$. Der experimentelle Wert von $L = \SI{1,77}{nm}$ ist geringer als diese einfache Abschätzung, da das Modell des idealen Kastens die realen Bindungsverhältnisse und die endlichen Potentialwände nicht berücksichtigt.
+Zum Vergleich: Der Bindungsabstand in einem konjugierten System beträgt ca. $\SI{0,14}{nm}$ pro Bindung. Für 22 Elektronen (11 Doppelbindungen, 22 Bindungen) ist ein gängiger Literaturwert von $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$ \cite{noauthor_konjugation_2026}. Der experimentelle Wert von $L = \SI{1,782}{nm}$ ist geringer als diese einfache Abschätzung, da das Modell des idealen Kastens die realen Bindungsverhältnisse und die endlichen Potentialwände nicht berücksichtigt.
 
 \subsubsection{Fehlerbetrachtung}
-Die größte Fehlerquelle bei diesem Versuch ist die Genauigkeit beim Ablesen von $\lambda_{\text{max}}$ aus dem Absorptionsspektrum. Da das Absorptionsmaximum von $\beta$-Carotin ein relativ breites Band aufweist, ist die Exaktheit der Wellenlängenbestimmung auf etwa $\pm\SI{5}{nm}$ beschränkt. Nach \eqref{eq:kastenlänge} geht $\lambda_{\text{max}}$ mit einer Wurzelfunktion in die Kastenlänge ein, was den relativen Fehler von $L$ im Vergleich zu dem von $\lambda_{\text{max}}$ ethwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus der Näherung des Modells selbst: Das Teilchen-im-Kasten-Modell vernachlässigt Wechselwirkungen zwischen den Elektronen sowie die endliche Höhe der Potentialwände, was zu einer systematischen Unterschätzung von $L$ führt.
+Die größte Fehlerquelle bei diesem Versuch ist die Auflösung des Spektrometers, welche bei einem $\si{nm}$ liegt. Zusätzlich geht nach der Formel \eqref{eq:kastenlänge} $\lambda_{\text{max}}$ mit einer Wurzelfunktion in die Kastenlänge ein, was den relativen Fehler von $L$ im Vergleich zu dem von $\lambda_{\text{max}}$ etwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus der Näherung des Modells selbst: Das Teilchen-im-Kasten-Modell vernachlässigt Wechselwirkungen zwischen den Elektronen sowie die endliche Höhe der Potentialwände, was zu Abweichungen von $L$, in der Realität führt.
