@@ -10,9 +10,13 @@
 \usepackage{upgreek} %Für nicht kursive griechische Buchstaben, z. B. \upmu statt \mu
 \usepackage{float} %Großes H zum fixieren von Abbildungen/Tabellen
 %\usepackage{csquotes}% Anführungszeichen etc.
-\usepackage{chemformula}% mächtiges Chemiepaket(Rkt. Gl., Oxidationszahlen etc.)
-\usepackage{chemgreek}% für chemformula
+%\usepackage{chemformula}% mächtiges Chemiepaket(Rkt. Gl., Oxidationszahlen etc.)
+%\usepackage{chemgreek}% für chemformula
 %\usepackage{chemmacros}% für chemformula
+
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+
 \usepackage{geometry} %Für Einstellungen zum Rand etc.
 \usepackage[font=small]{caption} %Bestimmt die Schriftgröße von Tabellenüberschriften und Bildunterschriften, optional
 \usepackage[backend=biber, style=ieee]{biblatex} %Literaturverzeichnis
@@ -73,12 +77,13 @@
     \end{table}
   \end{center}
 \end{titlepage}
-\pagenumbering{Roman}
-\tableofcontents %Generiert ein Inhaltsverzeichnis, optional
-\newpage
-\pagenumbering{arabic}
+\pagestyle{empty}        % Kopf-/Fußzeile (inkl. Seitenzahl) für TOC ausblenden
+\tableofcontents
+\clearpage               % Seite abschließen
+\pagestyle{scrheadings}  % KOMA-Seitenstil mit deinen ihead/ohead etc. wiederherstellen
+\pagenumbering{arabic}   % Nummerierung ab hier bei 1 starten
 
-%%%% acctual content %%%%
+%%%% content %%%%
 \input{chapters/theorie.tex}
 
 \input{chapters/versuche.tex}
