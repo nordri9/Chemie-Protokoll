@@ -30,11 +30,11 @@ Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird, wie folgt gerechnet:
   \centering
   \begin{tabular}{ c|cc  }
     \hline
-    $H_{x}$-Line&$n$ &$\lambda_{\text{theo}}$ in $\SI{}{nm}$\\
+    $H_{x}$-Line & $n$ & $\lambda_{\text{theo}}$ in $\SI{}{nm}$ \\
     \hline
-    $H_{\alpha}$   & 3    &\SI{656}{}\\
-    $H_{\beta}$ &   4  & \SI{486}{}  \\
-    $H_{\gamma}$ &5 & \SI{433}{}\\
+    $H_{\alpha}$ & 3   & \SI{656}{}                             \\
+    $H_{\beta}$  & 4   & \SI{486}{}                             \\
+    $H_{\gamma}$ & 5   & \SI{433}{}                             \\
 
     \hline
   \end{tabular}
@@ -46,9 +46,9 @@ Für die $H_{\alpha}$-Linie ($n_{2}=3$) wird, wie folgt gerechnet:
 Um die Wellenlängen aus den gemessenen Maxima Abständen zu bestimmen verwendet man die Formeln für die Beugung des Lichtes am optischen Gitter \cite{noauthor_vielfachspalt_nodate}:
 
 \begin{align}
-  \tan(\alpha)&=\frac{x}{l} \\
-  \sin(\alpha)&=\frac{k \cdot \lambda}{g} \\
-  \implies \lambda& = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}
+  \tan(\alpha)     & =\frac{x}{l}                                                          \\
+  \sin(\alpha)     & =\frac{k \cdot \lambda}{g}                                            \\
+  \implies \lambda & = \frac{\sin\left(\arctan\left(\frac{x}{l}\right) \right) \cdot g}{k}
   \label{eq:optisches-gitter}
 \end{align}
 
@@ -64,19 +64,19 @@ Um die Wellenlängen aus den gemessenen Maxima Abständen zu bestimmen verwendet
 Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmaximum ($k=1$):
 
 \begin{align}
-  \sin\left(\arctan\left(\frac{\SI{5,07}{cm}}{\SI{12,5}{cm}}\right) \right) \cdot \frac{1}{600}\cdot 10^{-3} \si{\meter}&= \SI{6,264e-7}{m}\\
-  &=\SI{626,4}{nm}
+  \sin\left(\arctan\left(\frac{\SI{5,07}{cm}}{\SI{12,5}{cm}}\right) \right) \cdot \frac{1}{600}\cdot 10^{-3} \si{\meter} & = \SI{6,264e-7}{m} \\
+                                                                                                                         & =\SI{626,4}{nm}
 \end{align}
 
 \begin{table}[H]
   \centering
   \begin{tabular}{cccc}
     \hline
-    $H_{x}$-Line&Farbe &Abstand zum $0.$Maximum $x$ in \si{cm}&Berechnete Wellenlänge $\lambda_{\text{exp}}$ in \si{nm}\\
+    $H_{x}$-Line & Farbe   & Abstand zum $0.$Maximum $x$ in \si{cm} & Berechnete Wellenlänge $\lambda_{\text{exp}}$ in \si{nm} \\
     \hline
-    $H_{\alpha}$   & Rot&\SI{5,07}{}    &\SI{626,4}{}\\
-    $H_{\beta}$ &  Indigo &\SI{3,65}{}  & \SI{467,2}{}\\
-    $H_{\gamma}$ &Violett &\SI{3,41}{} & \SI{438,6}{}\\
+    $H_{\alpha}$ & Rot     & \SI{5,07}{}                            & \SI{626,4}{}                                             \\
+    $H_{\beta}$  & Indigo  & \SI{3,65}{}                            & \SI{467,2}{}                                             \\
+    $H_{\gamma}$ & Violett & \SI{3,41}{}                            & \SI{438,6}{}                                             \\
     \hline
   \end{tabular}
   \caption{Messwerte und aus diesen berechneten Wellenlängen mittels \eqref{eq:optisches-gitter}.}
@@ -87,9 +87,9 @@ Im folgenden die Beispielrechnung zu der $H_{\alpha}$-Linie und dem $1.$Hauptmax
 
 Die Ionisierungsenergie eines Wasserstoff Atoms wird mit Hilfe der Rydberg-Energie Formel berechnet:
 \begin{align}
-  R_{y} &=hR =hcR_{\infty} \\
-  &= \SI{6,626e-34}{J \cdot s} \cdot \SI{2.998e8}{\frac{m}{s}} \cdot \SI{1.097e7}{\frac{1}{m}} \nonumber\\
-  &= \SI{2.18e-18}{\joule}=\SI{13.61}{eV}, \nonumber
+  R_{y} & =hR =hcR_{\infty}                                                                                     \\
+        & = \SI{6,626e-34}{J \cdot s} \cdot \SI{2.998e8}{\frac{m}{s}} \cdot \SI{1.097e7}{\frac{1}{m}} \nonumber \\
+        & = \SI{2.18e-18}{\joule}=\SI{13.61}{eV}, \nonumber
 \end{align}
 
 \begin{itemize}
@@ -123,24 +123,24 @@ Durch einsetzen der konstanten erhalten wir:
 Die aus den Messwerten berechneten Wellenlängen \eqref{tab:gemessene-werte} weichen von den theoretisch berechneten Werten \eqref{tab:theoretische-werte} ab. Die absoluten Abweichungen ergeben sich zu:
 
 \begin{align}
-  \Delta \lambda &= \lambda_{\text{exp}}- \lambda_{\text{theo}}\\
-  \SI{626,4}{nm}- \SI{656}{nm}&=\SI{-29,6}{nm} \nonumber
+  \Delta \lambda               & = \lambda_{\text{exp}}- \lambda_{\text{theo}} \\
+  \SI{626,4}{nm}- \SI{656}{nm} & =\SI{-29,6}{nm} \nonumber
 \end{align}
 Die relativen Abweichungen zu:
 \begin{align}
-  p =& \frac{\lambda_{\text{exp}}- \lambda_{\text{theo}}}{\lambda_{\text{theo}}}\cdot 100 \\
-  \frac{\SI{626,4}{nm}- \SI{656}{nm}}{\SI{656}{nm}} \cdot 100 =& \SI{-4,5}{\percent} \nonumber
+  p =                                                           & \frac{\lambda_{\text{exp}}- \lambda_{\text{theo}}}{\lambda_{\text{theo}}}\cdot 100 \\
+  \frac{\SI{626,4}{nm}- \SI{656}{nm}}{\SI{656}{nm}} \cdot 100 = & \SI{-4,5}{\percent} \nonumber
 \end{align}
 
 \begin{table}[H]
   \centering
   \begin{tabular}{c|cccc}
     \hline
-    $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} &Abweichung in \si{nm}& Abweichung in \si{\percent}\\
+    $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} & Abweichung in \si{nm} & Abweichung in \si{\percent} \\
     \hline
-    $H_{\alpha}$ & \SI{656}{} & \SI{626,4}{} & \SI{-29,6}{}&\SI{-4,5}{}\\
-    $H_{\beta}$  & \SI{486}{} & \SI{467,2}{} & \SI{-18,8}{}&\SI{-3,9}{}\\
-    $H_{\gamma}$ & \SI{433}{} & \SI{438,6}{} & \SI{5,6}{}&\SI{1,3}{}\\
+    $H_{\alpha}$  & \SI{656}{}                         & \SI{626,4}{}                      & \SI{-29,6}{}          & \SI{-4,5}{}                 \\
+    $H_{\beta}$   & \SI{486}{}                         & \SI{467,2}{}                      & \SI{-18,8}{}          & \SI{-3,9}{}                 \\
+    $H_{\gamma}$  & \SI{433}{}                         & \SI{438,6}{}                      & \SI{5,6}{}            & \SI{1,3}{}                  \\
     \hline
   \end{tabular}
   \caption{Vergleich der theoretisch und experimentell bestimmten Wellenlängen der Balmer-Serie.}
@@ -177,8 +177,8 @@ Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspe
 $\beta$-Carotin besitzt 11  Doppelbindungen und damit $N=22$ $\pi$-Elektronen im delokalisierten System. Nach dem Modell des eindimensionalen Kastens ergibt sich die Energie des HOMO-LUMO-Übergangs gemäß Gleichung \eqref{eq:energie-Potentialtopf}. Da die Energie des absorbierten Lichtes durch \eqref{eq:absorbtionsenergie} definiert ist, kann die Kastenlänge $L$ durch folgende Umstellung bestimmt werden:
 
 \begin{align}
-  \frac{hc}{\lambda_{\text{max}}} &= \frac{h^{2}}{8 m_{e} L^{2}} \cdot (N+1) \\
-  \implies L &= \sqrt{\frac{h \cdot \lambda_{\text{max}} \cdot (N+1)}{8 m_{e} c}}
+  \frac{hc}{\lambda_{\text{max}}} & = \frac{h^{2}}{8 m_{e} L^{2}} \cdot (N+1)                           \\
+  \implies L                      & = \sqrt{\frac{h \cdot \lambda_{\text{max}} \cdot (N+1)}{8 m_{e} c}}
   \label{eq:kastenlänge}
 \end{align}
 
