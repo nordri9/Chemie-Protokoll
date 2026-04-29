@@ -12,7 +12,7 @@ Es sollen die Wellenlängen der $H_{\alpha}$-, $H_{\beta}$- und $H_{\gamma}$-Lin
 \end{figure}
 
 \subsubsection{Versuchsdurchführung}
-Zunächst wurde ein Blatt Papier hinter die erste Sammellinse ($f=\SI{50}{mm}$) gehalten, um deren Höhe optimal einzustellen. Dies wurde anschließend hinter dem verstellbaren Spalt, der zweiten Sammellinse ($f=\SI{100}{mm}$) und dem optischen Gitter wiederholt, um Intensitätsverluste zu minimieren. Nach dem Einstellen des Schirmabstandes auf $\SI{12,5}{cm}$ wurden die Abstände der Interferenzmaxima auf einem auf dem Schirm angebrachten Papier markiert. Die Messung wurde mehrfach wiederholt, wobei die Sammellinsen leicht verschoben wurden, um ein möglichst scharfes Bild zu erhalten und Messfehler zu minimieren.
+Zunächst wurde ein Blatt Papier hinter die erste Sammellinse ($f=\SI{50}{mm}$) gehalten, um deren Höhe optimal einzustellen. Dies wurde anschließend hinter dem verstellbaren Spalt, der zweiten Sammellinse ($f=\SI{100}{mm}$) und dem optischen Gitter wiederholt, um Intensitätsverluste zu minimieren. Nach dem Einstellen des Schirmabstandes auf $\SI{12,5}{cm}$ wurden die Abstände der Interferenzmaxima auf einem auf dem Schirm angebrachten Papier markiert. Die Messung wurde mehrfach wiederholt, wobei die Sammellinsen leicht verschoben wurden, um ein möglichst scharfes Bild zu erhalten.
 
 \subsubsection{Beobachtung}
 Auf dem Schirm war das Maximum nullter Ordnung im Zentrum des Interferenzmusters zu erkennen. Symmetrisch dazu befanden sich die Maxima erster Ordnung, welche von innen nach außen die Farben Violett, Indigo und Rot zeigten. Dabei wiesen die Violett- und Indigolinie nahezu den gleichen Abstand zum zentralen Maximum auf.
@@ -20,10 +20,7 @@ Auf dem Schirm war das Maximum nullter Ordnung im Zentrum des Interferenzmusters
 \subsubsection{Versuchsauswertung}
 Die theoretischen Emissionslinien werden mit Gl.~\eqref{eq:balmer-frequenz} und \eqref{eq:energie} berechnet. Für die $H_{\alpha}$-Linie ($n_{2}=3$, $n_1=2$) ergibt sich beispielhaft:
 \begin{equation}
-  \begin{aligned}
-    R_{H} \cdot c \cdot \left(\frac{1}{3^{2}}-\frac{1}{2^{2}} \right) = \SI{4.569e11}{\frac{1}{m}} \\
-    \frac{c}{\SI{4.569e11}{\frac{1}{m}}}= \SI{656e-9}{m}=\SI{656}{nm}
-  \end{aligned}
+  \lambda_{H_\alpha} = \frac{c}{R_{H} \cdot c \cdot \left(\frac{1}{2^{2}}-\frac{1}{3^{2}} \right)} = \SI{656}{nm}
 \end{equation}
 
 \begin{table}[H]
@@ -62,26 +59,19 @@ Die experimentellen Wellenlängen werden mit Gl.~\eqref{eq:optisches-gitter} aus
 \end{table}
 
 \paragraph*{Ionisierungsenergie}
-Die Ionisierungsenergie des Wasserstoffatoms entspricht der Rydberg-Energie:
-\begin{align}
-  R_y = \SI{6,626e-34}{Js} \cdot \SI{2,998e8}{\frac{m}{s}} \cdot \SI{1,097e7}{\frac{1}{m}} = \SI{13,61}{eV}
-\end{align}
-
-mit der Rydberg-Konstante $R_{\infty}$ \cite{nist_constants}.
+Die Ionisierungsenergie des Wasserstoffatoms wird über die Rydberg-Energie berechnet (Gl.~\eqref{eq:rydberg-energie}):
+$R_y = h c R_{\infty} = \SI{6,626e-34}{Js} \cdot \SI{2,998e8}{m/s} \cdot \SI{1,097e7}{m^{-1}} = \SI{2,18e-18}{J} = \SI{13,61}{eV}$.
 
 \paragraph*{Bohrscher Radius}
-Der Bohrsche Radius ergibt sich aus \cite[103]{demtroder_experimentalphysik_2016}:
-\begin{align}
-  a_{0}= \dfrac{4\pi \cdot \SI{8,854e-12}{\frac{As}{Vm}} \cdot (\SI{1,055e-34}{J s})^{2}}{(\SI{1,602e-19}{C})^{2}\cdot\SI{9,109e-31}{kg}} = \SI{52,92}{pm}
-\end{align}
-
+Der Bohrsche Radius (Gl.~\eqref{eq:bohr-radius}) berechnet sich zu:
+$a_{0}= \dfrac{4\pi \cdot \SI{8,854e-12}{As/Vm} \cdot (\SI{1,055e-34}{Js})^{2}}{(\SI{1,602e-19}{C})^{2}\cdot\SI{9,109e-31}{kg}} = \SI{52,92}{pm}$.
 
 \subsubsection{Fehlerbetrachtung}
-Die aus den Messwerten berechneten Wellenlängen (Tab.~\ref{tab:gemessene-werte}) weichen von den theoretischen Werten (Tab.~\ref{tab:theoretische-werte}) ab. Die absoluten und relativen Abweichungen sind nach Gl.~\eqref{eq:abweichung_abs} und \eqref{eq:abweichung_rel} berechnet:
+Die aus den Messwerten berechneten Wellenlängen (Tab.~\ref{tab:gemessene-werte}) weichen von den theoretischen Werten (Tab.~\ref{tab:theoretische-werte}) ab. Absolute und relative Abweichungen errechnen sich zu:
 \begin{align}
-  \Delta \lambda  = \lambda_{\text{exp}} - \lambda_{\text{theo}}
+  \Delta \lambda  &= \lambda_{\text{exp}} - \lambda_{\text{theo}}
   \label{eq:abweichung_abs} \\
-  p               = \frac{\lambda_{\text{exp}} - \lambda_{\text{theo}}}{\lambda_{\text{theo}}} \cdot 100
+  p               &= \frac{\lambda_{\text{exp}} - \lambda_{\text{theo}}}{\lambda_{\text{theo}}} \cdot 100
   \label{eq:abweichung_rel}
 \end{align}
 
@@ -92,25 +82,25 @@ Die aus den Messwerten berechneten Wellenlängen (Tab.~\ref{tab:gemessene-werte}
     \hline
     $H_{x}$-Linie & $\lambda_{\text{theo}}$ in \si{nm} & $\lambda_{\text{exp}}$ in \si{nm} & $\Delta\lambda$ in \si{nm} & $p$ in \si{\percent} \\
     \hline
-    $H_{\alpha}$  & 656                                & 626{,}4                           & $-$29{,}6                  & $-$4{,}5             \\
-    $H_{\beta}$   & 486                                & 467{,}2                           & $-$18{,}8                  & $-$3{,}9             \\
-    $H_{\gamma}$  & 433                                & 438{,}6                           & $+$5{,}6                   & $+$1{,}3             \\
+    $H_{\alpha}$  & 656 & 626{,}4 & $-$29{,}6 & $-$4{,}5 \\
+    $H_{\beta}$   & 486 & 467{,}2 & $-$18{,}8 & $-$3{,}9 \\
+    $H_{\gamma}$  & 433 & 438{,}6 & $+$5{,}6  & $+$1{,}3 \\
     \hline
   \end{tabular}
 \end{table}
 
-Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximapositionen auf dem Schirm zurückzuführen, da die Linien bereits sehr schwach waren. Weitere Fehlerquellen sind Ungenauigkeiten beim Messen des Schirmabstandes~$l$ sowie eine mögliche Fehljustierung des optischen Aufbaus. Da die Abweichungen bei allen drei Linien in ähnlicher Größenordnung liegen, ist ein systematischer Fehler wahrscheinlich.
+Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximapositionen zurückzuführen, da die Linien sehr schwach waren. Weitere Fehlerquellen sind Ungenauigkeiten beim Messen des Schirmabstandes~$l$ sowie eine mögliche Fehljustierung des optischen Aufbaus. Da die Abweichungen bei allen drei Linien ähnlich sind, ist ein systematischer Fehler wahrscheinlich.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}
 \subsubsection{Aufgabenstellung}
-Die Messung des UV/Vis-Absorptionsspektrums einer $\beta$-Carotinlösung (Konzentration $c_0 \approx \SI{3,0e-5}{\frac{mol}{l}}$) in Cyclohexan sowie die Bestimmung der Länge des delokalisierten $\pi$-Elektronensystems nach dem Modell des eindimensionalen Potentialtopfs.
+Die Messung des UV/Vis-Absorptionsspektrums einer $\beta$-Carotinlösung ($c_0 \approx \SI{3,0e-5}{mol/L}$) in Cyclohexan sowie die Bestimmung der Länge des delokalisierten $\pi$-Elektronensystems nach dem Modell des eindimensionalen Potentialtopfs.
 
 \subsubsection{Versuchsdurchführung}
-Zunächst wurde eine Messung mit reinem Cyclohexan in einer Küvette aufgenommen. Diese dient als Referenz, um den Eigenabsorptionsbeitrag des Lösungsmittels herauszurechnen. Anschließend wurde die zweite Küvette mit der $\beta$-Carotin-Lösung befüllt und das Absorptionsspektrum im Wellenlängenbereich von \SIrange{325}{500}{nm} aufgenommen.
+Zunächst wurde eine Referenzbasislinie mit reinem Cyclohexan in einer Küvette aufgenommen, um den Eigenabsorptionsbeitrag des Lösungsmittels herauszurechnen. Anschließend wurde die zweite Küvette mit der $\beta$-Carotin-Lösung befüllt und das Absorptionsspektrum im Wellenlängenbereich von \SIrange{325}{500}{nm} aufgenommen.
 
 \subsubsection{Beobachtung}
-Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspektrum war ein deutliches Absorptionsmaximum bei $\lambda_{\text{max}} \approx \SI{455}{nm}$ im blauen Spektralbereich zu erkennen, was der Komplementärfarbe Orange entspricht.
+Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspektrum war ein deutliches Maximum bei $\lambda_{\text{max}} \approx \SI{455}{nm}$ im blauen Spektralbereich erkennbar, was der Komplementärfarbe Orange entspricht.
 
 \subsubsection{Versuchsauswertung}
 \begin{figure}[H]
@@ -127,13 +117,23 @@ Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspe
   \label{fig:strukturformel}
 \end{figure}
 
-$\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N=22$ delokalisierte $\pi$-Elektronen. Nach dem Modell des eindimensionalen Kastens (Gl.~\ref{eq:kastenlänge}) ergibt sich mit $\lambda_{\text{max}} = \SI{455}{nm}$, $N = 22$ und $m_e = \SI{9,109e-31}{kg}$ die Kastenlänge:
-
+$\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N=22$ delokalisierte $\pi$-Elektronen. Mit Gl.~\eqref{eq:kastenlaenge}, $\lambda_{\text{max}} = \SI{455}{nm}$, $N = 22$ und $m_e = \SI{9,109e-31}{kg}$ ergibt sich die Kastenlänge:
 \begin{equation}
-  L = \sqrt{\frac{\SI{6,626e-34}{Js} \cdot \SI{455e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{\frac{m}{s}}}} = \SI{1,782}{nm}
+  L = \sqrt{\frac{\SI{6,626e-34}{Js} \cdot \SI{455e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{m/s}}} = \SI{1,782}{nm}
 \end{equation}
 
-Zum Vergleich: Im Literaturwert für konjugierte Systeme beträgt der mittlere Bindungsabstand ca.~$\SI{0,14}{nm}$ pro Bindung \cite{atkins_physical_chemistry}. Für 22 Bindungen ergibt sich $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$. Der experimentelle Wert $L = \SI{1,782}{nm}$ liegt darunter, da das Modell des idealen Kastens Elektron-Elektron-Wechselwirkungen sowie die endliche Höhe der Potentialwände vernachlässigt.
+Zum Vergleich: Bei einem mittleren Bindungsabstand von $\SI{0,14}{nm}$ in konjugierten Systemen \cite{atkins_physical_chemistry} ergibt sich für 22 Bindungen $L_{\text{lit}} = \SI{3,08}{nm}$. Der experimentelle Wert liegt darunter, da das Modell Elektron-Elektron-Wechselwirkungen und die endliche Höhe der Potentialwände vernachlässigt.
 
 \subsubsection{Fehlerbetrachtung}
-Die größte Fehlerquelle ist die Auflösung des Spektrometers von $\SI{1}{nm}$. Da $\lambda_{\text{max}}$ gemäß Gl.~\eqref{eq:kastenlänge} mit einer Wurzelfunktion in $L$ eingeht, wird der relative Fehler von $L$ gegenüber dem von $\lambda_{\text{max}}$ etwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus den Näherungen des Modells: Das Teilchen-im-Kasten-Modell vernachlässigt sowohl die Elektron-Elektron-Wechselwirkungen als auch die endliche Höhe der Potentialwände und die Geometrie des $\pi$-Systems.
+Die größte Fehlerquelle ist die Auflösung des Spektrometers von $\SI{1}{nm}$. Da $\lambda_{\text{max}}$ gemäß Gl.~\eqref{eq:kastenlaenge} mit einer Wurzelfunktion in $L$ eingeht, wird der relative Fehler von $L$ etwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus den Näherungen des Modells: Das Teilchen-im-Kasten-Modell vernachlässigt Elektron-Elektron-Wechselwirkungen, die endliche Höhe der Potentialwände sowie die reale Geometrie des $\pi$-Systems.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Zusammenfassung}
+
+In diesem Praktikum wurden zwei Experimente zur Spektroskopie durchgeführt.
+
+Im ersten Versuch wurde das Emissionsspektrum von Wasserstoff mithilfe eines optischen Gitters untersucht. Die Wellenlängen der $H_\alpha$-, $H_\beta$- und $H_\gamma$-Linien der Balmer-Serie wurden experimentell zu $\SI{626,4}{nm}$, $\SI{467,2}{nm}$ bzw. $\SI{438,6}{nm}$ bestimmt und mit den theoretischen Werten ($\SI{656}{nm}$, $\SI{486}{nm}$, $\SI{433}{nm}$) verglichen. Die relativen Abweichungen lagen im Bereich von $\SI{1,3}{\percent}$ bis $\SI{4,5}{\percent}$ und sind vorwiegend auf Ablesefehler sowie eine mögliche Fehljustierung des Aufbaus zurückzuführen.
+
+Im zweiten Versuch wurde das UV/Vis-Absorptionsspektrum einer $\beta$-Carotinlösung aufgenommen. Das Absorptionsmaximum bei $\lambda_{\text{max}} \approx \SI{455}{nm}$ erklärt die orange-gelbe Farbe der Lösung. Über das Modell des eindimensionalen Potentialtopfs wurde die Länge des konjugierten $\pi$-Elektronensystems zu $L = \SI{1,782}{nm}$ bestimmt. Der erhaltene Wert ist kleiner als der Literaturwert von $\SI{3,08}{nm}$, was auf die Vereinfachungen des Modells zurückzuführen ist.
+
+Insgesamt zeigen beide Versuche gute qualitative Übereinstimmungen mit den theoretischen Vorhersagen und verdeutlichen die Anwendbarkeit quantenmechanischer Modelle zur Interpretation optischer Spektren.
