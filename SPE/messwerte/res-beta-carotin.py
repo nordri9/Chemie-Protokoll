@@ -3,11 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+plt.rcParams["text.usetex"] = True
+plt.rcParams["font.family"] = "serif"
 # Funktion zur Umrechnung von Wellenlänge in RGB-Farben
 
-
+"""
 def wavelength_to_rgb(wavelength, gamma=0.8):
-    """Konvertiert eine Wellenlänge in nm in einen RGB-Farbwert für den sichtbaren Bereich (380-750 nm)."""
     wl = float(wavelength)
 
     if 380 <= wl <= 440:
@@ -49,28 +50,28 @@ def wavelength_to_rgb(wavelength, gamma=0.8):
 
     return (R, G, B)
 
-
+"""
 # Daten laden
 data = np.loadtxt("CAROTIN9A-copy.txt", dtype=float, delimiter=",")
 x = data[:, 0]
 y = data[:, 1]
 
 # Für jeden x-Wert (Wellenlänge) die exakte RGB-Farbe berechnen
-colors = [wavelength_to_rgb(wl) for wl in x]
+colors = "blue"
 
 # Scatter-Plot mit der berechneten Farbliste erstellen
 plt.scatter(x, y, c=colors, edgecolor='black',
             linewidth=0.2, label="Messwerte", zorder=5)
 
-plt.title("Absorptionsspektrum")
-plt.ylabel("Absorption")
-plt.xlabel("Wellenlänge")
+# plt.title("Absorptionsspektrum")
+plt.xlabel(r"Wellenlänge $\lambda$ (nm)")
+plt.ylabel(r"Absorption $A$")
 
 ax = plt.gca()
 
-ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:g} nm'))
-ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:g} A'))
+# ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:g} nm'))
+# ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:g} A'))
 
 plt.legend()
 plt.savefig("../figures/fitten-von-funktionen.pdf")
-plt.show()
+# plt.show()
