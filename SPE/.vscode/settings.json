@@ -41,5 +41,5 @@
   "editor.inlineSuggest.syntaxHighlightingEnabled": false,
   "files.autoSave": "afterDelay",
   "cSpell.language": "en,de-de",
-  "git.autofetch": true,
+  "git.autofetch": "all",
 }
