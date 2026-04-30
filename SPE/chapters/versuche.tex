@@ -12,10 +12,10 @@ Es sollen die Wellenlängen der $H_{\alpha}$-, $H_{\beta}$- und $H_{\gamma}$-Lin
 \end{figure}
 
 \subsubsection{Versuchsdurchführung}
-Zunächst wurde ein Blatt Papier hinter die erste Sammellinse ($f=\SI{50}{mm}$) gehalten, um deren Höhe optimal einzustellen. Dies wurde anschließend hinter dem verstellbaren Spalt, der zweiten Sammellinse ($f=\SI{100}{mm}$) und dem optischen Gitter wiederholt, um Intensitätsverluste zu minimieren. Nach dem Einstellen des Schirmabstandes auf $\SI{12,5}{cm}$ wurden die Abstände der Interferenzmaxima auf einem auf dem Schirm angebrachten Papier markiert. Die Messung wurde mehrfach wiederholt, wobei die Sammellinsen leicht verschoben wurden, um ein möglichst scharfes Bild zu erhalten und Messfehler zu minimieren.
+Zunächst wurde ein Blatt Papier hinter die erste Sammellinse ($f=\SI{50}{mm}$) gehalten, um deren Höhe einzustellen. Dies wurde anschließend hinter dem verstellbaren Spalt, der zweiten Sammellinse ($f=\SI{100}{mm}$) und dem optischen Gitter wiederholt, um Intensitätsverluste zu minimieren. Nach dem Einstellen des Schirmabstandes auf $\SI{12,5}{cm}$ wurden die Abstände der Interferenzmaxima auf einem auf dem Schirm angebrachten Papier markiert. Die Messung wurde mehrfach wiederholt, wobei die Sammellinsen verschoben wurden, um ein scharfes Bild zu erhalten und Messfehler zu minimieren.
 
 \subsubsection{Beobachtung}
-Auf dem Schirm war das Maximum nullter Ordnung im Zentrum des Interferenzmusters zu erkennen. Symmetrisch dazu befanden sich die Maxima erster Ordnung, welche von innen nach außen die Farben Violett, Indigo und Rot zeigten. Dabei wiesen die Violett- und Indigolinie nahezu den gleichen Abstand zum zentralen Maximum auf.
+Auf dem Schirm war das Maximum nullter Ordnung im Zentrum des Interferenzmusters zu erkennen. Symmetrisch dazu befanden sich die Maxima erster Ordnung, welche von innen nach außen die Farben Violett, Indigo und Rot zeigten. Aufgrund ihrer ähnlichen Wellenlängen befanden sich die violette und die indigofarbene Linie in nahezu identischem Abstand zum nullten Hauptmaximum.
 
 \subsubsection{Versuchsauswertung}
 Die theoretischen Emissionslinien werden mit Gl.~\eqref{eq:balmer-frequenz} und \eqref{eq:energie} berechnet. Für die $H_{\alpha}$-Linie ($n_{2}=3$, $n_1=2$) ergibt sich beispielhaft:
@@ -41,7 +41,7 @@ Die theoretischen Emissionslinien werden mit Gl.~\eqref{eq:balmer-frequenz} und 
   \end{tabular}
 \end{table}
 
-Die experimentellen Wellenlängen werden mit Gl.~\eqref{eq:optisches-gitter} aus den gemessenen Maxima-Abständen bestimmt. Dabei sind $l$ der Schirm-Gitter-Abstand, $x$ der Abstand vom zentralen Maximum zum Maximum erster Ordnung ($k=1$) und $g = \frac{1}{600}\,\si{mm}$ die Gitterkonstante. Für die $H_{\alpha}$-Linie ergibt sich:
+Die experimentellen Wellenlängen werden mit Gl.~\eqref{eq:optisches-gitter} aus den gemessenen Maxima-Abständen bestimmt. Dabei sind $l=\SI{12,5}{cm}$ der Schirm-Gitter-Abstand, $x$ der Abstand vom zentralen Maximum zum Maximum erster Ordnung ($k=1$) und $g = \frac{1}{600}\,\si{mm}$ die Gitterkonstante. Für die $H_{\alpha}$-Linie ergibt sich:
 \begin{equation}
   \lambda = \sin\!\left(\arctan\!\left(\frac{\SI{5,07}{cm}}{\SI{12,5}{cm}}\right) \right) \cdot \frac{1}{600}\cdot 10^{-3}\,\si{m} = \SI{626,4}{nm}
 \end{equation}
@@ -61,15 +61,13 @@ Die experimentellen Wellenlängen werden mit Gl.~\eqref{eq:optisches-gitter} aus
   \end{tabular}
 \end{table}
 
-\paragraph*{Ionisierungsenergie}
+\subsubsection*{Ionisierungsenergie}
 Die Ionisierungsenergie des Wasserstoffatoms entspricht der Rydberg-Energie Gl. \eqref{eq:rydberg-energie}:
 \begin{align}
   R_y = \SI{6,626e-34}{Js} \cdot \SI{2,998e8}{\frac{m}{s}} \cdot \SI{1,097e7}{\frac{1}{m}} = \SI{13,61}{eV}
 \end{align}
 
-mit der Rydberg-Konstante $R_{\infty}$ \cite{nist_constants}.
-
-\paragraph*{Bohrscher Radius}
+\subsubsection*{Bohrscher Radius}
 Der Bohrsche Radius ergibt sich aus Gl. \eqref{eq:bohr-radius}:
 \begin{align}
   a_{0}= \dfrac{4\pi \cdot \SI{8,854e-12}{\frac{As}{Vm}} \cdot (\SI{1,055e-34}{J s})^{2}}{(\SI{1,602e-19}{C})^{2}\cdot\SI{9,109e-31}{kg}} = \SI{52,92}{pm}
@@ -99,7 +97,7 @@ Die aus den Messwerten berechneten Wellenlängen (Tab.~\ref{tab:gemessene-werte}
   \end{tabular}
 \end{table}
 
-Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximapositionen auf dem Schirm zurückzuführen, da die Linien bereits sehr schwach waren. Weitere Fehlerquellen sind Ungenauigkeiten beim Messen des Schirmabstandes~$l$ sowie eine mögliche Fehljustierung des optischen Aufbaus. Da die Abweichungen bei allen drei Linien in ähnlicher Größenordnung liegen, ist ein systematischer Fehler wahrscheinlich.
+Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximapositionen auf dem Schirm zurückzuführen, da die Linien bereits schwach waren. Weitere Fehlerquellen sind Ungenauigkeiten beim Messen des Schirmabstandes~$l$ sowie eine mögliche Fehljustierung des optischen Aufbaus. Da die Abweichungen bei allen drei Linien in ähnlicher Größenordnung liegen, ist ein systematischer Fehler wahrscheinlich.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Versuch 2: Bestimmung der Länge eines eindimensionalen Potentialtopfs}
@@ -127,7 +125,7 @@ Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspe
   \label{fig:strukturformel}
 \end{figure}
 
-$\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N=22$ delokalisierte $\pi$-Elektronen. Nach dem Modell des eindimensionalen Kastens (Gl.~\ref{eq:kastenlänge}) ergibt sich mit $\lambda_{\text{max}} = \SI{455}{nm}$, $N = 22$ und $m_e = \SI{9,109e-31}{kg}$ die Kastenlänge:
+$\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N=22$ delokalisierte $\pi$-Elektronen. Nach dem Modell des eindimensionalen Kastens (Gl.~\ref{eq:kastenlänge}) ergibt sich mit $\lambda_{\text{max}} = \SI{455}{nm}$ und $N = 22$ die Kastenlänge:
 
 \begin{equation}
   L = \sqrt{\frac{\SI{6,626e-34}{Js} \cdot \SI{455e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{\frac{m}{s}}}} = \SI{1,782}{nm}
@@ -136,7 +134,7 @@ $\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N=22$ delokali
 Zum Vergleich: Im Literaturwert für konjugierte Systeme beträgt der mittlere Bindungsabstand ca.~$\SI{0,14}{nm}$ pro Bindung \cite{atkins_physical_chemistry}. Für 22 Bindungen ergibt sich $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$. Der experimentelle Wert $L = \SI{1,782}{nm}$ liegt darunter, da das Modell des idealen Kastens Elektron-Elektron-Wechselwirkungen sowie die endliche Höhe der Potentialwände vernachlässigt.
 
 \subsubsection{Fehlerbetrachtung}
-Die größte Fehlerquelle ist die Auflösung des Spektrometers von $\SI{1}{nm}$. Da $\lambda_{\text{max}}$ gemäß Gl.~\eqref{eq:kastenlänge} mit einer Wurzelfunktion in $L$ eingeht, wird der relative Fehler von $L$ gegenüber dem von $\lambda_{\text{max}}$ etwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus den Näherungen des Modells: Das Teilchen-im-Kasten-Modell vernachlässigt sowohl die Elektron-Elektron-Wechselwirkungen als auch die endliche Höhe der Potentialwände und die Geometrie des $\pi$-Systems.
+Die größte Fehlerquelle ist die Auflösung des Spektrometers von $\SI{1}{nm}$. Da $\lambda_{\text{max}}$ gemäß Gl.~\eqref{eq:kastenlänge} mit einer Wurzelfunktion in $L$ eingeht, wird der relative Fehler von $L$ gegenüber dem von $\lambda_{\text{max}}$ etwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus den Näherungen des Modells: Das Teilchen-im-Kasten-Modell \cite[123]{demtroder_experimentalphysik_2016} vernachlässigt sowohl die Elektron-Elektron-Wechselwirkungen als auch die endliche Höhe der Potentialwände und die Geometrie des $\pi$-Systems.
 \newpage
 \section{Zusammenfassung}
 
