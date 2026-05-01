@@ -6,59 +6,58 @@ Die Energie $E$ elektromagnetischer Strahlung ist gegeben durch:
   E = h f = \frac{h c}{\lambda}
   \label{eq:energie}
 \end{equation}
-wobei $h = \SI{6,62607015e-34}{Js}$ das Plancksche Wirkungsquantum, $f$ die Frequenz, $\lambda$ die Wellenlänge und $c = \SI{299792458}{\frac{m}{s}}$ die Vakuumlichtgeschwindigkeit ist \cite[10]{gobel_new_2019}. Wie in Gleichung~\ref{eq:energie} zu erkennen, sind Energie und Wellenlänge invers proportional zueinander.
+wobei $h = \SI{6,626e-34}{J \cdot s}$ das Plancksche Wirkungsquantum, $f$ die Frequenz, $\lambda$ die Wellenlänge und $c = \SI{2,998e8}{m/s}$ die Vakuumlichtgeschwindigkeit sind \cite{nist_constants}. Energie und Wellenlänge sind invers proportional zueinander.
 
 \subsection{Balmer-Serie}
-Das Wasserstoffatom emittiert Licht diskreter Wellenlängen, die als Spektrallinien beobachtet werden. Diese lassen sich in Serien einteilen, die jeweils durch einen festen unteren Quantenzustand charakterisiert sind. Die Frequenzen der emittierten Strahlung werden durch die Rydberg-Formel beschrieben \cite[23--24]{skript}:
+Das Wasserstoffatom emittiert Licht nur bei diskreten Wellenlängen (Emissionsspektrallinien). Für Elektronenübergänge zwischen den Zuständen mit Hauptquantenzahlen $n_2 > n_1$ gilt die Rydberg-Formel \cite[23--24]{skript}:
 \begin{equation}
   f_{n_2 \rightarrow n_1} = R_{\ce{H}} \cdot c \cdot \left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)
   \label{eq:balmer-frequenz}
 \end{equation}
-Hierbei sind $n_1$ und $n_2$ die Hauptquantenzahlen des unteren bzw. oberen Zustands. Für die Balmer-Serie gilt $n_1 = 2$ und $n_2 = 3,4,5,\dots$. Die Konstante $R_{\ce{H}} = \SI{1,09737e7}{\frac{1}{m}}$ ist die Rydberg-Konstante \cite{nist_constants}. Die einzelnen Linien werden als $H_\alpha$, $H_\beta$, $H_\gamma$ bezeichnet und liegen im sichtbaren Spektralbereich (ca.~\SIrange{400}{800}{nm}).
+Für die Balmer-Serie gilt $n_1 = 2$, $n_2 = 3,4,5,\dots$, mit der Rydberg-Konstante $R_{\ce{H}} = \SI{1,097e7}{m^{-1}}$ \cite{nist_constants}. Die Linien $H_\alpha$, $H_\beta$, $H_\gamma$ liegen im sichtbaren Bereich (\SIrange{400}{800}{nm}).
 
-\subsection{Interferenz am optischen Gitter}
-Trifft Licht auf ein optisches Gitter mit Gitterkonstante~$g$, entstehen Interferenzmaxima der Ordnung~$k$ unter einem Winkel~$\alpha$ gegenüber der optischen Achse. Mit dem Abstand~$l$ zwischen Gitter und Schirm sowie dem Abstand~$x$ vom zentralen Maximum gilt \cite[307--310]{demtroder_experimentalphysik_2017}:
-\begin{align}
-  \lambda & = \frac{\sin\!\left(\arctan\!\left(\dfrac{x}{l}\right)\right) \cdot g}{k}
-  \label{eq:optisches-gitter}
-\end{align}
-
-Die Ionisierungsenergie des Wasserstoffatoms entspricht der Rydberg-Energie \cite[101]{demtroder_experimentalphysik_2016}:
+Die Ionisierungsenergie des Wasserstoffatoms entspricht der Rydberg-Energie \cite[70]{demtroder_experimentalphysik_2016}:
 \begin{equation}
-  R_y = h c R_{\ce{H}}
+  R_y = h c R_{\infty} = \SI{2,18e-18}{J} = \SI{13,61}{eV}
   \label{eq:rydberg-energie}
 \end{equation}
 
-Der Bohrsche Radius $a_0$ beschreibt den wahrscheinlichsten Kernabstand des Elektrons im Grundzustand und ergibt sich aus \cite[103]{demtroder_experimentalphysik_2016}:
+Der Bohrsche Radius $a_0$ beschreibt den wahrscheinlichsten Kernabstand des Elektrons im Grundzustand und ergibt sich aus \cite[73]{demtroder_experimentalphysik_2016}:
 \begin{equation}
-  a_0 = \frac{4\pi\epsilon_0\hbar^2}{e^2 m_e}
+  a_0 = \frac{4\pi\epsilon_0\hbar^2}{e^2 m_e} = \SI{52,92}{pm}
   \label{eq:bohr-radius}
 \end{equation}
-wobei $\epsilon_0 = \SI{8,854e-12}{\frac{As}{Vm}}$ die elektrische Feldkonstante, $\hbar = \SI{1,055e-34}{J s}$ das reduzierte Plancksche Wirkungsquantum, $e = \SI{1,602e-19}{C}$ die Elementarladung und $m_e = \SI{9,109e-31}{kg}$ die Elektronenmasse sind.
+wobei $\epsilon_0$ die elektrische Feldkonstante, $\hbar$ das reduzierte Plancksche Wirkungsquantum, $e$ die Elementarladung und $m_e$ die Elektronenmasse sind.
 
+\subsection{Interferenz am optischen Gitter}
+Trifft Licht auf ein optisches Gitter mit Gitterkonstante~$g$, entstehen Interferenzmaxima der Ordnung~$k$. Mit dem Schirm-Gitter-Abstand~$l$ und dem Abstand~$x$ vom zentralen Maximum gilt \cite[307--310]{demtroder_experimentalphysik_2017}:
+\begin{equation}
+  \lambda = \frac{\sin\!\left(\arctan\!\left(\dfrac{x}{l}\right)\right) \cdot g}{k}
+  \label{eq:optisches-gitter}
+\end{equation}
 
 \subsection{Grundlagen der optischen Absorptionsspektroskopie}
-Die optische Absorptionsspektroskopie untersucht die wellenlängenabhängige Schwächung von Licht beim Durchgang durch eine Probe. Wird monochromatisches Licht der Ausgangsintensität $I_0(\lambda)$ durch eine Küvette der Schichtdicke~$d$ geleitet, so wird es auf die Intensität $I_1(\lambda)$ abgeschwächt. Die Abschwächung hängt von der Konzentration $c_0$ und dem molaren Extinktionskoeffizienten $\epsilon(\lambda)$ ab. Dieser Zusammenhang wird durch das Lambert-Beer'sche Gesetz beschrieben \cite[24--25]{skript}:
+Die optische Absorptionsspektroskopie untersucht die wellenlängenabhängige Schwächung von Licht beim Durchgang durch eine Probe. Wird Licht der Ausgangsintensität $I_0(\lambda)$ durch eine Küvette der Schichtdicke~$d$ mit Konzentration $c_0$ geleitet, wird es gemäß dem Lambert-Beer'schen Gesetz abgeschwächt \cite[24--25]{skript}:
 \begin{equation}
   I_1(\lambda) = I_0(\lambda) \cdot e^{-\epsilon(\lambda)\cdot c_0 \cdot d}
   \label{eq:lambert-beer}
 \end{equation}
-Im sichtbaren und UV-Bereich werden dabei vor allem Elektronen in diskrete Energieniveaus angeregt.
+Dabei ist $\epsilon(\lambda)$ der molare Extinktionskoeffizient. Im sichtbaren und UV-Bereich werden hauptsächlich Elektronen in diskrete Energieniveaus angeregt.
 
 \subsection{Das Teilchen im eindimensionalen Kasten}
-Beim Modell des Teilchens im eindimensionalen Kasten wird ein Elektron in einem Potentialkasten der Länge~$L$ mit unendlich hohen Wänden betrachtet. Durch Lösung der stationären Schrödinger-Gleichung ergeben sich quantisierte Energiezustände \cite[122]{demtroder_experimentalphysik_2016}:
+Ein Elektron im Potentialkasten der Länge~$L$ mit unendlich hohen Wänden besitzt quantisierte, nicht entartete Energiezustände, die sich aus der stationären Schrödinger-Gleichung ergeben \cite[122]{demtroder_experimentalphysik_2016}:
 \begin{equation}
   E_n = \frac{n^2 h^2}{8 m_e L^2}, \quad n \in \mathbb{N}
   \label{eq:kasten-energie}
 \end{equation}
-wobei $m_e$ die Elektronenmasse und $n$ die Hauptquantenzahl ist. Für ein System mit $N$~$\pi$-Elektronen sind aufgrund des Pauli-Prinzips im Grundzustand die niedrigsten $N/2$ Niveaus doppelt besetzt. Der HOMO-LUMO-Übergang hat die Energiedifferenz \cite[26]{skript}:
+Für ein solches System mit $N$ $\pi$-Elektronen sind im Grundzustand die niedrigsten $N/2$ Niveaus doppelt besetzt (Pauli-Prinzip). Durch Absorption kann ein Elektron vom höchstbesetzten Zustand in den nächsthöheren unbesetzten Zustand übergehen. Die Energiedifferenz dieses Übergangs beträgt \cite[26]{skript}:
 \begin{equation}
   \Delta E = \frac{h^2}{8 m_e L^2}(N+1)
   \label{eq:energie-potentialtopf}
 \end{equation}
-Gleichsetzen mit $\Delta E = \frac{hc}{\lambda}$ (Gl.~\ref{eq:energie}) liefert die Kastenlänge \cite[123]{demtroder_experimentalphysik_2016}:
+Gleichsetzen mit $\Delta E = hc/\lambda$ (Gl.~\ref{eq:energie}) liefert die Kastenlänge \cite[123]{demtroder_experimentalphysik_2016}:
 \begin{equation}
-  L = \sqrt{\frac{h \cdot \lambda_{\text{max}} \cdot (N+1)}{8 m_e c}}
-  \label{eq:kastenlänge}
+  L = \sqrt{\frac{h \lambda_{\text{max}} (N+1)}{8 m_e c}}
+  \label{eq:kastenlaenge}
 \end{equation}
-\pagebreak
+\newpage
