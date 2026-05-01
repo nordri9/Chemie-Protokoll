@@ -105,16 +105,16 @@ Die Abweichungen sind hauptsächlich auf Ablesefehler beim Markieren der Maximap
 Die Messung des UV/Vis-Absorptionsspektrums einer $\beta$-Carotinlösung (Konzentration $c_0 \approx \SI{3,0e-5}{\frac{mol}{l}}$) in Cyclohexan sowie die Bestimmung der Länge des delokalisierten $\pi$-Elektronensystems nach dem Modell des eindimensionalen Potentialtopfs.
 
 \subsubsection{Versuchsdurchführung}
-Zunächst wurde eine Messung mit reinem Cyclohexan in einer Küvette aufgenommen. Diese dient als Referenz, um den Eigenabsorptionsbeitrag des Lösungsmittels herauszurechnen. Anschließend wurde die zweite Küvette mit der $\beta$-Carotin-Lösung befüllt und das Absorptionsspektrum im Wellenlängenbereich von \SIrange{325}{500}{nm} aufgenommen.
+Zunächst wurde eine Messung mit reinem Cyclohexan in einer Küvette aufgenommen. Diese dient als Referenz, um den Eigenabsorptionsbeitrag des Lösungsmittels herauszurechnen. Anschließend wurde die zweite Küvette mit der $\beta$-Carotin-Lösung befüllt und das Absorptionsspektrum im Wellenlängenbereich von \SIrange{330}{500}{nm} aufgenommen.
 
 \subsubsection{Beobachtung}
-Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspektrum war ein deutliches Absorptionsmaximum bei $\lambda_{\text{max}} \approx \SI{455}{nm}$ im blauen Spektralbereich zu erkennen, was der Komplementärfarbe Orange entspricht.
+Die $\beta$-Carotin-Lösung zeigte eine orange-gelbe Färbung. Im Absorptionsspektrum war ein deutliches Absorptionsmaximum bei $\lambda_{\text{max}} =\SI{455}{nm}$ im blauen Spektralbereich zu erkennen, was der Komplementärfarbe Orange entspricht.
 
 \subsubsection{Versuchsauswertung}
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{figures/fitten-von-funktionen.pdf}
-  \caption{UV/Vis-Absorptionsspektrum der $\beta$-Carotin-Lösung ($c_0 \approx \SI{3,0e-5}{mol/L}$) in Cyclohexan im Bereich \SIrange{325}{500}{nm}.}
+  \caption{UV/Vis-Absorptionsspektrum der $\beta$-Carotin-Lösung ($c_0 \approx \SI{3,0e-5}{mol/L}$) in Cyclohexan im Bereich \SIrange{330}{500}{nm}.}
   \label{img:absorbtionsspektrum}
 \end{figure}
 
@@ -131,12 +131,12 @@ $\beta$-Carotin besitzt 11 konjugierte Doppelbindungen und damit $N=22$ delokali
   L = \sqrt{\frac{\SI{6,626e-34}{Js} \cdot \SI{455e-9}{m} \cdot 23}{8 \cdot \SI{9,109e-31}{kg} \cdot \SI{2,998e8}{\frac{m}{s}}}} = \SI{1,782}{nm}
 \end{equation}
 
-Zum Vergleich: Im Literaturwert für konjugierte Systeme beträgt der mittlere Bindungsabstand ca.~$\SI{0,14}{nm}$ pro Bindung \cite{atkins_physical_chemistry}. Für 22 Bindungen ergibt sich $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$. Der experimentelle Wert $L = \SI{1,782}{nm}$ liegt darunter, da das Modell des idealen Kastens Elektron-Elektron-Wechselwirkungen sowie die endliche Höhe der Potentialwände vernachlässigt.
+Zum Vergleich: Im Literaturwert für konjugierte Systeme beträgt der mittlere Bindungsabstand ca.~$\SI{0,14}{nm}$ pro Bindung \cite[359]{atkins_kurzlehrbuch_2020}. Für 22 Bindungen ergibt sich $L_{\text{lit}} \approx 22 \cdot \SI{0,14}{nm} = \SI{3,08}{nm}$. Der experimentelle Wert $L = \SI{1,782}{nm}$ liegt darunter, da das Modell des Teilchens im Kasten neben Elektron-Elektron-Wechselwirkungen und der endlichen Höhe der Potentialwände auch die reale Geometrie der Kohlenstoffkette sowie den Einfluss der alternierenden Bindungslängen im konjugierten Polyensystem vernachlässigt.
 
 \subsubsection{Fehlerbetrachtung}
 Die größte Fehlerquelle ist die Auflösung des Spektrometers von $\SI{1}{nm}$. Da $\lambda_{\text{max}}$ gemäß Gl.~\eqref{eq:kastenlänge} mit einer Wurzelfunktion in $L$ eingeht, wird der relative Fehler von $L$ gegenüber dem von $\lambda_{\text{max}}$ etwa halbiert. Ein weiterer systematischer Fehler ergibt sich aus den Näherungen des Modells: Das Teilchen-im-Kasten-Modell \cite[123]{demtroder_experimentalphysik_2016} vernachlässigt sowohl die Elektron-Elektron-Wechselwirkungen als auch die endliche Höhe der Potentialwände und die Geometrie des $\pi$-Systems.
 \newpage
 \section{Zusammenfassung}
 
-Im ersten Versuch wurde das Emissionsspektrum von Wasserstoff mithilfe eines optischen Gitters untersucht. Die Wellenlängen der $H_\alpha$-, $H_\beta$- und $H_\gamma$-Linien der Balmer-Serie wurden experimentell zu $\SI{626,4}{nm}$, $\SI{467,2}{nm}$ bzw. $\SI{438,6}{nm}$ bestimmt und mit den theoretischen Werten ($\SI{656}{nm}$, $\SI{486}{nm}$, $\SI{433}{nm}$) verglichen. Die relativen Abweichungen lagen im Bereich von $\SI{1,3}{\percent}$ bis $\SI{4,5}{\percent}$ und sind vorwiegend auf Ablesefehler sowie eine mögliche Fehljustierung des Aufbaus zurückzuführen. \\
+Im ersten Versuch wurde das Emissionsspektrum von Wasserstoff mithilfe eines optischen Gitters untersucht. Die Wellenlängen der $H_\alpha$-, $H_\beta$- und $H_\gamma$-Linien der Balmer-Serie wurden experimentell zu $\SI{626,4}{nm}$, $\SI{467,2}{nm}$ bzw. $\SI{438,6}{nm}$ bestimmt und mit den theoretischen Werten $\SI{656}{nm}$, $\SI{486}{nm}$, $\SI{433}{nm}$ verglichen. Die relativen Abweichungen lagen im Bereich von $\SI{1,3}{\percent}$ bis $\SI{4,5}{\percent}$ und sind vorwiegend auf Ablesefehler sowie eine mögliche Fehljustierung des Aufbaus zurückzuführen. \\
 Im zweiten Versuch wurde das UV/Vis-Absorptionsspektrum einer $\beta$-Carotinlösung aufgenommen. Das Absorptionsmaximum bei $\lambda_{\text{max}} \approx \SI{455}{nm}$ erklärt die orange-gelbe Farbe der Lösung. Über das Modell des eindimensionalen Potentialtopfs wurde die Länge des konjugierten $\pi$-Elektronensystems zu $L = \SI{1,782}{nm}$ bestimmt. Der erhaltene Wert ist kleiner als der Literaturwert von $\SI{3,08}{nm}$, was auf die Vereinfachungen des Modells zurückzuführen ist.
