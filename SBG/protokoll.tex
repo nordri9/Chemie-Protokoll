@@ -1,0 +1,96 @@
+\documentclass[12pt]{scrartcl} %Dokumentklasse, bestimmt Teile des Layouts
+\usepackage[utf8]{inputenc} %Ermöglicht Unicode, absolut notwendig
+\usepackage[ngerman]{babel} %Ermöglicht deutsche Sonderzeichen, z. B. Umlaute
+\usepackage[T1]{fontenc} %Ermöglicht Unicode, absolut notwendig
+\usepackage{amsmath} %Wichtige Mathe-Möglichkeiten
+\usepackage{amssymb} %Wichtige Mathe-Möglichkeiten
+\usepackage{graphicx} %Bessere Bilder
+\usepackage{svg}
+\usepackage{array} %Bessere Formatierung / Umgebung für mehrzeilige Formeln
+\usepackage{upgreek} %Für nicht kursive griechische Buchstaben, z. B. \upmu statt \mu
+\usepackage{float} %Großes H zum fixieren von Abbildungen/Tabellen
+%\usepackage{csquotes}% Anführungszeichen etc.
+%\usepackage{chemformula}% mächtiges Chemiepaket(Rkt. Gl., Oxidationszahlen etc.)
+%\usepackage{chemgreek}% für chemformula
+%\usepackage{chemmacros}% für chemformula
+
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+
+\usepackage{geometry} %Für Einstellungen zum Rand etc.
+\usepackage[font=small]{caption} %Bestimmt die Schriftgröße von Tabellenüberschriften und Bildunterschriften, optional
+\usepackage[backend=biber, style=ieee]{biblatex} %Literaturverzeichnis
+\usepackage{csquotes} % Added to fix the biblatex warning
+
+\usepackage{siunitx} %Ein schönes Paket, um Einheiten und physikalische Größen richtig zu setzen. Z.B.  \SI{2}{\kilo\gram\per\meter\squared}
+\sisetup{locale = DE}
+
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead{Gruppe 9a: Robin Kühnberger, Felix Naraschewski}
+\ohead{\today}
+\ifoot{9a}
+\ofoot{Seite \pagemark}
+\KOMAoptions{headsepline=true}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+\usepackage{authblk}
+
+\addbibresource{lit.bib} %Literaturverzeichnis, zu finden als Datei lit.bib im selben Ordner wie diese .tex-Datei
+\captionsetup{format=plain}
+\geometry{bottom=100pt} \geometry{top=100pt} %Definiert den oberen und unteren Rand, optional
+\parindent0pt %Kein Einzug am Anfang von Absätzen
+\sloppy %Besserer Blocksatz
+\renewcaptionname{ngerman}{\figurename}{Abb.} %Umbenennung Abbildungen, optional
+\renewcaptionname{ngerman}{\tablename}{Tab.} %Umbenennung Tabellen, optional
+
+\newcommand{\celsius}{^{\circ}\mathrm{C}} %Ermöglicht es, \celsius für die Einheit °C zu verwenden
+\newcommand{\datepraktikum}{15.04.2026}
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \vspace*{2cm}
+    \begin{LARGE}
+      \vspace*{1cm}
+      \textbf{\textsf{Versuch 3 \\}}
+    \end{LARGE}
+    \vspace*{1cm}
+    \textbf{\textsf{SBG}}\\
+    \vspace*{1.5cm}
+    \begin{table}[H]
+      \sffamily
+      \hspace*{3cm}
+      \begin{tabular}{>{\bfseries}p{4cm}p{8cm}}
+        Verfasser:      & Michael Brendle, Robin Kühnberger, Felix Naraschewski                                                                                                       \\
+        Matrikelnummer: & 3836158, 3714445, 3836776                                                                                                                                           \\
+        E-Mail-Adresse: & \href{mailto:st197544@uni-stuttgart.de}{st197544@uni-stuttgart.de},\href{mailto:st189389@stud.uni-stuttgart.de}{st189389@stud.uni-stuttgart.de}, \href{mailto:st197995@stud.uni-stuttgart.de}{st197995@stud.uni-stuttgart.de} \\
+        Assistent:      & Alexandra Friedly                                                                                                                                                       \\
+        Erstabgabe:     & \today                                                                                                                                                     \\
+        %      Zweitabgabe     & 29. April 2026                                                                                                                                                           \\
+      \end{tabular}
+    \end{table}
+  \end{center}
+\end{titlepage}
+\pagestyle{empty}        % Kopf-/Fußzeile (inkl. Seitenzahl) für TOC ausblenden
+\tableofcontents
+\clearpage               % Seite abschließen
+\pagestyle{scrheadings}  % KOMA-Seitenstil mit deinen ihead/ohead etc. wiederherstellen
+\pagenumbering{arabic}   % Nummerierung ab hier bei 1 starten
+
+%%%% content %%%%
+\input{chapters/theorie.tex}
+
+\input{chapters/versuche.tex}
+
+\newpage
+\pagenumbering{roman}
+
+\printbibliography
+\end{document}

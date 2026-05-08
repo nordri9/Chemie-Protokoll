@@ -1,0 +1,45 @@
+{
+  "latex-workshop.chktex.enabled": false,
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.recipe.default": "latexmk",
+  "latex-workshop.latex.outDir": "./output",
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.progress.enabled": false,
+  "latex-workshop.formatting.latexindent.path": "/usr/bin/latexindent",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-pdflatex=pdflatex -draftmode %O %S",
+        "-usepretex",
+        "-outdir=./output",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.formatting.latex": "latexindent",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+  "files.autoSave": "afterDelay",
+  "cSpell.language": "en,de-de",
+  "git.autofetch": "all",
+}
