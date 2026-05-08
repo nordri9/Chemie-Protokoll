@@ -1,125 +1,161 @@
 \section{Theorie}
+
 \subsection{Säure-Base-Theorien}
-Säure-Base-Reaktionen können durch verschiedene Modelle beschrieben werden. Nach der Arrhenius-Theorie bilden Säuren in wässriger Lösung Protonen (H$^+$), während Basen Hydroxid-Ionen (OH$^-$) freisetzen. Diese Definition ist jedoch auf wässrige Systeme beschränkt.
+
+Säure-Base-Reaktionen können durch verschiedene Modelle beschrieben werden. Nach der Arrhenius-Theorie bilden Säuren in wässriger Lösung Protonen (\ce{H+}), während Basen Hydroxid-Ionen (\ce{OH-}) freisetzen. Diese Definition ist jedoch auf wässrige Systeme beschränkt.
 
 Die Brønsted-Theorie erweitert dieses Konzept. Säuren sind hier Protonendonatoren und Basen Protonenakzeptoren. Jede Säure-Base-Reaktion ist damit eine Protonenübertragung und führt zur Bildung konjugierter Paare:
+
 \begin{equation}
-\mathrm{HA + B \rightleftharpoons A^- + HB^+}
+\ce{HA + B <=> A^- + HB+}
 \end{equation}
 
 Nach der Lewis-Theorie sind Säuren Elektronenpaarakzeptoren und Basen Elektronenpaardonatoren, wodurch auch Reaktionen ohne Protonenübertragung beschrieben werden können.
 
 \subsection{Autoprotolyse des Wassers}
+
 Wasser verhält sich amphoter und kann sowohl als Säure als auch als Base reagieren. Die Autoprotolyse beschreibt die Selbstionisation:
+
 \begin{equation}
-\mathrm{2H_2O \rightleftharpoons H_3O^+ + OH^-}
+\ce{2H2O <=> H3O+ + OH-}
 \end{equation}
 
 Die Gleichgewichtskonstante dieser Reaktion ist das Ionenprodukt des Wassers:
+
 \begin{equation}
-K_W = [\mathrm{H_3O^+}] \cdot [\mathrm{OH^-}]
+K_\mathrm{W} = [\ce{H3O+}] \cdot [\ce{OH-}]
 \end{equation}
 
-Bei 25\,°C gilt:
+Bei \SI{25}{\celsius} gilt:
+
 \begin{equation}
-K_W = 10^{-14} \, \mathrm{mol^2\,L^{-2}}
+K_\mathrm{W} = 10^{-14}\,\si{\mole\squared\per\liter\squared}
 \end{equation}
 
 Da im reinen Wasser gleiche Konzentrationen an Oxonium- und Hydroxid-Ionen vorliegen, ergibt sich:
+
 \begin{equation}
-[\mathrm{H_3O^+}] = [\mathrm{OH^-}] = 10^{-7} \, \mathrm{mol\,L^{-1}}
+[\ce{H3O+}] = [\ce{OH-}] = 10^{-7}\,\si{\mole\per\liter}
 \end{equation}
 
 Der pH-Wert ist definiert als negativer dekadischer Logarithmus der Oxoniumionenkonzentration:
+
 \begin{equation}
-\mathrm{pH} = -\log [\mathrm{H_3O^+}]
+\mathrm{pH} = -\log [\ce{H3O+}]
 \end{equation}
 
 Zusätzlich gilt der Zusammenhang:
+
 \begin{equation}
-\mathrm{pK_W = pH + pOH}
+\mathrm{p}K_\mathrm{W} = \mathrm{pH} + \mathrm{pOH}
 \end{equation}
 
 \subsection{Säure- und Basenstärke}
-Die Stärke einer Säure wird durch die Säurekonstante $K_S$ beschrieben:
+
+Die Stärke einer Säure wird durch die Säurekonstante \(K_\mathrm{S}\) beschrieben:
+
 \begin{equation}
-K_S = \frac{[\mathrm{H_3O^+}][\mathrm{A^-}]}{[\mathrm{HA}]}
+K_\mathrm{S} =
+\frac{[\ce{H3O+}][\ce{A^-}]}{[\ce{HA}]}
 \end{equation}
 
-Der zugehörige p$K_S$-Wert ist definiert als:
+Der zugehörige p\(K_\mathrm{S}\)-Wert ist definiert als:
+
 \begin{equation}
-\mathrm{p}K_S = -\log K_S
+\mathrm{p}K_\mathrm{S} = -\log K_\mathrm{S}
 \end{equation}
 
 Starke Säuren dissoziieren in Wasser nahezu vollständig, sodass näherungsweise gilt:
+
 \begin{equation}
-[\mathrm{H_3O^+}] \approx c_0
+[\ce{H3O+}] \approx c_0
 \end{equation}
 
 Schwache Säuren dagegen liegen in einem Gleichgewicht zwischen undissoziierter und dissoziierter Form vor:
+
 \begin{equation}
-[\mathrm{H_3O^+}] = \sqrt{K_S \cdot c_0}
+[\ce{H3O+}] = \sqrt{K_\mathrm{S} \cdot c_0}
 \end{equation}
 
-Für Basen gelten analoge Zusammenhänge über die Basenkonstante $K_B$.
+Für Basen gelten analoge Zusammenhänge über die Basenkonstante \(K_\mathrm{B}\).
 
 \subsection{Protolysegleichgewichte}
+
 Säuren und Basen treten stets in konjugierten Paaren auf. Für diese gilt der Zusammenhang:
+
 \begin{equation}
-\mathrm{HA \rightleftharpoons A^- + H^+}
+\ce{HA <=> A^- + H+}
 \end{equation}
 
 Zwischen Säure- und Basenkonstante besteht die Beziehung:
+
 \begin{equation}
-K_S \cdot K_B = K_W
+K_\mathrm{S} \cdot K_\mathrm{B} = K_\mathrm{W}
 \end{equation}
 
 Daraus folgt für die pK-Werte:
+
 \begin{equation}
-\mathrm{p}K_S + \mathrm{p}K_B = \mathrm{p}K_W
+\mathrm{p}K_\mathrm{S} + \mathrm{p}K_\mathrm{B} = \mathrm{p}K_\mathrm{W}
 \end{equation}
 
 Diese Beziehung erklärt, dass eine starke Säure immer eine schwache konjugierte Base besitzt.
 
 \subsection{Puffersysteme}
+
 Pufferlösungen bestehen aus einer schwachen Säure und ihrer konjugierten Base und sind in der Lage, den pH-Wert bei Zugabe kleiner Mengen starker Säuren oder Basen weitgehend konstant zu halten.
 
 Der pH-Wert eines Puffers ergibt sich aus der Henderson-Hasselbalch-Gleichung:
+
 \begin{equation}
-\mathrm{pH = p}K_S + \log \left(\frac{[\mathrm{A^-}]}{[\mathrm{HA}]}\right)
+\mathrm{pH} = \mathrm{p}K_\mathrm{S}
++ \log \left(
+\frac{[\ce{A^-}]}{[\ce{HA}]}
+\right)
 \end{equation}
 
-Der Halbäquivalenzpunkt wird durch die gleichen Konzentrationen von Säure und Base beschrieben, so dass folgender Zusammenhang gilt:
+Der Halbäquivalenzpunkt wird durch gleiche Konzentrationen von Säure und Base beschrieben, sodass gilt:
+
 \begin{equation}
-[\mathrm{A^-}] = [\mathrm{HA}] \Rightarrow \mathrm{pH = p}K_S
+[\ce{A^-}] = [\ce{HA}]
+\Rightarrow
+\mathrm{pH} = \mathrm{p}K_\mathrm{S}
 \end{equation}
 
-Die Pufferwirkung ist besonders effektiv, wenn beide Komponenten in ähnlichen Konzentrationen vorliegen. Da dann sowohl zugegebene Säure als auch Base abgefangen werden, ohne dass sich der pH-Wert stark ändert.
+Die Pufferwirkung ist besonders effektiv, wenn beide Komponenten in ähnlichen Konzentrationen vorliegen, da dann sowohl zugegebene Säure als auch Base abgefangen werden können, ohne dass sich der pH-Wert stark ändert.
 
 \subsection{Indikatoren}
+
 Säure-Base-Indikatoren sind schwache Säuren oder Basen, deren protonierte und deprotonierte Form unterschiedliche Farben besitzen. Das Gleichgewicht lässt sich beschreiben durch:
+
 \begin{equation}
-\mathrm{HIn \rightleftharpoons H^+ + In^-}
+\ce{HIn <=> H+ + In^-}
 \end{equation}
 
-Der Farbumschlag erfolgt in einem charakteristischen pH-Bereich um den p$K_\mathrm{In}$-Wert:
+Der Farbumschlag erfolgt in einem charakteristischen pH-Bereich um den p\(K_\mathrm{In}\)-Wert:
+
 \begin{equation}
-\mathrm{pH = p}K_{\mathrm{In}} \pm 1
+\mathrm{pH} = \mathrm{p}K_\mathrm{In} \pm 1
 \end{equation}
 
 Universalindikatoren bestehen aus Mischungen mehrerer Indikatoren mit unterschiedlichen Umschlagsbereichen, wodurch eine kontinuierliche Farbskala über einen breiten pH-Bereich entsteht.
 
 \subsection{Säure-Base-Titration}
+
 Bei einer Säure-Base-Titration wird eine Lösung unbekannter Konzentration mit einer Maßlösung bekannter Konzentration umgesetzt. Am Äquivalenzpunkt gilt für eine einprotonige Säure:
+
 \begin{equation}
-n(\mathrm{HA}) = n(\mathrm{OH^-}), \quad n = c \cdot V
+n(\ce{HA}) = n(\ce{OH^-}),
+\qquad
+n = c \cdot V
 \end{equation}
 
 Während der Titration verschiebt sich das Gleichgewicht kontinuierlich, wodurch sich der pH-Wert charakteristisch ändert und eine Titrationskurve entsteht.
 
 Bei schwachen Säuren entsteht am Äquivalenzpunkt eine basische Lösung, da die konjugierte Base mit Wasser reagiert:
+
 \begin{equation}
-\mathrm{A^- + H_2O \rightleftharpoons HA + OH^-}
+\ce{A^- + H2O <=> HA + OH^-}
 \end{equation}
 
 Der Verlauf der Titrationskurve hängt daher von der Säurestärke ab.
