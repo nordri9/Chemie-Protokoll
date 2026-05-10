@@ -26,8 +26,67 @@ Es sollen  pH-Werte angegebener Lösungen geschätzt und bestimmt werden, um fes
 \subsubsection{Fehlerbetrachtung}
 
 \subsection{Berechnung einer Puffermischung}
+
 \subsubsection{Aufgabenstellung}
+
+Mithilfe der Henderson-Hasselbalch-Gleichung soll eine Puffermischung aus Essigsäure und Natriumacetat berechnet werden, die bei einem pH-Wert von 5{,}5 ihre maximale Pufferwirkung entfaltet.
+
+Gegeben sind \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung. Gesucht sind die benötigte Konzentration der Natriumacetatlösung sowie die Einwaage an Natriumacetat-Trihydrat (\ce{NaCH3COO * 3 H2O}).
+
 \subsubsection{Berechnung}
+
+Die Berechnung erfolgt über die Henderson-Hasselbalch-Gleichung \ref{eq:henderson_hasselbalch}.
+
+Für Essigsäure wird der Literaturwert \(\mathrm{p}K_\mathrm{S} = 4{,}76\) eingesetzt:
+
+\begin{align}
+5{,}5 &= 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)
+\end{align}
+
+\begin{align}
+0{,}74 &= \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)
+\end{align}
+
+\begin{align}
+\frac{[\ce{A^-}]}{[\ce{HA}]} &= 10^{0{,}74} \approx 5{,}5
+\end{align}
+
+\vspace{0.5em}
+
+Die Stoffmenge der Essigsäure ergibt sich nach Gleichung~\ref{eq:aequivalenz}:
+
+\begin{align}
+n(\ce{CH3COOH}) &= c \cdot V \\
+&= \SI{0,1}{\mole\per\liter} \cdot \SI{0,010}{\liter} \\
+&= \SI{1,0e-3}{\mole}
+\end{align}
+
+Für das benötigte Acetat-Ion folgt:
+
+\begin{align}
+n(\ce{CH3COO^-}) &= 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
+&= \SI{5,5e-3}{\mole}
+\end{align}
+
+Die Konzentration der benötigten Natriumacetatlösung ergibt sich zu:
+
+\begin{align}
+c(\ce{CH3COONa}) &= \frac{n}{V} \\
+&= \frac{\SI{5,5e-3}{\mole}}{\SI{0,010}{\liter}} \\
+&= \SI{0,55}{\mole\per\liter}
+\end{align}
+
+\vspace{0.5em}
+
+Für die Einwaage von Natriumacetat-Trihydrat (\ce{CH3COONa * 3 H2O}) mit \(M = \SI{136,08}{\gram\per\mole}\) gilt:
+
+\begin{align}
+m &= n \cdot M \\
+&= \SI{5,5e-3}{\mole} \cdot \SI{136,08}{\gram\per\mole} \\
+&= \SI{0,75}{\gram}
+\end{align}
+
+Damit müssen \SI{0,75}{\gram} Natriumacetat-Trihydrat in \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung gelöst werden.
 
 \newpage
 \section{Zusammenfassung}
