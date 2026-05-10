@@ -30,3 +30,5 @@ build/
 output/
 SPE/protokoll.pdf
 SPE/protokoll.bcf
+SBG/protokoll.bcf
+SBG/protokoll.run.xml
