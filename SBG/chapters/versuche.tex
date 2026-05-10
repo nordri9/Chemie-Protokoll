@@ -120,7 +120,106 @@ Ein von der Assistenz bereitgestellter Analysenkolben wird mit demineralisiertem
 Die Bürette wird mit \SI{0,1}{\mole\per\liter} Natronlauge bis zur Nullmarke gefüllt. Die Titration wird bis zum Farbumschlag von farblos nach leicht rosa durchgeführt, wobei der Erlenmeyerkolben kontinuierlich geschwenkt wird.
 
 \subsubsection{Beobachtungen}
+Nach Zugabe von \SI{11,2}{\milli\liter} Natronlauge erfolgt ein Farbumschlag der zuvor farblosen Essigsäurelösung zu einer leicht violett/lila gefärbten Lösung.
+
 \subsubsection{Auswertung}
+Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge mithilfe von Gleichung \ref{eq:stoffmenge} berechnet:
+
+\begin{equation}
+    n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\mole\per\liter} \cdot \SI{0,0112}{\liter} = \SI{0,00112}{\mole}
+\end{equation}
+
+Die Neutralisationsreaktion verläuft nach:
+
+\begin{equation}
+    \ce{CH3COOH + NaOH -> CH3COO- + Na+ + H2O}
+\end{equation}
+
+Am Äquivalenzpunkt gilt gemäß Gleichung \ref{eq:aequivalenzpunkt} ein Stoffmengenverhältnis von 1:1 zwischen Essigsäure und Natronlauge, sodass sich ergibt:
+
+\begin{equation}
+    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{0,00112}{\mole}
+\end{equation}
+
+Die Konzentration der Essigsäure ergibt sich ebenfalls aus Gleichung \ref{eq:stoffmenge}:
+
+\begin{equation}
+    c(\ce{CH3COOH}) = \frac{n}{V} = \frac{\SI{0,00112}{\mole}}{\SI{0,025}{\liter}} = \SI{0,0448}{\mole\per\liter}
+\end{equation}
+
+Unter Berücksichtigung der Verdünnung um den Faktor 4 ergibt sich für die ursprüngliche Lösung:
+
+\begin{equation}
+    c_0 = \SI{0,0448}{\mole\per\liter} \cdot 4 = \SI{0,1792}{\mole\per\liter}
+\end{equation}
+
+Die Stoffmenge in \SI{100}{\milli\liter} der ursprünglichen Lösung beträgt damit:
+
+\begin{equation}
+    n = c_0 \cdot V = \SI{0,0448}{\mole\per\liter} \cdot \SI{0,1}{\liter} = \SI{0,00448}{\mole}
+\end{equation}
+
+Dies entspricht:
+
+\[
+\SI{4,48}{\milli\mole}
+\]
+
+Der von der Assistenz angegebene Literaturwert beträgt:
+
+\[
+\SI{4,5145}{\milli\mole}
+\]
+
+Die experimentell bestimmte Stoffmenge stimmt damit nahezu mit dem Literaturwert überein.
+\newline
+
+
+Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich \ce{CH3COO^-}, welches mit Wasser hydrolysiert:
+
+\begin{equation}
+    \ce{CH3COO^- + H2O <=> CH3COOH + OH^-}
+\end{equation}
+
+Dadurch entsteht eine basische Lösung, weshalb der pH-Wert am Äquivalenzpunkt größer als 7 ist.
+
+Zur Abschätzung wird die Konzentration der Acetat-Ionen am Äquivalenzpunkt verwendet:
+
+\begin{equation}
+    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{0,00112}{\mole}}{\SI{0,0362}{\liter}} = \SI{0,0309}{\mole\per\liter}
+\end{equation}
+
+Mit dem Zusammenhang für schwache Basen (aus der Theorie, Gleichung \ref{eq:schwache_saeure_nahe} analog für Basen) ergibt sich näherungsweise:
+
+\begin{equation}
+    [\ce{OH^-}] = \sqrt{K_\mathrm{B} \cdot c}
+\end{equation}
+
+Mit
+\[
+K_\mathrm{B} = \frac{K_\mathrm{W}}{K_\mathrm{S}} \approx \frac{10^{-14}}{1{,}8 \cdot 10^{-5}} = 5{,}6 \cdot 10^{-10}
+\]
+
+folgt:
+
+\begin{equation}
+    [\ce{OH^-}] = \sqrt{5{,}6 \cdot 10^{-10} \cdot 0{,}0309} = 1{,}32 \cdot 10^{-5}\,\si{\mole\per\liter}
+\end{equation}
+
+Damit ergibt sich:
+
+\begin{equation}
+    \mathrm{pOH} = -\log([\ce{OH^-}]) = 4{,}88
+\end{equation}
+
+und somit:
+
+\begin{equation}
+    \mathrm{pH} = 14 - \mathrm{pOH} = 9{,}12
+\end{equation}
+
+Der Äquivalenzpunkt liegt somit im basischen Bereich bei etwa pH \(\approx 9\).
+
 \subsubsection{Fehlerbetrachtung}
 
 \subsection{Berechnung einer Puffermischung}
