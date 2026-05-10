@@ -7,50 +7,233 @@ Es sollen  pH-Werte angegebener Lösungen geschätzt und bestimmt werden, um fes
 Neun Reagenzgläser wurden mit \SI{0.1}{\frac{\mol}{l}} Salzsäure, \SI{0.01}{\frac{\mol}{l}}, Salzsäure, demineralisiertem Wasser, Natriumcarbonatlösung, Natriumhydrogencarbonatlösung, Natriumacetatlösung, Kaliumnitratlösung, Ammoniumchloridlösung, Hydroxylammoniumchloridlösung bis zur Hälfte befüllt. Die genannten Lösungen wurden aus den bereitgestellten Chemikalien hergestellt. Zuerst wurden die pH-Werte geschätzt, anschließend mit Indikatorpapier bestimmt und abschließend mit einem pH-Meter gemessen.
 
 \subsubsection{Beobachtungen}
+
 \begin{table}[H]
     \centering
-    \caption{}
-    \label{tab:theoretische-werte}
-    \begin{tabular}{ c|cc  }
+    \caption{Geschätzte und gemessene pH-Werte der untersuchten Lösungen}
+    \label{tab:ph_werte_versuch1}
+    \begin{tabular}{l|c|c|c}
         \hline
-        $H_{x}$-Linie & $n_2$ & $\lambda_{\text{theo}}$ in \si{nm} \\
+        \textbf{Lösung} & \textbf{geschätzt} & \textbf{Indikatorpapier} & \textbf{pH-Meter} \\
         \hline
-        $H_{\alpha}$  & 3     & 656                                \\
-        $H_{\beta}$   & 4     & 486                                \\
-        $H_{\gamma}$  & 5     & 433                                \\
+        0,1 mol/L Salzsäure & 1 & 1 & 0,70 \\
+        0,01 mol/L Salzsäure & 2 & 2 & 1,93 \\
+        Demineralisiertes Wasser & 7 & 6 & 8,78 \\
+        Natriumcarbonatlösung & 11--12 & 12 & 11,05 \\
+        Natriumhydrogencarbonatlösung & 9 & 9 & 8,30 \\
+        Natriumacetatlösung & 8 & 8 & 7,30 \\
+        Kaliumnitratlösung & 7 & 6 & 3,34 \\
+        Ammoniumchloridlösung & 5--6 & 4 & 4,80 \\
+        Hydroxylammoniumchloridlösung & 3--4 & 2 & 3,47 \\
         \hline
     \end{tabular}
 \end{table}
 
 \subsubsection{Auswertung}
+Die untersuchten Lösungen lassen sich anhand ihrer pH-Werte in saure, neutrale und basische Lösungen einteilen. Die Salzsäurelösungen zeigen wie erwartet stark saure pH-Werte, da sie in Wasser nahezu vollständig zu \ce{H+}-Ionen dissoziieren. Dabei führt die zehnfach geringere Konzentration der 0,01 molaren Lösung zu einer Erhöhung des pH-Wertes um etwa eine Einheit, was sich durch die logarithmischen Definition des pH-Wertes erklären lässt.
+
+Das demineralisierte Wasser sollte theoretisch einen neutralen pH-Wert von 7 besitzen, zeigt jedoch leichte Abweichungen, da aufgenommenes \ce{CO2} den pH-Wert beeinflussen kann.
+
+Die untersuchten Salzlösungen zeigen unterschiedliches Hydrolyseverhalten: Natriumcarbonat führt aufgrund der Reaktion des Carbonat-Ions mit Wasser zu einer deutlich basischen Lösung, während Natriumhydrogencarbonat und Natriumacetat schwach basisch reagieren. Ammoniumchlorid und Hydroxylammoniumchlorid führen hingegen durch Protonenabgabe der Kationen zu sauren Lösungen. Kaliumnitrat zeigt dagegen einen nahezu neutralen pH-Wert, da es aus einer starken Säure und einer starken Base gebildet wird.
+
+Insgesamt bestätigen die Ergebnisse den Zusammenhang zwischen dem pH-Wert und der Stärke der zugrunde liegenden Säure-Base-Paare.
+
 \subsubsection{Fehlerbetrachtung}
+Die Messwerte weisen teilweise deutliche Abweichungen von den theoretisch erwarteten pH-Werten auf. Diese lassen sich durch verschiedene systematische und zufällige Fehler erklären.
+
+Ein möglicher Fehler ist eine unzureichende Kalibrierung des pH-Meters. Zudem kann eine Kontamination der Glaselektrode durch unvollständiges Spülen zwischen den einzelnen Messungen zu verfälschten Ergebnissen führen.
+
+Weitere Fehlerquellen ergeben sich durch mögliche Ungenauigkeiten bei der Herstellung der Lösungen. Auch das Indikatorpapier besitzt nur eine begrenzte Genauigkeit, sodass die damit bestimmten pH-Werte nur als Näherungswerte zu verstehen sind. Zusätzlich kann die Aufnahme von \ce{CO2} aus der Luft, insbesondere bei Wasserproben, zu einer pH-Absenkung führen.
+
+Die teilweise stark abweichenden Werte deuten darauf hin, dass systematische Fehler (z. B. Kalibrierung oder Elektrodenzustand) eine größere Rolle gespielt haben als zufällige Messfehler.
 
 
 \subsection{Versuch 2: Verwendung geeigneter Indikatoren}
 \subsubsection{Aufgabenstellung}
-\subsubsection{Durchführung}
-\subsubsection{Beobachtungen}
-\subsubsection{Auswertung}
-\subsubsection{Fehlerbetrachtung}
+Es soll untersucht werden, welche Säure-Base-Indikatoren für verschiedene pH-Bereiche geeignet sind und in welchem Bereich ihr Farbumschlag erfolgt.
 
+\subsubsection{Durchführung}
+In jeweils fünf Reagenzgläsern werden getrennt \SI{0,1}{\mole\per\liter} Salzsäure, Essigsäure, Ammoniaklösung und Natronlauge erstellt, sodass insgesamt vier Reihen mit jeweils fünf Reagenzgläsern entstehen. Die pH-Werte der einzelnen Lösungen werden anschließend mit einem pH-Meter bestimmt.
+
+Anschließend wird jede der vier Lösungsreihen jeweils mit den Indikatorlösungen Methylorange, Methylrot, Bromthymolblau, Phenolphthalein sowie Universalindikator versetzt, wobei in jeder Reihe jedes Reagenzglas einen anderen Indikator enthält. Die dabei auftretenden Farbumschläge werden beobachtet und dokumentiert.
+
+\subsubsection{Beobachtungen}
+Die Indikatoren zeigen in den verschiedenen Lösungen charakteristische Farbänderungen, anhand derer auf ihre jeweiligen Umschlagsbereiche und die pH-Bereiche der Lösungen geschlossen werden kann.
+
+\begin{table}[H]
+    \centering
+    \caption{Beobachtete Farbreaktionen der Indikatoren bei unterschiedlichen pH-Werten}
+    \label{tab:indikator_beobachtung}
+    \begin{tabular}{|l|c|c|c|c|c|c|}
+        \hline
+        \textbf{Lösung} & \textbf{pH-Wert} & \textbf{MO} & \textbf{MR} & \textbf{BTB} & \textbf{PT} & \textbf{UI} \\
+        \hline
+        HCl & $\approx 1$ & rot & rot & gelb & farblos & rot \\
+        Essigsäure & $\approx 3$ & orange-rot & rot-orange & gelb & farblos & orange \\
+        NH$_3$ & $\approx 11$ & gelb & gelb & blau & pink & blau \\
+        NaOH & $\approx 13$ & gelb & gelb & blau & pink-violett & violett \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Auswertung}
+
+Säure-Base-Indikatoren sind schwache Säuren oder Basen, deren protonierte und deprotonierte Form unterschiedliche Farben besitzen. Der Farbumschlag beruht auf einem pH-abhängigen Gleichgewicht zwischen diesen beiden Formen.
+
+Je nach pH-Wert der Lösung verschiebt sich dieses Gleichgewicht in Richtung der protonierten oder deprotonierten Form, wodurch der charakteristische Farbwechsel entsteht. Der Umschlagsbereich entspricht dabei dem pH-Bereich, in dem beide Formen in vergleichbaren Konzentrationen vorliegen.
+
+\begin{table}[H]
+    \centering
+    \caption{Literaturbekannte Umschlagsbereiche der verwendeten Indikatoren}
+    \label{tab:indikatoren}
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Indikator} & \textbf{Umschlagsbereich (Literatur)} \\
+        \hline
+        Methylorange & 3,1 -- 4,4 \\
+        Methylrot & 4,2 -- 6,3 \\
+        Bromthymolblau & 6,0 -- 7,6 \\
+        Phenolphthalein & 8,2 -- 10,0 \\
+        Universalindikator & ca. 1 -- 14 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Der Universalindikator stellt ein Gemisch mehrerer Säure-Base-Indikatoren mit unterschiedlichen pKS-Werten und Umschlagsbereichen dar. Dadurch kann ein breiter pH-Bereich durch eine kontinuierliche Farbskala von stark sauer bis stark basisch abgedeckt werden.
+
+Der Vorteil des Universalindikators liegt in seiner breiten Anwendbarkeit. Im Vergleich zu Einzelindikatoren ist die Genauigkeit jedoch geringer, da die Farbzuordnung lediglich eine grobe Abschätzung des pH-Wertes ermöglicht.
+
+\subsubsection{Fehlerbetrachtung}
+Eine mögliche Fehlerquelle könnten bei der Herstellung der Lösungen entstanden sein, beispielsweise durch ungenaues Abmessen.
+
+Zudem könnte eine zu geringe oder zu große Menge an zugesetztem Indikator die Beobachtung der Farbumschläge beeinflusst haben.
+
+Weitere mögliche Fehlerquellen wären Verunreinigungen der Reagenzgläser oder eine unzureichende Durchmischung der Lösungen. Zusätzlich könnten Beleuchtung und Betrachtungswinkel die Wahrnehmung der Farben beeinflusst haben.
 
 \subsection{Versuch 3: Titration von Essigsäure}
 \subsubsection{Aufgabenstellung}
+Die Stoffmenge an Essigsäure in einer Lösung unbekannter Konzentration soll durch eine Säure-Base-Titration mit \SI{0,1}{\mole\per\liter} Natronlauge bestimmt werden.
+
 \subsubsection{Durchführung}
+Ein von der Assistenz bereitgestellter Analysenkolben wird mit demineralisiertem Wasser bis zur \SI{100}{\milli\liter}-Marke aufgefüllt und durchmischt. Mit einer Vollpipette werden \SI{25}{\milli\liter} dieser Lösung entnommen und in einen Erlenmeyerkolben überführt. Anschließend wird die Lösung mit wenigen Tropfen Phenolphthalein versetzt und erneut durch vorsichtiges Schwenken gemischt.
+
+Die Bürette wird mit \SI{0,1}{\mole\per\liter} Natronlauge bis zur Nullmarke gefüllt. Die Titration wird bis zum Farbumschlag von farblos nach leicht rosa durchgeführt, wobei der Erlenmeyerkolben kontinuierlich geschwenkt wird.
+
 \subsubsection{Beobachtungen}
+Nach Zugabe von \SI{11,2}{\milli\liter} Natronlauge erfolgt ein Farbumschlag der zuvor farblosen Essigsäurelösung zu einer leicht violett/lila gefärbten Lösung.
+
 \subsubsection{Auswertung}
+Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge mithilfe von Gleichung \ref{eq:stoffmenge} berechnet:
+
+\begin{equation}
+    n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\mole\per\liter} \cdot \SI{0,0112}{\liter} = \SI{0,00112}{\mole}
+\end{equation}
+
+Die Neutralisationsreaktion verläuft nach:
+
+\begin{equation}
+    \ce{CH3COOH + NaOH -> CH3COO- + Na+ + H2O}
+\end{equation}
+
+Am Äquivalenzpunkt gilt gemäß Gleichung \ref{eq:aequivalenzpunkt} ein Stoffmengenverhältnis von 1:1 zwischen Essigsäure und Natronlauge, sodass sich ergibt:
+
+\begin{equation}
+    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{0,00112}{\mole}
+\end{equation}
+
+Die Konzentration der Essigsäure ergibt sich ebenfalls aus Gleichung \ref{eq:stoffmenge}:
+
+\begin{equation}
+    c(\ce{CH3COOH}) = \frac{n}{V} = \frac{\SI{0,00112}{\mole}}{\SI{0,025}{\liter}} = \SI{0,0448}{\mole\per\liter}
+\end{equation}
+
+Unter Berücksichtigung der Verdünnung um den Faktor 4 ergibt sich für die ursprüngliche Lösung:
+
+\begin{equation}
+    c_0 = \SI{0,0448}{\mole\per\liter} \cdot 4 = \SI{0,1792}{\mole\per\liter}
+\end{equation}
+
+Die Stoffmenge in \SI{100}{\milli\liter} der ursprünglichen Lösung beträgt damit:
+
+\begin{equation}
+    n = c_0 \cdot V = \SI{0,0448}{\mole\per\liter} \cdot \SI{0,1}{\liter} = \SI{0,00448}{\mole}
+\end{equation}
+
+Dies entspricht:
+
+\[
+\SI{4,48}{\milli\mole}
+\]
+
+Der von der Assistenz angegebene Literaturwert beträgt:
+
+\[
+\SI{4,5145}{\milli\mole}
+\]
+
+Die experimentell bestimmte Stoffmenge stimmt damit nahezu mit dem Literaturwert überein.
+\newline
+
+
+Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich \ce{CH3COO^-}, welches mit Wasser hydrolysiert:
+
+\begin{equation}
+    \ce{CH3COO^- + H2O <=> CH3COOH + OH^-}
+\end{equation}
+
+Dadurch entsteht eine basische Lösung, weshalb der pH-Wert am Äquivalenzpunkt größer als 7 ist.
+
+Zur Abschätzung wird die Konzentration der Acetat-Ionen am Äquivalenzpunkt verwendet:
+
+\begin{equation}
+    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{0,00112}{\mole}}{\SI{0,0362}{\liter}} = \SI{0,0309}{\mole\per\liter}
+\end{equation}
+
+Mit dem Zusammenhang für schwache Basen (aus der Theorie, Gleichung \ref{eq:schwache_saeure_nahe} analog für Basen) ergibt sich näherungsweise:
+
+\begin{equation}
+    [\ce{OH^-}] = \sqrt{K_\mathrm{B} \cdot c}
+\end{equation}
+
+Mit
+\[
+K_\mathrm{B} = \frac{K_\mathrm{W}}{K_\mathrm{S}} \approx \frac{10^{-14}}{1{,}8 \cdot 10^{-5}} = 5{,}6 \cdot 10^{-10}
+\]
+
+folgt:
+
+\begin{equation}
+    [\ce{OH^-}] = \sqrt{5{,}6 \cdot 10^{-10} \cdot 0{,}0309} = 1{,}32 \cdot 10^{-5}\,\si{\mole\per\liter}
+\end{equation}
+
+Damit ergibt sich:
+
+\begin{equation}
+    \mathrm{pOH} = -\log([\ce{OH^-}]) = 4{,}88
+\end{equation}
+
+und somit:
+
+\begin{equation}
+    \mathrm{pH} = 14 - \mathrm{pOH} = 9{,}12
+\end{equation}
+
+Der Äquivalenzpunkt liegt somit im basischen Bereich bei etwa pH \(\approx 9\).
+
 \subsubsection{Fehlerbetrachtung}
+Obwohl die experimentell bestimmte Stoffmenge der Essigsäure sehr gut mit dem Literaturwert übereinstimmt, können dennoch geringe Abweichungen auftreten. Eine mögliche Fehlerquelle liegt im Erkennen des Äquivalenzpunktes, da der Farbumschlag des Indikators nicht schlagartig erfolgt und der exakte Umschlagzeitpunkt subjektiv schwer exakt zu bestimmen ist. Dadurch kann es dazu kommen, dass die Titration über den tatsächlichen Äquivalenzpunkt hinaus durchgeführt wird, wodurch ein leicht erhöhter Verbrauch an Natronlauge resultiert.
+
+Weitere Abweichungen können durch das Ablesen der Bürette sowie durch kleine Ungenauigkeiten beim Einstellen der Nullmarke oder Luftbläßchen in der Bürette entstehen. Zusätzlich können bereits bei der Herstellung der Natronlauge Konzentrationsungenauigkeiten aufgetreten sein, beispielsweise durch ungenaues Einwiegen oder unvollständiges Lösen des Feststoffs.
+
+Insgesamt ist die Übereinstimmung mit dem Literaturwert jedoch als sehr gut zu bewerten.
 
 \subsection{Berechnung einer Puffermischung}
-
 \subsubsection{Aufgabenstellung}
-
 Mithilfe der Henderson-Hasselbalch-Gleichung soll eine Puffermischung aus Essigsäure und Natriumacetat berechnet werden, die bei einem pH-Wert von 5{,}5 ihre maximale Pufferwirkung entfaltet.
 
 Gegeben sind \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung. Gesucht sind die benötigte Konzentration der Natriumacetatlösung sowie die Einwaage an Natriumacetat-Trihydrat (\ce{NaCH3COO * 3 H2O}).
 
 \subsubsection{Berechnung}
-
 Die Berechnung erfolgt über die Henderson-Hasselbalch-Gleichung \ref{eq:henderson_hasselbalch}.
 
 Für Essigsäure wird der Literaturwert \(\mathrm{p}K_\mathrm{S} = 4{,}76\) eingesetzt:
@@ -69,7 +252,7 @@ Für Essigsäure wird der Literaturwert \(\mathrm{p}K_\mathrm{S} = 4{,}76\) eing
 
 \vspace{0.5em}
 
-Die Stoffmenge der Essigsäure ergibt sich nach Gleichung~\ref{eq:aequivalenz}:
+Die Stoffmenge der Essigsäure ergibt sich nach Gleichung~\ref{eq:stoffmenge}:
 
 \begin{align}
 n(\ce{CH3COOH}) &= c \cdot V \\
@@ -105,4 +288,20 @@ m &= n \cdot M \\
 Damit müssen \SI{0,75}{\gram} Natriumacetat-Trihydrat in \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung gelöst werden.
 
 \newpage
+
 \section{Zusammenfassung}
+Im ersten Versuch wurden pH-Werte verschiedener Lösungen zunächst abgeschätzt, anschließend mit Indikatorpapier bestimmt und schließlich mit einem pH-Meter gemessen. Dabei ergab sich die erwartete Einteilung in saure, neutrale und basische Lösungen. Abweichungen zwischen Literatur- und Messwerten wurden insbesondere auf Kalibrierungsfehler des pH-Meters, den Zustand der Glaselektrode, die Aufnahme von \ce{CO2} aus der Luft sowie allgemeine Messungenauigkeiten zurückgeführt.
+
+Im zweiten Versuch wurden Säure-Base-Indikatoren hinsichtlich ihres Farbumschlags untersucht. Dabei zeigte sich, dass jeder Indikator einen charakteristischen pH-Bereich besitzt, in dem ein Gleichgewicht zwischen protonierter und deprotonierter Form vorliegt. Der Universalindikator deckt einen sehr breiten pH-Bereich ab, ermöglicht jedoch nur eine vergleichsweise ungenaue pH-Bestimmung.
+
+Im dritten Versuch wurde die Konzentration einer Essigsäurelösung mittels Titration mit Natronlauge bestimmt. Aus dem Verbrauch an Natronlauge konnte die Stoffmenge der Essigsäure berechnet werden. Dabei ergab sich eine gute Übereinstimmung mit dem Literaturwert. Zudem wurde gezeigt, dass der Äquivalenzpunkt im basischen Bereich liegt, da das entstehende Acetat-Ion mit Wasser hydrolysiert.
+
+Abschließend wurde mithilfe der Henderson-Hasselbalch-Gleichung eine Puffermischung aus Essigsäure und Natriumacetat für einen Ziel-pH von 5{,}5 berechnet.
+\newpage
+
+\section{zutun}
+    Titrationskurve in Python (2.3.4) Auswertung
+
+    richtige Farbumschläge und pH-Werte bei V2 (2.2.3) Beobachtung
+    
+    Literaturverzeichnis
