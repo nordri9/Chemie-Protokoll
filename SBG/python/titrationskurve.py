@@ -28,7 +28,8 @@ for Vb in V_base_added:
     if n_base < n_acid:  # vor Äquivalenzpunkt
         n_HAc = n_acid - n_base
         n_Ac = n_base
-        pH = pKa + np.log10(n_Ac / n_HAc) if n_Ac > 0 else -np.log10(np.sqrt(Ka * c_acid))
+        pH = pKa + np.log10(n_Ac / n_HAc) if n_Ac > 0 else - \
+            np.log10(np.sqrt(Ka * c_acid))
     elif np.isclose(n_base, n_acid, atol=1e-8):  # Äquivalenzpunkt
         c_acetate = n_acid / V_total
         Kb = Kw / Ka
@@ -47,14 +48,17 @@ for Vb in V_base_added:
 # Plot
 # -----------------------------
 plt.figure(figsize=(10, 6))
-plt.plot(V_base_added * 1000, pH_values, color="darkblue", linewidth=2, label="Titrationskurve")
+plt.plot(V_base_added * 1000, pH_values, color="darkblue",
+         linewidth=2, label="Titrationskurve")
 
 # Halbäquivalenzpunkt markieren
-plt.scatter(V_half*1000, pKa, color="orange", zorder=5, label=f"Halbäquivalenzpunkt pH≈{pKa:.2f}")
+plt.scatter(V_half*1000, pKa, color="orange", zorder=5,
+            label=f"Halbäquivalenzpunkt pH≈{pKa:.2f}")
 plt.axvline(V_half*1000, color="orange", linestyle="--")
 
 # Äquivalenzpunkt markieren
-plt.scatter(V_eq*1000, 9.12, color="red", zorder=5, label=f"Äquivalenzpunkt pH≈9.12")
+plt.scatter(V_eq*1000, 9.12, color="red", zorder=5,
+            label=f"Äquivalenzpunkt pH≈9.12")
 plt.axvline(V_eq*1000, color="red", linestyle="--")
 
 # Achsen & Titel
