@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 # -----------------------------
 # Parameter
 # -----------------------------
@@ -70,5 +71,5 @@ plt.legend()
 plt.ylim(0, 14)
 plt.xlim(0, 22)
 plt.tight_layout()
-plt.savefig("titrationskurve.png", dpi=300)  # speichert die Grafik als PNG
+plt.savefig("titrationskurve.pdf")  # speichert die Grafik als PNG
 plt.close()  # schließt die Grafik, gut für Skripte

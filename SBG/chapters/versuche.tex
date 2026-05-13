@@ -34,7 +34,7 @@ Die untersuchten Lösungen lassen sich anhand ihrer pH-Werte in saure, neutrale 
 
 Das demineralisierte Wasser sollte theoretisch einen neutralen pH-Wert von 7 besitzen, zeigt jedoch leichte Abweichungen, da aufgenommenes \ce{CO2} den pH-Wert beeinflussen kann \cite{mortimer_muller}.
 
-Die untersuchten Salzlösungen zeigen unterschiedliches Hydrolyseverhalten: Natriumcarbonat führt aufgrund der Reaktion des Carbonat-Ions mit Wasser zu einer deutlich basischen Lösung, während Natriumhydrogencarbonat und Natriumacetat schwach basisch reagieren \cite{holleman_wiberg}. Ammoniumchlorid und Hydroxylammoniumchlorid führen hingegen durch Protonenabgabe der Kationen zu sauren Lösungen. Kaliumnitrat zeigt dagegen einen nahezu neutralen pH-Wert, da es aus einer starken Säure und einer starken Base gebildet wird \cite{skript}.
+Die untersuchten Salzlösungen zeigen unterschiedliches Hydrolyseverhalten: Natriumcarbonat führt aufgrund der Reaktion des Carbonat-Ions mit Wasser zu einer deutlich basischen Lösung, während Natriumhydrogencarbonat und Natriumacetat schwach basisch reagieren. Ammoniumchlorid und Hydroxylammoniumchlorid führen hingegen durch Protonenabgabe der Kationen zu sauren Lösungen. Kaliumnitrat zeigt dagegen einen nahezu neutralen pH-Wert, da es aus einer starken Säure und einer starken Base gebildet wird.
 
 Insgesamt bestätigen die Ergebnisse den Zusammenhang zwischen dem pH-Wert und der Stärke der zugrunde liegenden Säure-Base-Paare.
 
@@ -80,7 +80,7 @@ Die Indikatoren zeigen in den verschiedenen Lösungen charakteristische Farbänd
 
 Säure-Base-Indikatoren sind schwache Säuren oder Basen, deren protonierte und deprotonierte Form unterschiedliche Absorbtionsspektren besitzen. Der Farbumschlag beruht auf einem pH-abhängigen Gleichgewicht zwischen diesen beiden Formen \cite{skript}.
 
-Je nach pH-Wert der Lösung verschiebt sich dieses Gleichgewicht in Richtung der protonierten oder deprotonierten Form, wodurch der charakteristische Farbwechsel entsteht. Der Umschlagsbereich entspricht dabei dem pH-Bereich, in dem beide Formen in vergleichbaren Konzentrationen vorliegen \cite{zumdahl_chemistry}.
+Je nach pH-Wert der Lösung verschiebt sich dieses Gleichgewicht in Richtung der protonierten oder deprotonierten Form, wodurch der charakteristische Farbwechsel entsteht. Der Umschlagsbereich entspricht dabei dem pH-Bereich, in dem beide Formen in vergleichbaren Konzentrationen vorliegen \cite{mortimer_muller}.
 
 \begin{table}[H]
     \centering
@@ -129,7 +129,7 @@ Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titratio
     n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\mole\per\liter} \cdot \SI{0,0112}{\liter} = \SI{0,00112}{\mole}
 \end{equation}
 
-Die Neutralisationsreaktion verläuft nach \cite{holleman_wiberg}:
+Die Neutralisationsreaktion verläuft nach:
 
 \begin{equation}
     \ce{CH3COOH + NaOH -> CH3COO- + Na+ + H2O}
@@ -153,17 +153,7 @@ Da lediglich \SI{25}{\milli\liter} der insgesamt auf \SI{100}{\milli\liter} aufg
     n_{\text{gesamt}} = 4 \cdot \SI{0,00112}{\mole} = \SI{0,00448}{\mole}
 \end{equation}
 
-Dies entspricht:
-
-\[
-    \SI{4,48}{\milli\mole}
-\]
-
-Der von der Assistenz angegebene Literaturwert beträgt:
-
-\[
-    \SI{4,5145}{\milli\mole}
-\]
+Dies entspricht einer Stoffmenge von \SI{4,48}{\milli\mole}. Der von der Assistenz angegebene Literaturwert beträgt \SI{4,5145}{\milli\mole}.
 
 Die experimentell bestimmte Stoffmenge stimmt damit nahezu mit dem Literaturwert überein.
 \newline
@@ -216,7 +206,7 @@ Der Äquivalenzpunkt liegt somit im basischen Bereich bei etwa pH \(\approx 9\).
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{python/titrationskurve.png}
+    \includegraphics[width=1\textwidth]{python/titrationskurve.pdf}
     \caption{Titrationskurve von Essigsäure mit NaOH}
     \label{fig:titration}
 \end{figure}
@@ -239,52 +229,53 @@ Die Berechnung erfolgt über die Henderson-Hasselbalch-Gleichung \ref{eq:henders
 
 Für Essigsäure wird der Literaturwert \(\mathrm{p}K_\mathrm{S} = 4{,}76\) eingesetzt \cite{nist_chemistry_webbook}:
 
-\begin{align}
-    5{,}5 & = 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)
-\end{align}
-
-\begin{align}
-    0{,}74 & = \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)
-\end{align}
-
-\begin{align}
-    \frac{[\ce{A^-}]}{[\ce{HA}]} & = 10^{0{,}74} \approx 5{,}5
-\end{align}
-
-\vspace{0.5em}
+\begin{equation}
+    \begin{aligned}
+        5{,}5                        & = 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
+        0{,}74                       & = \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)          \\
+        \frac{[\ce{A^-}]}{[\ce{HA}]} & = 10^{0{,}74} \approx 5{,}5
+    \end{aligned}
+\end{equation}
 
 Die Stoffmenge der Essigsäure ergibt sich nach Gleichung~\ref{eq:stoffmenge}:
 
-\begin{align}
-    n(\ce{CH3COOH}) & = c \cdot V                                          \\
-                    & = \SI{0,1}{\mole\per\liter} \cdot \SI{0,010}{\liter} \\
-                    & = \SI{1,0e-3}{\mole}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        n(\ce{CH3COOH}) & = c \cdot V                                          \\
+                        & = \SI{0,1}{\mole\per\liter} \cdot \SI{0,010}{\liter} \\
+                        & = \SI{1,0e-3}{\mole}
+    \end{aligned}
+\end{equation}
 
 Für das benötigte Acetat-Ion folgt:
 
-\begin{align}
-    n(\ce{CH3COO^-}) & = 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
-                     & = \SI{5,5e-3}{\mole}
-\end{align}
-
+\begin{equation}
+    \begin{aligned}
+        n(\ce{CH3COO^-}) & = 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
+                         & = \SI{5,5e-3}{\mole}
+    \end{aligned}
+\end{equation}
 Die Konzentration der benötigten Natriumacetatlösung ergibt sich zu:
 
-\begin{align}
+\begin{equation}
+  \begin{aligned}
     c(\ce{CH3COONa}) & = \frac{n}{V}                                   \\
                      & = \frac{\SI{5,5e-3}{\mole}}{\SI{0,010}{\liter}} \\
                      & = \SI{0,55}{\mole\per\liter}
-\end{align}
+  \end{aligned}
+\end{equation}
 
 \vspace{0.5em}
 
 Für die Einwaage von Natriumacetat-Trihydrat (\ce{CH3COONa * 3 H2O}) mit \(M = \SI{136,08}{\gram\per\mole}\) gilt:
 
-\begin{align}
+\begin{equation}
+  \begin{aligned}
     m & = n \cdot M                                            \\
       & = \SI{5,5e-3}{\mole} \cdot \SI{136,08}{\gram\per\mole} \\
       & = \SI{0,75}{\gram}
-\end{align}
+  \end{aligned}
+\end{equation}
 
 Damit müssen \SI{0,75}{\gram} Natriumacetat-Trihydrat in \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung gelöst werden.
 
