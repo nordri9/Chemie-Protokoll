@@ -1,3 +1,76 @@
-\section{Theorie}
+\section{Theoretische Grundlagen}
 
+\subsection{Oxidation, Reduktion und Redoxpaare}
 
+Der Begriff der Oxidation bezeichnete ursprünglich die Aufnahme von Sauerstoff durch einen Stoff.
+Da jedoch viele Reaktionen, die denselben Charakter aufweisen, ohne Sauerstoffbeteiligung ablaufen, wurde das Konzept verallgemeinert:
+Eine \textbf{Oxidation} ist die Abgabe von Elektronen eines Atoms oder Ions; die Oxidationszahl des betreffenden Atoms erhöht sich dabei.
+Umgekehrt bezeichnet eine \textbf{Reduktion} die Aufnahme von Elektronen, wobei die Oxidationszahl sinkt.\cite{skript}
+Da Elektronen im Gegensatz zu Sauerstoff nicht frei in Lösung vorliegen, können Oxidation und Reduktion nie isoliert auftreten -- sie laufen stets als gekoppelte Teilreaktionen einer \textbf{Redoxreaktion} ab.
+Ein Stoff, der dabei Elektronen abgibt und oxidiert wird, heißt \textbf{Reduktionsmittel}; ein Stoff, der Elektronen aufnimmt und dabei selbst reduziert wird, heißt \textbf{Oxidationsmittel}.\cite{skript}
+
+Analog zu konjugierten Säure-Base-Paaren nach Brønsted existieren bei Redoxreaktionen \textbf{Redoxpaare}, in denen dasselbe Element sowohl in einer oxidierten als auch in einer reduzierten Form vorkommt (z.\,B. $\ce{Cu^{2+}/Cu}$ oder $\ce{Fe^{3+}/Fe^{2+}}$).
+Die Oxidationsstufe eines Atoms im Molekül wird als \textbf{Oxidationszahl} angegeben; sie ist per Konvention für das Element im Grundzustand gleich null.\cite{skript}
+
+\subsection{Elektrochemische Spannungsreihe und Standardpotential}
+
+Die Stärke eines Reduktions- oder Oxidationsmittels lässt sich quantifizieren, indem man das zugehörige Halbzellenpotential gegen eine Referenz misst.
+Als universeller Bezugspunkt dient die \textbf{Normalwasserstoffelektrode} (NHE), für welche die Halbreaktion
+\begin{equation}
+    \ce{2 H^+_{(aq)} + 2 e^- <=> H_{2(g)}}
+    \label{eq:nhe}
+\end{equation}
+konventionsgemäß das Standardpotential $E^0 = 0\,\si{V}$ erhält.\cite{skript}
+Das \textbf{Normalpotential} $E^0$ eines beliebigen Redoxpaares ist dann die unter Standardbedingungen ($T = 298{,}15\,\si{K}$, $p = 1013\,\si{hPa}$, $c_i = 1\,\si{mol/L}$) gemessene Potentialdifferenz gegen die NHE.\cite{skript}
+Die geordnete Auflistung dieser Normalpotentiale heißt \textbf{elektrochemische Spannungsreihe}.
+Die Potentialdifferenz $\Delta E$ zweier Halbzellen -- die sogenannte \textbf{elektromotorische Kraft} (EMK) -- berechnet sich zu
+\begin{equation}
+    \Delta E = E_{\text{Kathode}} - E_{\text{Anode}} \, ,
+    \label{eq:emk}
+\end{equation}
+wobei $E_{\text{Kathode}}$ und $E_{\text{Anode}}$ die jeweiligen Halbzellenpotentiale sind.\cite{skript}
+Ist $\Delta E > 0$, läuft die Reaktion spontan ab; ist $\Delta E < 0$, muss sie durch externe Energie erzwungen werden.
+Alle Metalle, deren $M/M^{n+}$-Redoxpaar ein negatives Normalpotential besitzt, können Protonen aus Säuren zu $\ce{H2}$ reduzieren.\cite{skript}
+
+\subsection{Nernst'sche Gleichung}
+
+Unter Reaktionsbedingungen, die von den Standardbedingungen abweichen, ist das Potential einer Halbzelle konzentrationsabhängig.
+Die \textbf{Nernst'sche Gleichung} beschreibt diese Abhängigkeit für ein Redoxpaar Ox/Red mit $z$ übertragenen Elektronen:\cite{skript}
+\begin{equation}
+    E = E^0 + \frac{R \cdot T}{z \cdot F} \cdot \ln \frac{c(\text{Ox})}{c(\text{Red})} \, .
+    \label{eq:nernst}
+\end{equation}
+Dabei ist $R = 8{,}314\,\si{J.K^{-1}.mol^{-1}}$ die universelle Gaskonstante, $T$ die absolute Temperatur in Kelvin, $F = 96485\,\si{C.mol^{-1}}$ die Faraday-Konstante und $z$ die Zahl der pro Formelumsatz übertragenen Elektronen.\cite{skript}
+Bei Raumtemperatur ($T = 298{,}15\,\si{K}$) vereinfacht sich Gl.\,\eqref{eq:nernst} zu\cite{holleman_wiberg}
+\begin{equation}
+    E \approx E^0 + \frac{0{,}059\,\si{V}}{z} \cdot \log \frac{c(\text{Ox})}{c(\text{Red})} \, .
+    \label{eq:nernst_approx}
+\end{equation}
+Die Nernst-Gleichung zeigt außerdem, dass das Redoxpotential vom pH-Wert abhängt, wenn Protonen an der Halbreaktion beteiligt sind -- ein Redoxpaar mit $\ce{H+}$-Beteiligung wird bei steigendem pH (sinkender $c(\ce{H+})$) zu einem stärkeren Reduktionsmittel.\cite{skript}
+
+\subsection{Syn- und Disproportionierung sowie Redoxamphoterie}
+
+Bei bestimmten Redoxreaktionen reagieren Atome \emph{desselben} Elements in \emph{verschiedenen} Oxidationsstufen miteinander zu einer einheitlichen mittleren Oxidationsstufe; dieser Vorgang wird als \textbf{Synproportionierung} (oder Komproportionierung) bezeichnet.\cite{skript}
+Das Gegenteil -- ein Atom einer mittleren Oxidationsstufe reagiert mit sich selbst zu Produkten, in denen es sowohl eine höhere als auch eine niedrigere Oxidationsstufe einnimmt -- heißt \textbf{Disproportionierung}.\cite{skript}
+Ein Stoff, der je nach Reaktionspartner oder Reaktionsmilieu sowohl als Oxidationsmittel als auch als Reduktionsmittel wirken kann, wird als \textbf{redoxamphoter} bezeichnet; Wasserstoffperoxid ist ein typisches Beispiel.\cite{skript}
+
+\subsection{Iodometrische Redox-Titration}
+
+Bei der \textbf{iodometrischen Titration} wird die zu bestimmende Substanz zunächst mit einem Überschuss an Iodid ($\ce{I^-}$) versetzt, wobei die Menge an freigesetztem elementaren Iod ($\ce{I2}$) äquivalent zur Analytmenge ist.\cite{holleman_wiberg}
+Das entstandene $\ce{I2}$ wird anschließend mit einer Natriumthiosulfat-Maßlösung ($\ce{Na2S2O3}$) zurücktitriert:
+\begin{equation}
+    \ce{I2_{(aq)} + 2 S2O3^{2-}_{(aq)} -> 2 I^-_{(aq)} + S4O6^{2-}_{(aq)}} \, .
+    \label{eq:thiosulfat}
+\end{equation}
+Stärke dient dabei als Indikator, da sie mit $\ce{I2}$ einen intensiv blau gefärbten Einschlusskomplex bildet, der beim Äquivalenzpunkt entfärbt wird.\cite{holleman_wiberg}
+Für den vorgelagerten Schritt -- die Oxidation von Iodid durch $\ce{Cu^{2+}}$ -- gilt:\cite{skript}
+\begin{equation}
+    \ce{2 Cu^{2+}_{(aq)} + 4 I^-_{(aq)} -> 2 CuI_{(s)} + I2_{(aq)}} \, .
+    \label{eq:cu_iod}
+\end{equation}
+Aus der verbrauchten Menge Thiosulfat $n(\ce{Na2S2O3})$ lässt sich die Stoffmenge an $\ce{Cu^{2+}}$ berechnen:
+\begin{equation}
+    n(\ce{Cu^{2+}}) = \frac{V_{\text{ges}}}{V_{\text{Probe}}} \cdot n(\ce{Na2S2O3}) \, ,
+    \label{eq:n_cu}
+\end{equation}
+wobei $V_{\text{ges}}$ das Gesamtvolumen der Analysenlösung und $V_{\text{Probe}}$ das Probenvolumen bezeichnen.\cite{holleman_wiberg}
