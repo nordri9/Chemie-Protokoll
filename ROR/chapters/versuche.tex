@@ -1,14 +1,13 @@
 \section{Versuche}
 
-\subsection{Versuch 2.1: Elektrochemische Spannungsreihe}
-
+\subsection{Versuch 1: Elektrochemische Spannungsreihe}
 \subsubsection{Aufgabenstellung}
 Die untersuchten Redoxpaare sollen anhand ihrer Reaktion mit verdünnter und konzentrierter Salzsäure sowie Salpetersäure in die elektrochemische Spannungsreihe eingeordnet werden.
 
 \subsubsection{Durchführung}
 \begin{enumerate}[label=\textbf{\alph*)}]
     \item Vier Reagenzgläser wurden jeweils etwa 2\,cm hoch mit verdünnter Salzsäure (1 Teil demineralisiertes Wasser : 1 Teil konzentrierte Salzsäure) gefüllt. Anschließend wurden ein Stück Magnesiumband, eine Zink-Granalie, etwas Nickelpulver sowie einige blanke Kupferspäne zugegeben.
-    
+
     \item In drei weiteren Reagenzgläsern wurden Zinkstücke vorsichtig mit wenigen Tropfen konzentrierter Salzsäure, verdünnter Salpetersäure (1 Teil demineralisiertes Wasser : 1 Teil konzentrierte Salpetersäure) sowie konzentrierter Salpetersäure versetzt. Der Versuch wurde anschließend analog mit blanken Kupferspänen wiederholt.
 \end{enumerate}
 
@@ -20,20 +19,69 @@ Die untersuchten Redoxpaare sollen anhand ihrer Reaktion mit verdünnter und kon
 \end{enumerate}
 
 \subsubsection{Auswertung}
-Die Beobachtungen lassen sich durch die Stellung der Metalle in der elektrochemischen Spannungsreihe erklären. Metalle, die unedler sind (z.B. Magnesium und Zink), geben leichter Elektronen ab und reagieren daher bereits mit verdünnter Salzsäure unter Bildung von Wasserstoffgas (\ce{H2}). 
+Die Beobachtungen lassen sich durch die Stellung der Metalle in der elektrochemischen Spannungsreihe erklären. Metalle, die unedler sind (z.B. Magnesium und Zink), geben leichter Elektronen ab und reagieren daher bereits mit verdünnter Salzsäure unter Bildung von Wasserstoffgas (\ce{H2}).
 
 Nickel reagiert deutlich schwächer, da es edler ist als Magnesium und Zink. Kupfer zeigt keine Reaktion mit Salzsäure, da es unter diesen Bedingungen nicht oxidiert wird und somit kein Wasserstoff aus der Säure verdrängt werden kann.
 
 Die Reaktionen mit Salpetersäure lassen sich zusätzlich durch deren oxidierende Wirkung erklären. Selbst edlere Metalle wie Kupfer können dadurch oxidiert und in Lösung gebracht werden. Die unterschiedliche Reaktivität bestätigt die Reihenfolge:
 
-\begin{equation}
-    \ch{Mg \, > \, Zn \, > \, Ni \, > \, Cu}
-\end{equation}
+\paragraph{a) Reaktion der Metalle mit Salzsäure}
+Magnesium, Zink und Nickel oxidieren in Salzsäure unter Wasserstoffentwicklung (\ce{M} steht für das jeweilige Metall):
+\begin{align}
+    \text{Ox.:}\quad  & \ce{\overset{0}{M}_{(s)} -> \overset{+II}{M^{2+}}_{(aq)} + 2 e^-} \label{eq:v1_ox}       \\
+    \text{Red.:}\quad & \ce{2 \overset{+I}{H^+}_{(aq)} + 2 e^- -> \overset{0}{H2_{(g)}} ^}  \label{eq:v1_red}    \\
+    \hline
+    \text{Ges.:}\quad & \ce{\overset{0}{M}_{(s)} + 2 H^+_{(aq)} -> M^{2+}_{(aq)} + H2_{(g)} ^} \label{eq:v1_ges}
+\end{align}
+Kupfer reagiert nicht, da sein Standardpotential $E^0(\ce{Cu^{2+}/Cu}) = +0{,}34\,\si{V}$ größer als $E^0(\ce{H^+/H2}) = 0\,\si{V}$ ist; es kann Protonen daher nicht reduzieren (vgl.\ Gl.\,\eqref{eq:emk}).\cite{holleman_wiberg}
+Die Reaktionsgeschwindigkeit nimmt in der Reihe Mg $>$ Zn $>$ Ni ab, was der Abfolge in der Spannungsreihe entspricht: Je negativer das Standardpotential, desto stärker das Reduktionsmittel.
+Die Literaturwerte der Standardpotentiale sind in Tab.\,\ref{tab:stdpot} zusammengefasst.\cite{holleman_wiberg}
+
+\begin{table}[H]
+    \centering
+    \caption{Standardpotentiale der untersuchten Redoxpaare.\cite{holleman_wiberg}}
+    \label{tab:stdpot}
+    \begin{tabular}{ll}
+        \toprule
+        Redoxpaar         & $E^0$ / V \\
+        \midrule
+        $\ce{Mg^{2+}/Mg}$ & $-2{,}37$ \\
+        $\ce{Zn^{2+}/Zn}$ & $-0{,}76$ \\
+        $\ce{Ni^{2+}/Ni}$ & $-0{,}24$ \\
+        $\ce{Cu^{2+}/Cu}$ & $+0{,}34$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\paragraph{b) Reaktion von Zink und Kupfer mit Salpetersäure}
+Zink mit verdünnter Salpetersäure: Das Nitrat-Ion wirkt als Oxidationsmittel; Stickstoff wird von $+$V auf $+$II reduziert (\ce{NO}):
+\begin{align}
+    \text{Ox.:}\quad  & \ce{3 \overset{0}{Zn}_{(s)} -> 3 \overset{+II}{Zn^{2+}}_{(aq)} + 6 e^-}                               \\
+    \text{Red.:}\quad & \ce{2 \overset{+V}{N}O3^-_{(aq)} + 8 H^+_{(aq)} + 6 e^- -> 2 \overset{+II}{N}O_{(g)} ^ + 4 H2O_{(l)}} \\
+    \hline
+    \text{Ges.:}\quad & \ce{3 Zn_{(s)} + 8 H^+_{(aq)} + 2 NO3^-_{(aq)} -> 3 Zn^{2+}_{(aq)} + 2 NO_{(g)} ^ + 4 H2O_{(l)}}
+\end{align}
+Das zunächst farblose \ce{NO} reagiert an der Luft weiter zu rotbraunem \ce{NO2}: $\ce{2 NO_{(g)} + O2_{(g)} -> 2 NO2_{(g)}}$.\\
+Mit konzentrierter Salpetersäure erfolgt die Reduktion direkt bis \ce{NO2} (+IV):
+\begin{align}
+    \text{Ox.:}\quad  & \ce{\overset{0}{Zn}_{(s)} -> \overset{+II}{Zn^{2+}}_{(aq)} + 2 e^-}                                    \\
+    \text{Red.:}\quad & \ce{2 \overset{+V}{N}O3^-_{(aq)} + 4 H^+_{(aq)} + 2 e^- -> 2 \overset{+IV}{N}O2_{(g)} ^ + 2 H2O_{(l)}} \\
+    \hline
+    \text{Ges.:}\quad & \ce{Zn_{(s)} + 4 H^+_{(aq)} + 2 NO3^-_{(aq)} -> Zn^{2+}_{(aq)} + 2 NO2_{(g)} ^ + 2 H2O_{(l)}}
+\end{align}
+Kupfer mit verdünnter Salpetersäure verläuft analog zur Zinkreaktion mit Ausbildung von \ce{NO}, während mit konzentrierter Salpetersäure ebenfalls direkt \ce{NO2} entsteht. Dass Kupfer -- trotz positivem $E^0$ -- mit Salpetersäure reagiert, liegt daran, dass das Normalpotential des $\ce{NO3^-/NO}$-Paares ($+0{,}96\,\si{V}$) deutlich über dem von Kupfer liegt (vgl.\ Gl.\,\eqref{eq:emk}).\cite{holleman_wiberg}
+
+
 
 \subsubsection{Fehlerbetrachtung}
+Ein möglicher systematischer Fehler ist die Passivierung von Nickel durch eine Oxidschicht, welche die beobachtete Reaktionsgeschwindigkeit verringert und so zu einer fehlerhaften Einschätzung des Normalpotentials führen könnte. Zudem kann eine unvollständige Reinigung der Metalloberflächen (Oxide, Fette) die Reaktivität beeinflussen.
 Mögliche Fehlerquellen ergeben sich durch unterschiedlich große Metalloberflächen, wodurch die Reaktionsgeschwindigkeit beeinflusst werden kann. Zudem können Verunreinigungen der Metalle oder ungenaue Konzentrationen der Säuren zu Abweichungen geführt haben.
 
+\newpage
+% ============================================================
 \subsection{Versuch 2: Abhängigkeit des Redoxpotentials vom pH-Wert}
+% ============================================================
+
 \subsubsection{Aufgabenstellung}
 Es soll gezeigt werden, dass das Redoxpotential des Systems \ce{Fe^{2+}/Fe^{3+}} vom pH-Wert der Lösung abhängig ist.
 
@@ -44,12 +92,44 @@ Es soll gezeigt werden, dass das Redoxpotential des Systems \ce{Fe^{2+}/Fe^{3+}}
 \end{enumerate}
 
 \subsubsection{Beobachtung}
-\subsubsection{Auswertung}
-\subsubsection{Fehlerbetrachtung}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item An der Phasengrenze zwischen der wässrigen Schicht und der konzentrierten Schwefelsäure bildete sich ein dunkelbrauner bis schwarzer Ring.
+    \item Die Lösung im Becherglas färbte sich dunkelbraun, es entstand eine Gasentwicklung. Das Indikatorpapier verfärbte sich innerhalb kurzer Zeit deutlich grün/blau-grün, was auf einen basischen Analyten hindeutet.
+\end{enumerate}
 
+\subsubsection{Auswertung}
+
+\paragraph{a) Saures Milieu -- Braunring-Probe}
+Im sauren Milieu wird \ce{Fe^{2+}} zu \ce{Fe^{3+}} oxidiert und das Nitrat zu Stickstoffmonoxid reduziert:
+\begin{align}
+    \text{Ox.:}\quad  & \ce{3 \overset{+II}{Fe^{2+}}_{(aq)} -> 3 \overset{+III}{Fe^{3+}}_{(aq)} + 3 e^-}                 \\
+    \text{Red.:}\quad & \ce{\overset{+V}{N}O3^-_{(aq)} + 4 H^+_{(aq)} + 3 e^- -> \overset{+II}{N}O_{(g)} + 2 H2O_{(l)}}  \\
+    \hline
+    \text{Ges.:}\quad & \ce{3 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 4 H^+_{(aq)} -> 3 Fe^{3+}_{(aq)} + NO_{(g)} + 2 H2O_{(l)}}
+\end{align}
+Das erzeugte \ce{NO} bildet mit überschüssigem $\ce{Fe^{2+}}$ einen Pentaaquanitrosyleisen(II)-Komplex $\ce{[Fe(H2O)5(NO)]^{2+}}$, der die charakteristische dunkelbraune Ringfärbung verursacht.\cite{holleman_wiberg}
+
+\paragraph{b) Basisches Milieu -- Ammoniaknachweis}
+Im basischen Milieu ist das Normalpotential des Redoxpaars $\ce{Fe^{3+}/Fe^{2+}}$ deutlich negativer als in saurer Lösung (\emph{ca.}\,$-1{,}4\,\si{V}$), da $\ce{Fe^{3+}}$ als schwerlösliches $\ce{Fe(OH)3}$ ausfällt und damit seine effektive Konzentration stark sinkt (vgl.\ Nernst-Gleichung, Gl.\,\eqref{eq:nernst}).\cite{skript}\cite{holleman_wiberg}
+Dadurch ist \ce{Fe^{2+}} im Basischen ein erheblich stärkeres Reduktionsmittel und vermag Nitrat vollständig bis zu Ammoniak ($-$III) zu reduzieren:
+\begin{align}
+    \text{Ox.:}\quad  & \ce{8 \overset{+II}{Fe^{2+}}_{(aq)} + 20 OH^-_{(aq)} -> 8 \overset{+III}{Fe(OH)3}_{(s)} + 8 e^- + 4 H2O_{(l)}} \\
+    \text{Red.:}\quad & \ce{\overset{+V}{N}O3^-_{(aq)} + 6 H2O_{(l)} + 8 e^- -> \overset{-III}{N}H3_{(g)} ^ + 9 OH^-_{(aq)}}           \\
+    \hline
+    \text{Ges.:}\quad & \ce{8 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 11 OH^-_{(aq)} -> 8 Fe(OH)3_{(s)} + NH3_{(g)} ^}
+\end{align}
+Das flüchtige Ammoniak hydrolysiert am befeuchteten Indikatorpapier und erhöht dort den pH-Wert, was die Grünfärbung erklärt.\cite{skript}
+
+\subsubsection{Fehlerbetrachtung}
+Sollte das Becherglas im zweiten Teilversuch erhitzt werden, muss ein Sieden der Lösung vermieden werden, da alkalische Spritzer sonst direkt das Indikatorpapier färben würden und einen falsch-positiven Befund erzeugen könnten. Außerdem ist darauf zu achten, dass ausreichend NaOH für ein deutlich basisches Milieu vorhanden ist.
+
+\newpage
+% ============================================================
 \subsection{Versuch 3: Redox-Amphoterie, Dis- und Synproportionierung}
+% ============================================================
+
 \subsubsection{Aufgabenstellung}
-Anhand von Manganverbindungen sollen Redoxamphoterie sowie Disproportionierungs- und Komproportionierungsreaktionen untersucht und unterschieden werden.
+Anhand von Mangan- und Wasserstoffperoxid-Reaktionen sollen die Begriffe Synproportionierung, Disproportionierung und Redoxamphoterie experimentell veranschaulicht werden.
 
 \subsubsection{Durchführung}
 \begin{enumerate}[label=\textbf{\alph*)}]
@@ -60,10 +140,62 @@ Anhand von Manganverbindungen sollen Redoxamphoterie sowie Disproportionierungs-
 \end{enumerate}
 
 \subsubsection{Beobachtung}
-\subsubsection{Auswertung}
-\subsubsection{Fehlerbetrachtung}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item Die violette Permanganatlösung entfärbte sich bei Zugabe der farblosen $\ce{MnSO4}$-Lösung und es bildete sich ein brauner Feststoff ($\ce{MnO2}$).
+    \item Bei Zugabe von $\ce{MnO2}$ zur $\ce{H2O2}$-Lösung entstand sofort eine starke Gasentwicklung; der glimmende Span entzündete sich (Sauerstoff).
+    \item Es bildete sich ein dunkelbrauner Feststoff bei gleichzeitiger Gasentwicklung.
+    \item Die violette Lösung entfärbte sich graduell über Rot und Braun schließlich vollständig; gleichzeitig war Gasentwicklung zu beobachten.
+\end{enumerate}
 
-\subsection{Versuch 4: Redox-Titration einer $\ce{Cu^{2+}}$-Kationen-Lösung}
+\subsubsection{Auswertung}
+
+\paragraph{a) Synproportionierung von Mangan}
+$\ce{Mn^{2+}}$ (+II) und $\ce{MnO4^-}$ (+VII) reagieren zu $\ce{MnO2}$ (+IV):
+\begin{align}
+    \text{Ox.:}\quad  & \ce{3 \overset{+II}{Mn^{2+}}_{(aq)} + 12 OH^-_{(aq)} -> 3 \overset{+IV}{Mn}O2_{(s)} + 6 H2O_{(l)} + 6 e^-} \\
+    \text{Red.:}\quad & \ce{2 \overset{+VII}{Mn}O4^-_{(aq)} + 4 H2O_{(l)} + 6 e^- -> 2 \overset{+IV}{Mn}O2_{(s)} + 8 OH^-_{(aq)}}  \\
+    \hline
+    \text{Ges.:}\quad & \ce{3 Mn^{2+}_{(aq)} + 2 MnO4^-_{(aq)} + 4 OH^-_{(aq)} -> 5 MnO2_{(s)} + 2 H2O_{(l)}}
+\end{align}
+Beide Mangan-Spezies konvergieren auf die mittlere Oxidationsstufe +IV. Dies ist eine Synproportionierung gemäß der Definition in Abschnitt 1.4.\cite{skript}
+
+\paragraph{b) Disproportionierung von Wasserstoffperoxid}
+$\ce{MnO2}$ wirkt hier als Katalysator. Der Sauerstoff in $\ce{H2O2}$ liegt in der mittleren Oxidationsstufe $-$I vor und disproportioniert zu $-$II (Wasser) und 0 (Sauerstoff):
+\begin{align}
+    \text{Ox.:}\quad  & \ce{\overset{-I}{H2O2}_{(aq)} -> \overset{0}{O2}_{(g)} ^ + 2 H^+_{(aq)} + 2 e^-}    \\
+    \text{Red.:}\quad & \ce{\overset{-I}{H2O2}_{(aq)} + 2 H^+_{(aq)} + 2 e^- -> 2 \overset{-II}{H2O}_{(l)}} \\
+    \hline
+    \text{Ges.:}\quad & \ce{2 H2O2_{(aq)} ->[ MnO2 ] 2 H2O_{(l)} + O2_{(g)} ^}
+\end{align}
+Die positive Glimmspanprobe bestätigt die Bildung von Sauerstoff.\cite{skript}
+
+\paragraph{c) Oxidative Wirkung von $\ce{H2O2}$ im Basischen}
+Im basischen Milieu mit $\ce{Mn^{2+}}$ als Reaktionspartner wirkt $\ce{H2O2}$ als Oxidationsmittel; $\ce{Mn^{2+}}$ wird zu $\ce{MnO2}$ oxidiert:
+\begin{align}
+    \text{Ox.:}\quad  & \ce{\overset{+II}{Mn^{2+}}_{(aq)} + 4 OH^-_{(aq)} -> \overset{+IV}{Mn}O2_{(s)} + 2 H2O_{(l)} + 2 e^-} \\
+    \text{Red.:}\quad & \ce{\overset{-I}{H2O2}_{(aq)} + 2 e^- -> 2 \overset{-II}{O}H^-_{(aq)}}                                \\
+    \hline
+    \text{Ges.:}\quad & \ce{Mn^{2+}_{(aq)} + H2O2_{(aq)} + 2 OH^-_{(aq)} -> MnO2_{(s)} + 2 H2O_{(l)}}
+\end{align}
+
+\paragraph{d) Reduktive Wirkung von $\ce{H2O2}$ im Sauren}
+Gegenüber dem starken Oxidationsmittel $\ce{KMnO4}$ im sauren Milieu wirkt $\ce{H2O2}$ als Reduktionsmittel; $\ce{MnO4^-}$ (+VII) wird zu $\ce{Mn^{2+}}$ (+II) reduziert:
+\begin{align}
+    \text{Ox.:}\quad  & \ce{5 \overset{-I}{H2O2}_{(aq)} -> 5 \overset{0}{O2}_{(g)} ^ + 10 H^+_{(aq)} + 10 e^-}                         \\
+    \text{Red.:}\quad & \ce{2 \overset{+VII}{Mn}O4^-_{(aq)} + 16 H^+_{(aq)} + 10 e^- -> 2 \overset{+II}{Mn^{2+}}_{(aq)} + 8 H2O_{(l)}} \\
+    \hline
+    \text{Ges.:}\quad & \ce{2 MnO4^-_{(aq)} + 5 H2O2_{(aq)} + 6 H^+_{(aq)} -> 2 Mn^{2+}_{(aq)} + 5 O2_{(g)} ^ + 8 H2O_{(l)}}
+\end{align}
+Die Entfärbung der violetten Permanganatlösung zeigt den vollständigen Verbrauch von $\ce{MnO4^-}$ an. Die Versuche c) und d) verdeutlichen die Redoxamphoterie von $\ce{H2O2}$: Je nach Reaktionspartner und Milieu kann es als Oxidations- oder Reduktionsmittel fungieren.\cite{skript}
+
+\subsubsection{Fehlerbetrachtung}
+Da $\ce{MnO2}$ als Katalysator wirkt, ist der Verbrauch nicht stöchiometrisch -- eine zu große zugegebene Menge ändert zwar die Reaktionsgeschwindigkeit, nicht aber das Ergebnis. Die stark exotherme Disproportionierung von konzentriertem $\ce{H2O2}$ kann bei zu großen Mengen und hoher Katalysatorkonzentration unkontrolliert verlaufen.
+
+\newpage
+% ============================================================
+\subsection{Versuch 4: Iodometrische Redox-Titration einer $\ce{Cu^{2+}}$-Lösung}
+% ============================================================
+
 \subsubsection{Aufgabenstellung}
 Die Stoffmenge einer $\ce{Cu^{2+}}$-haltigen Lösung soll mittels iodometrischer Redoxtitration bestimmt.
 
@@ -76,9 +208,21 @@ Die Stoffmenge einer $\ce{Cu^{2+}}$-haltigen Lösung soll mittels iodometrischer
 \end{enumerate}
 
 \subsubsection{Beobachtung}
-
+Nach Zugabe von Kaliumiodid bildete sich ein cremefarbener Niederschlag ($\ce{CuI}$) und die Lösung färbte sich gelbbraun durch das freigesetzte $\ce{I2}$. Nach Stärkezugabe wechselte die Farbe nach intensiv Blau. Beim Titrieren mit Thiosulfat wurde die Blaufärbung zunehmend heller und verschwand am Äquivalenzpunkt vollständig (Lösung farblos).
 
 \subsubsection{Auswertung}
+
+Die Reaktion von $\ce{Cu^{2+}}$ mit Iodid erfolgt gemäß Gl.\,\eqref{eq:cu_iod}: Zwei $\ce{Cu^{2+}}$-Ionen oxidieren vier $\ce{I^-}$ unter Bildung von $\ce{CuI}$-Fällungs und $\ce{I2}$. Das Stöchiometrieverhältnis beträgt $n(\ce{Cu^{2+}}) : n(\ce{I2}) = 2 : 1$.
+
+Die anschließende Titration des $\ce{I2}$ mit $\ce{Na2S2O3}$ verläuft nach Gl.\,\eqref{eq:thiosulfat}: Thiosulfat ($\ce{S2O3^{2-}}$, Schwefel: $+$II) wird zu Tetrathionat ($\ce{S4O6^{2-}}$, Schwefel: $+$II{,}5) oxidiert; $\ce{I2}$ wird zu $\ce{I^-}$ reduziert. Das Verhältnis beträgt $n(\ce{I2}) : n(\ce{Na2S2O3}) = 1 : 2$.
+
+Insgesamt gilt daher $n(\ce{Cu^{2+}}) = n(\ce{Na2S2O3})$. Die Stoffmenge in der Gesamtlösung ergibt sich nach Gl.\,\eqref{eq:n_cu}:
+\begin{equation}
+    n(\ce{Cu^{2+}})_{\text{ges}} = \frac{V_{\text{ges}}}{V_{\text{Probe}}} \cdot c(\ce{Na2S2O3}) \cdot V(\ce{Na2S2O3})
+\end{equation}
+
+Das Normalpotential des Paares $\ce{Cu^{2+}/Cu^+}$ beträgt $+0{,}16\,\si{V}$, jenes von $\ce{I2/I^-}$ liegt bei $+0{,}54\,\si{V}$.\cite{holleman_wiberg} Aus Gl.\,\eqref{eq:emk} folgt $\Delta E = 0{,}16 - 0{,}54 = -0{,}38\,\si{V} < 0$: Die Reaktion $\ce{Cu^{2+} + I^-}$ sollte gemäß den Normalpotentialen \emph{nicht} spontan ablaufen. Sie läuft dennoch ab, weil das schwerlösliche $\ce{CuI}$ ($K_L \approx 10^{-12}$) ausfällt und so das Gleichgewicht durch das Prinzip von Le~Chatelier auf die Produktseite verschoben wird.\cite{holleman_wiberg}
+
 
 Die iodometrische Bestimmung der Kupfer(II)-Ionen beruht auf der Reaktion von \ce{Cu^{2+}} mit Iodid-Ionen. Dabei wird Kupfer(II) zu Kupfer(I) reduziert und Iodid zu elementarem Iod oxidiert:
 
@@ -119,9 +263,9 @@ Die Stoffmenge an Thiosulfat ergibt sich aus dem Verbrauch der Maßlösung:
 
 \begin{equation}
     \begin{aligned}
-        n(\ce{S2O3^{2-}}) &= c \cdot V \\
-        &= \SI{0.1}{\mole\per\liter} \cdot \SI{0.0082}{\liter} \\
-        &= \SI{8.2e-4}{\mole}
+        n(\ce{S2O3^{2-}}) & = c \cdot V                                           \\
+                          & = \SI{0.1}{\mole\per\liter} \cdot \SI{0.0082}{\liter} \\
+                          & = \SI{8.2e-4}{\mole}
     \end{aligned}
 \end{equation}
 
@@ -159,7 +303,7 @@ Die Standardpotentiale der beteiligten Redoxpaare lauten:
 Thermodynamisch wäre die Reaktion zwischen \ce{Cu^{2+}} und \ce{I^-} nach den Standardpotentialen nicht begünstigt. Dennoch läuft sie vollständig ab, da das schwerlösliche Kupfer(I)-iodid (\ce{CuI}) ausfällt und \ce{Cu^{+}} dadurch kontinuierlich aus dem Gleichgewicht entfernt wird. Zusätzlich wird das entstehende \ce{I2} durch die Titration fortlaufend umgesetzt. Beide Effekte verschieben das Gleichgewicht nach dem Prinzip von Le Chatelier auf die Produktseite.
 
 \subsubsection{Fehlerbetrachtung}
-Die experimentell bestimmte Stoffmenge stimmt sehr gut mit dem Literaturwert überein. Dennoch können geringe Abweichungen auftreten.
+Eine wesentliche Fehlerquelle ist die Luftoxidation von $\ce{I^-}$ zu $\ce{I2}$, die durch Licht katalysiert wird und zu einem systematisch zu hohen Verbrauch an Thiosulfat führen kann. Die Ansäuerung mit Essigsäure ist notwendig, um die Ausfällung von Kupferhydroxid zu verhindern, welche die Reaktion mit Iodid unterdrücken würde. Beim Ablesen des Bürettenvolumens können Parallaxenfehler auftreten, die durch exaktes Ablesen auf Augenhöhe minimiert werden sollten.
 
 Eine wesentliche Fehlerquelle ist die Bestimmung des Endpunktes, da der Farbumschlag nicht abrupt erfolgt und durch die starke Trübung zusätzlich erschwert wird. Dadurch kann es zu einer leichten Überschreitung des Äquivalenzpunktes kommen.
 
@@ -167,3 +311,6 @@ Weitere Fehler können durch Ableseungenauigkeiten an der Bürette sowie durch K
 
 
 \section{Zusammenfassung}
+% ============================================================
+
+In dieser Versuchsreihe wurden grundlegende Konzepte der Elektrochemie und Redoxchemie experimentell untersucht. Im ersten Versuch wurde die elektrochemische Spannungsreihe für Mg, Zn, Ni und Cu bestätigt: Die beobachteten Reaktivitäten stimmten qualitativ mit den tabellierten Normalpotentialen überein. Versuch 2 zeigte eindrücklich, dass das Redoxpotential protonenabhängiger Halbzellen empfindlich vom pH-Wert abhängt: $\ce{Fe^{2+}}$ konnte im Basischen das Nitrat bis zum Ammoniak reduzieren, was im Sauren nicht möglich war. Versuch 3 verdeutlichte die Begriffe Syn- und Disproportionierung anhand von Manganreaktionen sowie die Redoxamphoterie von Wasserstoffperoxid. Im abschließenden Versuch 4 wurde die Stoffmenge einer unbekannten $\ce{Cu^{2+}}$-Lösung erfolgreich iodometrisch bestimmt.
