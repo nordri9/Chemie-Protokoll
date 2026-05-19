@@ -7,50 +7,48 @@ Redoxreaktionen sind Reaktionen, bei denen Elektronen zwischen Reaktionspartnern
 Eine Oxidation ist durch die Abgabe von Elektronen gekennzeichnet, wodurch sich die Oxidationszahl eines Atoms oder Ions erhöht. Die Reduktion beschreibt entsprechend die Aufnahme von Elektronen und damit die Abnahme der Oxidationszahl.
 
 \begin{equation}
-    \text{Oxidation: } \ce{A -> A^{z+} + z e^-}
-    \label{eq:oxidation}
+    \begin{aligned}
+        \text{Oxidation: } \ce{A              & -> A^{z+} + z e^-} \\
+        \text{Reduktion: } \ce{B^{z+} + z e^- & -> B}
+        \label{eq:Redox}
+    \end{aligned}
 \end{equation}
 
-\begin{equation}
-    \text{Reduktion: } \ce{B^{z+} + z e^- -> B}
-    \label{eq:reduktion}
-\end{equation}
 
-Oxidation und Reduktion treten nie isoliert auf, sondern sind stets miteinander gekoppelt. Ein Stoff, der Elektronen abgibt, wirkt als Reduktionsmittel. Ein Stoff, der Elektronen aufnimmt, wirkt entsprechend als Oxidationsmittel. Zusammengehörige oxidierte und reduzierte Formen bilden ein Redoxpaar.
+
+Oxidation und Reduktion treten nie isoliert auf, sondern sind stets miteinander gekoppelt. Ein Stoff, der Elektronen abgibt, wirkt als Reduktionsmittel. Ein Stoff, der Elektronen aufnimmt, wirkt entsprechend als Oxidationsmittel. Zusammengehörige oxidierte und reduzierte Formen bilden ein Redoxpaar. \cite{mortimer_muller}
 
 \subsection{Elektrochemische Spannungsreihe und Standardpotentiale}
 
 Die Triebkraft einer Redoxreaktion wird durch das Standardelektrodenpotential $E^0$ beschrieben. Dieses ist nur relativ messbar und wird auf die Standard-Wasserstoffelektrode bezogen.
+Je positiver das Potential ist, desto stärker wirkt die oxidierte Form als Oxidationsmittel. Je negativer es ist, desto stärker ist die reduzierte Form als Reduktionsmittel. \cite{skript}
 
-Je positiver das Potential ist, desto stärker wirkt die oxidierte Form als Oxidationsmittel. Je negativer es ist, desto stärker ist die reduzierte Form als Reduktionsmittel.
-
-Die Zellspannung ergibt sich aus der Differenz der Elektrodenpotentiale:
-
-\begin{equation}
-    \Delta E^0 = E^0_{\text{Kathode}} - E^0_{\text{Anode}}
-    \label{eq:zellspannung}
-\end{equation}
-
-An der Kathode findet die Reduktion statt, an der Anode die Oxidation.
+%Die Zellspannung ergibt sich aus der Differenz der Elektrodenpotentiale:
+%
+%\begin{equation}
+%    \Delta E^0 = E^0_{\text{Kathode}} - E^0_{\text{Anode}}
+%    \label{eq:zellspannung}
+%\end{equation}
+%
+%An der Kathode findet die Reduktion statt, an der Anode die Oxidation.
 
 \subsection{Nernst-Gleichung}
 
-Da reale Bedingungen oft von Standardbedingungen abweichen, hängt das Elektrodenpotential von Temperatur und Aktivitäten der beteiligten Teilchen ab:
+Da reale Bedingungen oft von Standardbedingungen abweichen, hängt das Elektrodenpotential von Temperatur und Konzentration der beteiligten Teilchen ab \cite{skript}:
 
 \begin{equation}
     E = E^0 + \frac{R \cdot T}{z \cdot F}\ln \left(\frac{c_{\text{Ox}}}{c_{\text{Red}}}\right)
     \label{eq:nernst}
 \end{equation}
 
-Hierbei ist $R$ die allgemeine Gaskonstante, $T$ die absolute Temperatur in Kelvin, $F$ die Faraday-Konstante, $z$ die Anzahl der übertragenen Elektronen sowie $c_{\text{Ox}}$ und $c_{\text{Red}}$ die Konzentration der oxidierten bzw. reduzierten Form.
+Hierbei ist $R=\SI{8.314}{\frac{\joule}{\mole \kelvin}}$ die allgemeine Gaskonstante, $T$ die absolute Temperatur in Kelvin, $F=\SI{9.649e4}{\frac{\coulomb}{\mole}}$ die Faraday-Konstante, $z$ die Anzahl der übertragenen Elektronen sowie $c_{\text{Ox}}$ und $c_{\text{Red}}$ die Konzentration der oxidierten bzw. reduzierten Form. \cite{nist_constants}
 
 \subsection{Aufstellen von Redoxreaktionen}
-
 Redoxreaktionen werden systematisch über Teilgleichungen ausgeglichen. Grundlage ist die Bestimmung der Oxidationszahlen aller Elemente in Edukten und Produkten, wodurch sich Oxidation und Reduktion eindeutig identifizieren lassen.
 
-Anschließend werden die beiden Teilreaktionen getrennt formuliert. Für Oxidation und Reduktion wird jeweils eine Halbreaktion aufgestellt, in der die Anzahl der übertragenen Elektronen durch geeignete Koeffizienten ausgeglichen wird. Dadurch wird sichergestellt, dass die Elektronenbilanz innerhalb der Teilgleichungen stimmt. Der Ladungsausgleich erfolgt anschließend abhängig vom Reaktionsmedium: Im sauren Milieu werden \ce{H+}-Ionen verwendet, im basischen Milieu \ce{OH^-}-Ionen, während im neutralen Bereich häufig Wasser bzw. die Autoprotolyse des Wassers als Ausgleichsmechanismus dient.
+Anschließend werden die Halbreaktionen getrennt formuliert und die übertragenen Elektronen durch Koeffizienten ausgeglichen, sodass die Elektronenbilanz stimmt. Der Ladungsausgleich erfolgt milieuabhängig: Im sauren Milieu werden \ce{H+}-Ionen verwendet, im basischen \ce{OH^-}-Ionen und im neutralen Bereich Wasser.
 
-Abschließend werden Sauerstoff- und Wasserstoffatome durch \ce{H2O} ausgeglichen. Danach werden die beiden Teilgleichungen addiert, sodass sich die Elektronen herauskürzen lassen und die Gesamtgleichung der Redoxreaktion entsteht.
+Abschließend gleicht man Sauerstoff- und Wasserstoffatome durch \ce{H2O} aus. Danach werden die Teilgleichungen addiert, sodass sich die Elektronen herauskürzen lassen und die Gesamtgleichung der Redoxreaktion entsteht.\cite{skript}
 
 \subsection{Spezielle Redoxreaktionen}
 
@@ -61,14 +59,10 @@ Bei der Disproportionierung wird ein Element gleichzeitig oxidiert und reduziert
 Ein klassisches Beispiel ist die Zersetzung von Wasserstoffperoxid:
 
 \begin{equation}
-    2\,\ce{H2}\overset{\scriptstyle -I}{\ce{O2}}
-    \rightarrow
-    2\,\ce{H2}\!\overset{\scriptstyle -II}{\ce{O}}
-    +
-    \overset{\scriptstyle 0}{\ce{O2}}
+    \ce{2H2 \!\overset{\mathrm{-I}}{O_2} -> 2H2\!\overset{\mathrm{-II}}{O} + \overset{0}{O_2}}
 \end{equation}
 
-Der Sauerstoff liegt im Edukt \ce{H2O2} in der Oxidationsstufe $-I$ vor. Ein Teil des Sauerstoffs wird reduziert; in \ce{H2O} sinkt die Oxidationszahl auf $-II$. Gleichzeitig wird der andere Teil oxidiert und liegt im molekularen Sauerstoff \ce{O2} in der Oxidationsstufe $0$ vor.
+Der Sauerstoff liegt im Edukt \ce{H2O2} in der Oxidationsstufe $\mathrm{-I}$ vor. Ein Teil des Sauerstoffs wird reduziert; in \ce{H2O} sinkt die Oxidationszahl auf $\mathrm{-II}$. Gleichzeitig wird der andere Teil oxidiert und liegt im molekularen Sauerstoff \ce{O2} in der Oxidationsstufe $0$ vor.
 
 \subsubsection{Synproportionierung}
 
@@ -77,17 +71,9 @@ Bei der Synproportionierung reagieren zwei Spezies desselben Elements in untersc
 Für das Mangan-System ergibt sich im basischen Milieu folgende Reaktion:
 
 \begin{equation}
-    2\,\overset{\scriptstyle +VII}{\ce{Mn}}\!\ce{O4^-}
-    +
-    3\,\overset{\scriptstyle +II}{\ce{Mn^2+}}
-    +
-    4\,\ce{OH^-}
-    \rightarrow
-    5\,\overset{\scriptstyle +IV}{\ce{Mn}}\ce{O2}
-    +
-    2\,\ce{H2O}
+    2\,\overset{ \mathrm{+VII}}{\ce{Mn}}\!\ce{O4^-} + 3\,\overset{\mathrm{+II}}{\ce{Mn^2+}} + 4\,\ce{OH^-} \rightarrow 5\,\overset{ \mathrm{+IV}}{\ce{Mn}}\ce{O2} + 2\,\ce{H2O}
 \end{equation}
 
-Im Permanganat-Ion \ce{MnO4^-} besitzt Mangan die Oxidationsstufe $+VII$, während es im Mangan(II)-Ion \ce{Mn^2+} in der Oxidationsstufe $+II$ vorliegt. Im Reaktionsprodukt \ce{MnO2} liegt Mangan schließlich in der Oxidationsstufe $+IV$ vor. Dabei wird ein Teil des Mangans reduziert und ein anderer Teil oxidiert, sodass insgesamt eine mittlere Oxidationsstufe entsteht.
+Im Permanganat-Ion \ce{MnO4^-} besitzt Mangan die Oxidationsstufe $\mathrm{+VII}$, während es im Mangan(II)-Ion \ce{Mn^2+} in der Oxidationsstufe $\mathrm{+II}$ vorliegt. Im Reaktionsprodukt \ce{MnO2} liegt Mangan schließlich in der Oxidationsstufe $\mathrm{+IV}$ vor. Dabei wird ein Teil des Mangans reduziert und ein anderer Teil oxidiert, sodass insgesamt eine mittlere Oxidationsstufe entsteht.
 
 \newpage
