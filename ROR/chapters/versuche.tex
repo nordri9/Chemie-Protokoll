@@ -63,10 +63,13 @@ Das zunächst farblose \ce{NO} reagiert an der Luft weiter zu rotbraunem \ce{NO2
 
 Mit konzentrierter Salpetersäure erfolgt die Reduktion direkt bis \ce{NO2} (+IV):
 \begin{align}
-    \text{Ox.:}\quad  & \ce{\overset{0}{Zn}_{(s)} -> \overset{+II}{Zn^{2+}}_{(aq)} + 2 e^-}                                    \\
-    \text{Red.:}\quad & \ce{2 \overset{+V}{N}O3^-_{(aq)} + 4 H^+_{(aq)} + 2 e^- -> 2 \overset{+IV}{N}O2_{(g)} ^ + 2 H2O_{(l)}} \\
+    \text{Ox.:}\quad  & \ce{\overset{\mathrm{0}}{\ce{Zn}}_{(s)}} 
+    &  & \ce{-> \overset{\mathrm{+II}}{\ce{Zn}}^{2+}_{(aq)} + 2 e^-} \\
+    \text{Red.:}\quad & \ce{2 \overset{\mathrm{+V}}{\ce{N}}O3^-_{(aq)} + 4 H^+_{(aq)} + 2 e^-} 
+    &  & \ce{-> 2 \overset{\mathrm{+IV}}{\ce{N}}O2_{(g)} ^ + 2 H2O_{(l)}} \\
     \hline
-    \text{Ges.:}\quad & \ce{Zn_{(s)} + 4 H^+_{(aq)} + 2 NO3^-_{(aq)} -> Zn^{2+}_{(aq)} + 2 NO2_{(g)} ^ + 2 H2O_{(l)}}
+    \text{Ges.:}\quad & \ce{Zn_{(s)} + 4 H^+_{(aq)} + 2 NO3^-_{(aq)}} 
+    &  & \ce{-> Zn^{2+}_{(aq)} + 2 NO2_{(g)} ^ + 2 H2O_{(l)}}
 \end{align}
 Kupfer mit verdünnter Salpetersäure verläuft analog zur Zinkreaktion mit Ausbildung von \ce{NO}, während mit konzentrierter Salpetersäure ebenfalls direkt \ce{NO2} entsteht. Dass Kupfer, trotz positivem Normalpotential, mit Salpetersäure reagiert, liegt daran, dass das Normalpotential des $\ce{NO3^-/NO}$-Paares ($+0{,}96\,\si{V}$) deutlich über dem von Kupfer liegt (vgl.\ Gl.\,\eqref{eq:zellspannung}).\cite{holleman_wiberg}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% review
@@ -99,21 +102,29 @@ Es soll gezeigt werden, dass das Redoxpotential des Systems \ce{Fe^{2+}/Fe^{3+}}
 \paragraph{a) Saures Milieu -- Braunring-Probe}
 Im sauren Milieu wird \ce{Fe^{2+}} zu \ce{Fe^{3+}} oxidiert und das Nitrat zu Stickstoffmonoxid reduziert:
 \begin{align}
-    \text{Ox.:}\quad  & \ce{3 Fe^{2+}_{(aq)}}                               &  & \longrightarrow \ce{3 Fe^{3+}_{(aq)} + 3 e^-}                  \\
-    \text{Red.:}\quad & \ce{NO3^-_{(aq)} + 4 H^+_{(aq)} + 3 e^-}            &  & \longrightarrow \ce{\overset{+II}{N}O_{(g)} + 2 H2O_{(l)}}     \\
+    \text{Ox.:}\quad  & \ce{3 \overset{\mathrm{+II}}{\ce{Fe}}^{2+}_{(aq)}} 
+    &  & \ce{-> 3 \overset{\mathrm{+III}}{\ce{Fe}}^{3+}_{(aq)} + 3 e^-} \\
+    \text{Red.:}\quad & \ce{\overset{\mathrm{+V}}{\ce{N}}O3^-_{(aq)} + 4 H^+_{(aq)} + 3 e^-} 
+    &  & \ce{-> \overset{\mathrm{+II}}{\ce{N}}O_{(g)} ^ + 2 H2O_{(l)}} \\
     \hline
-    \text{Ges.:}\quad & \ce{3 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 4 H^+_{(aq)}} &  & \longrightarrow \ce{3 Fe^{3+}_{(aq)} + NO_{(g)} + 2 H2O_{(l)}}
+    \text{Ges.:}\quad & \ce{3 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 4 H^+_{(aq)}} 
+    &  & \ce{-> 3 Fe^{3+}_{(aq)} + NO_{(g)} ^ + 2 H2O_{(l)}}
 \end{align}
+
 Das erzeugte \ce{NO} bildet mit überschüssigem $\ce{Fe^{2+}}$ einen Pentaaquanitrosyleisen(II)-Komplex $\ce{[Fe(H2O)5(NO)]^{2+}}$, der die charakteristische dunkelbraune Ringfärbung verursacht.\cite{Jander_Blasius_Strähle_Schweda_Rossi_1995}
 
 \paragraph{b) Basisches Milieu -- Ammoniaknachweis}
-Im basischen Milieu ist das Normalpotential des Redoxpaars $\ce{Fe^{3+}/Fe^{2+}}$ deutlich negativer als in saurer Lösung mit $E^{0} \SI{-1.4}{\volt}$, da $\ce{Fe^{3+}}$ als schwerlösliches $\ce{Fe(OH)3}$ ausfällt und damit seine effektive Konzentration stark sinkt \eqref{eq:nernst}.\cite{skript}
+Im basischen Milieu ist das Normalpotential des Redoxpaars $\ce{Fe^{3+}/Fe^{2+}}$ deutlich negativer als in saurer Lösung mit $E^{0} = \SI{-1.4}{\volt}$, da $\ce{Fe^{3+}}$ als schwerlösliches $\ce{Fe(OH)3}$ ausfällt und damit seine effektive Konzentration stark sinkt \eqref{eq:nernst}.\cite{skript}
 Dadurch ist \ce{Fe^{2+}} im Basischen ein erheblich stärkeres Reduktionsmittel und vermag Nitrat vollständig bis zu Ammoniak ($-$III) zu reduzieren:
+
 \begin{align}
-    \text{Ox.:}\quad  & \ce{8 \overset{\mathrm{+II}}{\ce{Fe}^{2+}}_{(aq)} + 20 OH^-_{(aq)} &  & -> 8 \overset{\mathrm{+III}}{Fe(OH)_3}_{(s)} + 8 e^- + 4 H2O_{(l)}} \\
-    \text{Red.:}\quad & \ce{\overset{\mathrm{+V}}{N}O3^-_{(aq)} + 6 H2O_{(l)} + 8 e^-      &  & -> \overset{\mathrm{-III}}{N}H3_{(g)} ^ + 9 OH^-_{(aq)}}            \\
+    \text{Ox.:}\quad  & \ce{8 \overset{\mathrm{+II}}{\ce{Fe}}^{2+}_{(aq)} + 20 OH^-_{(aq)}} 
+    &  & \ce{-> 8 \overset{\mathrm{+III}}{\ce{Fe}}(OH)3_{(s)} + 8 e^- + 4 H2O_{(l)}} \\
+    \text{Red.:}\quad & \ce{\overset{\mathrm{+V}}{\ce{N}}O3^-_{(aq)} + 6 H2O_{(l)} + 8 e^-} 
+    &  & \ce{-> \overset{\mathrm{-III}}{\ce{N}}H3_{(g)} ^ + 9 OH^-_{(aq)}} \\
     \hline
-    \text{Ges.:}\quad & \ce{8 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 11 OH^-_{(aq)}               &  & -> 8 Fe(OH)3_{(s)} + NH3_{(g)} ^}
+    \text{Ges.:}\quad & \ce{8 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 11 OH^-_{(aq)}} 
+    &  & \ce{-> 8 Fe(OH)3_{(s)} + NH3_{(g)} ^}
 \end{align}
 Das flüchtige Ammoniak hydrolysiert am befeuchteten Indikatorpapier und erhöht dort den pH-Wert, was die Grünfärbung erklärt.\cite{skript}
 
