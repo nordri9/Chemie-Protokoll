@@ -16,17 +16,10 @@ Die untersuchten Redoxpaare sollen anhand ihrer Reaktion mit verdünnter und kon
     \item Bei Zugabe der Metalle zur verdünnten Salzsäure zeigten Magnesium und Zink eine deutliche Gasentwicklung und Bläschenbildung. Nickel reagierte deutlich schwächer mit nur geringer Gasbildung. Kupfer zeigte keine sichtbare Reaktion.
 
     \item Zink reagierte mit konzentrierter Salzsäure unter schwacher Gasentwicklung. Mit verdünnter Salpetersäure war eine Reaktion mit bräunlicher Gasbildung, starker Bläschenbildung und teilweiser Auflösung des Metalls zu beobachten. In konzentrierter Salpetersäure erfolgte eine starke Reaktion mit dichter Gasentwicklung, der selben Farbe und nahezu vollständigem auflösen des Zink Korns.
-%redo!!!
-    Kupfer reagierte nur mit Salpetersäure (verdünnt und konzentriert) unter Bildung von Gasen, während in Salzsäure keine Reaktion erkennbar war.
+          Kupfer reagierte nur mit konzentrierter Salpetersäure unter starker Bildung von bräunlichem Gas. Bei verdünnter Salpetersäure kam es zu schwächerer Gasbildung des gleichen Farbtons, sowie zur Bildung eines türkiesen Schaums.   Wobei bei Salzsäure keine Reaktion erkennbar war.
 \end{enumerate}
 
 \subsubsection{Auswertung}
-Die Beobachtungen lassen sich durch die Stellung der Metalle in der elektrochemischen Spannungsreihe erklären. Metalle, die unedler sind (z.B. Magnesium und Zink), geben leichter Elektronen ab und reagieren daher bereits mit verdünnter Salzsäure unter Bildung von Wasserstoffgas (\ce{H2}).
-
-Nickel reagiert deutlich schwächer, da es edler ist als Magnesium und Zink. Kupfer zeigt keine Reaktion mit Salzsäure, da es unter diesen Bedingungen nicht oxidiert wird und somit kein Wasserstoff aus der Säure verdrängt werden kann.
-
-Die Reaktionen mit Salpetersäure lassen sich zusätzlich durch deren oxidierende Wirkung erklären. Selbst edlere Metalle wie Kupfer können dadurch oxidiert und in Lösung gebracht werden. Die unterschiedliche Reaktivität bestätigt die Reihenfolge:
-
 \paragraph{a) Reaktion der Metalle mit Salzsäure}
 Magnesium, Zink und Nickel oxidieren in Salzsäure unter Wasserstoffentwicklung (\ce{M} steht für das jeweilige Metall):
 \begin{align}
@@ -35,8 +28,8 @@ Magnesium, Zink und Nickel oxidieren in Salzsäure unter Wasserstoffentwicklung 
     \hline
     \text{Ges.:}\quad & \ce{\overset{0}{M}_{(s)} + 2 H^+_{(aq)} -> M^{2+}_{(aq)} + H2_{(g)} ^} \label{eq:v1_ges}
 \end{align}
-Kupfer reagiert nicht, da sein Standardpotential $E^0(\ce{Cu^{2+}/Cu}) = +0{,}34\,\si{V}$ größer als $E^0(\ce{H^+/H2}) = 0\,\si{V}$ ist; es kann Protonen daher nicht reduzieren (vgl.\ Gl.\,\eqref{eq:emk}).\cite{holleman_wiberg}
-Die Reaktionsgeschwindigkeit nimmt in der Reihe Mg $>$ Zn $>$ Ni ab, was der Abfolge in der Spannungsreihe entspricht: Je negativer das Standardpotential, desto stärker das Reduktionsmittel.
+Kupfer reagiert nicht, da sein Standardpotential $E^0(\ce{Cu^{2+}/Cu}) = +0{,}34\,\si{V}$ größer als $E^0(\ce{H^+/H2}) = 0\,\si{V}$ ist; es kann Protonen daher nicht reduzieren (vgl.\ Gl.\,\eqref{eq:zellspannung}).\cite{holleman_wiberg}
+Die Reaktionsgeschwindigkeit nimmt in der Reihe \ce{Mg} $>$ \ce{Zn} $>$ \ce{Ni} ab, was der Abfolge in der Spannungsreihe entspricht: Je negativer das Standardpotential, desto stärker das Reduktionsmittel.
 Die Literaturwerte der Standardpotentiale sind in Tab.\,\ref{tab:stdpot} zusammengefasst.\cite{holleman_wiberg}
 
 \begin{table}[H]
@@ -56,14 +49,18 @@ Die Literaturwerte der Standardpotentiale sind in Tab.\,\ref{tab:stdpot} zusamme
 \end{table}
 
 \paragraph{b) Reaktion von Zink und Kupfer mit Salpetersäure}
-Zink mit verdünnter Salpetersäure: Das Nitrat-Ion wirkt als Oxidationsmittel; Stickstoff wird von $+$V auf $+$II reduziert (\ce{NO}):
+Zink mit verdünnter Salpetersäure: Das Nitrat-Ion wirkt als Oxidationsmittel und Stickstoff wird von $+$V auf $+$II reduziert:
 \begin{align}
     \text{Ox.:}\quad  & \ce{3 \overset{0}{Zn}_{(s)} -> 3 \overset{+II}{Zn^{2+}}_{(aq)} + 6 e^-}                               \\
     \text{Red.:}\quad & \ce{2 \overset{+V}{N}O3^-_{(aq)} + 8 H^+_{(aq)} + 6 e^- -> 2 \overset{+II}{N}O_{(g)} ^ + 4 H2O_{(l)}} \\
     \hline
     \text{Ges.:}\quad & \ce{3 Zn_{(s)} + 8 H^+_{(aq)} + 2 NO3^-_{(aq)} -> 3 Zn^{2+}_{(aq)} + 2 NO_{(g)} ^ + 4 H2O_{(l)}}
 \end{align}
-Das zunächst farblose \ce{NO} reagiert an der Luft weiter zu rotbraunem \ce{NO2}: $\ce{2 NO_{(g)} + O2_{(g)} -> 2 NO2_{(g)}}$.\\
+Das zunächst farblose \ce{NO} reagiert an der Luft weiter zu rotbraunem \ce{NO2}:
+\begin{align}
+    \ce{2 NO_{(g)} + O2_{(g)} -> 2 NO2_{(g)}}
+\end{align}
+
 Mit konzentrierter Salpetersäure erfolgt die Reduktion direkt bis \ce{NO2} (+IV):
 \begin{align}
     \text{Ox.:}\quad  & \ce{\overset{0}{Zn}_{(s)} -> \overset{+II}{Zn^{2+}}_{(aq)} + 2 e^-}                                    \\
@@ -71,13 +68,13 @@ Mit konzentrierter Salpetersäure erfolgt die Reduktion direkt bis \ce{NO2} (+IV
     \hline
     \text{Ges.:}\quad & \ce{Zn_{(s)} + 4 H^+_{(aq)} + 2 NO3^-_{(aq)} -> Zn^{2+}_{(aq)} + 2 NO2_{(g)} ^ + 2 H2O_{(l)}}
 \end{align}
-Kupfer mit verdünnter Salpetersäure verläuft analog zur Zinkreaktion mit Ausbildung von \ce{NO}, während mit konzentrierter Salpetersäure ebenfalls direkt \ce{NO2} entsteht. Dass Kupfer -- trotz positivem $E^0$ -- mit Salpetersäure reagiert, liegt daran, dass das Normalpotential des $\ce{NO3^-/NO}$-Paares ($+0{,}96\,\si{V}$) deutlich über dem von Kupfer liegt (vgl.\ Gl.\,\eqref{eq:emk}).\cite{holleman_wiberg}
+Kupfer mit verdünnter Salpetersäure verläuft analog zur Zinkreaktion mit Ausbildung von \ce{NO}, während mit konzentrierter Salpetersäure ebenfalls direkt \ce{NO2} entsteht. Dass Kupfer, trotz positivem Normalpotential, mit Salpetersäure reagiert, liegt daran, dass das Normalpotential des $\ce{NO3^-/NO}$-Paares ($+0{,}96\,\si{V}$) deutlich über dem von Kupfer liegt (vgl.\ Gl.\,\eqref{eq:zellspannung}).\cite{holleman_wiberg}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% review
 
 
 
 \subsubsection{Fehlerbetrachtung}
-Ein möglicher systematischer Fehler ist die Passivierung von Nickel durch eine Oxidschicht, welche die beobachtete Reaktionsgeschwindigkeit verringert und so zu einer fehlerhaften Einschätzung des Normalpotentials führen könnte. Zudem kann eine unvollständige Reinigung der Metalloberflächen (Oxide, Fette) die Reaktivität beeinflussen.
-Mögliche Fehlerquellen ergeben sich durch unterschiedlich große Metalloberflächen, wodurch die Reaktionsgeschwindigkeit beeinflusst werden kann. Zudem können Verunreinigungen der Metalle oder ungenaue Konzentrationen der Säuren zu Abweichungen geführt haben.
+Ein möglicher systematischer Fehler ist die Passivierung von Nickel durch eine Oxidschicht, welche die beobachtete Reaktionsgeschwindigkeit verringert und so zu einer fehlerhaften Einschätzung des Normalpotentials führen könnte. Zudem können Verunreinigungen der Metalloberflächen die Reaktivität beeinflussen. Eine weitere mögliche Fehlerquelle ergibt sich durch unterschiedlich große Metalloberflächen, wodurch die Reaktionsgeschwindigkeit beeinflusst werden kann.
 
 \subsection{Versuch 2: Abhängigkeit des Redoxpotentials vom pH-Wert}
 
@@ -88,13 +85,13 @@ Es soll gezeigt werden, dass das Redoxpotential des Systems \ce{Fe^{2+}/Fe^{3+}}
 \subsubsection{Durchführung}
 \begin{enumerate}[label=\textbf{\alph*)}]
     \item Eine \ce{KNO3}-Lösung wurde etwa \SI{3}{cm} hoch in ein Reagenzglas gegeben und mit wenigen Tropfen Schwefelsäure angesäuert. Anschließend wurde ca. \SI{1}{cm} einer \ce{FeSO4}-Lösung zugegeben und die Lösung vorsichtig gemischt. Danach wurde konzentrierte Schwefelsäure vorsichtig entlang der Innenwand unterschichtet.
-    \item In einem Becherglas wurde \ce{FeSO4} in demineralisiertem Wasser gelöst. Anschließend wurden eine Spatelspitze \ce{KNO3} sowie 5–6 \ce{NaOH}-Plätzchen hinzugegeben und die Mischung gerührt. Das Becherglas wurde mit einem Uhrglas bedeckt, an dessen Unterseite ein angefeuchtetes Indikatorpapier befestigt wurde. Bei Bedarf wurde die Lösung vorsichtig erhitzt, ohne sie zum Sieden zu bringen.
+    \item In einem Becherglas wurde \ce{FeSO4} in demineralisiertem Wasser gelöst. Anschließend wurden eine Spatelspitze \ce{KNO3} sowie 5 \ce{NaOH}-Plätzchen hinzugegeben und die Mischung gerührt. Das Becherglas wurde mit einem Uhrglas bedeckt, an dessen Unterseite ein angefeuchtetes Indikatorpapier befestigt wurde.
 \end{enumerate}
 
 \subsubsection{Beobachtung}
 \begin{enumerate}[label=\textbf{\alph*)}]
-    \item An der Phasengrenze zwischen der wässrigen Schicht und der konzentrierten Schwefelsäure bildete sich ein dunkelbrauner bis schwarzer Ring.
-    \item Die Lösung im Becherglas färbte sich dunkelbraun, es entstand eine Gasentwicklung. Das Indikatorpapier verfärbte sich innerhalb kurzer Zeit deutlich grün/blau-grün, was auf einen basischen Analyten hindeutet.
+    \item An der Phasengrenze zwischen der wässrigen Schicht und der konzentrierten Schwefelsäure bildete sich ein dunkelbrauner Ring.
+    \item Die Lösung im Becherglas färbte sich dunkelgrün, und es entstand eine bräunliche Gasentwicklung. Das Indikatorpapier verfärbte sich innerhalb einiger Minuten grünlich.
 \end{enumerate}
 
 \subsubsection{Auswertung}
@@ -107,10 +104,10 @@ Im sauren Milieu wird \ce{Fe^{2+}} zu \ce{Fe^{3+}} oxidiert und das Nitrat zu St
     \hline
     \text{Ges.:}\quad & \ce{3 Fe^{2+}_{(aq)} + NO3^-_{(aq)} + 4 H^+_{(aq)}} &  & \longrightarrow \ce{3 Fe^{3+}_{(aq)} + NO_{(g)} + 2 H2O_{(l)}}
 \end{align}
-Das erzeugte \ce{NO} bildet mit überschüssigem $\ce{Fe^{2+}}$ einen Pentaaquanitrosyleisen(II)-Komplex $\ce{[Fe(H2O)5(NO)]^{2+}}$, der die charakteristische dunkelbraune Ringfärbung verursacht.\cite{holleman_wiberg}
+Das erzeugte \ce{NO} bildet mit überschüssigem $\ce{Fe^{2+}}$ einen Pentaaquanitrosyleisen(II)-Komplex $\ce{[Fe(H2O)5(NO)]^{2+}}$, der die charakteristische dunkelbraune Ringfärbung verursacht.\cite{Jander_Blasius_Strähle_Schweda_Rossi_1995}
 
 \paragraph{b) Basisches Milieu -- Ammoniaknachweis}
-Im basischen Milieu ist das Normalpotential des Redoxpaars $\ce{Fe^{3+}/Fe^{2+}}$ deutlich negativer als in saurer Lösung (\emph{ca.}\,$-1{,}4\,\si{V}$), da $\ce{Fe^{3+}}$ als schwerlösliches $\ce{Fe(OH)3}$ ausfällt und damit seine effektive Konzentration stark sinkt (vgl.\ Nernst-Gleichung, Gl.\,\eqref{eq:nernst}).\cite{skript}\cite{holleman_wiberg}
+Im basischen Milieu ist das Normalpotential des Redoxpaars $\ce{Fe^{3+}/Fe^{2+}}$ deutlich negativer als in saurer Lösung mit $E^{0} \SI{-1.4}{\volt}$, da $\ce{Fe^{3+}}$ als schwerlösliches $\ce{Fe(OH)3}$ ausfällt und damit seine effektive Konzentration stark sinkt \eqref{eq:nernst}.\cite{skript}
 Dadurch ist \ce{Fe^{2+}} im Basischen ein erheblich stärkeres Reduktionsmittel und vermag Nitrat vollständig bis zu Ammoniak ($-$III) zu reduzieren:
 \begin{align}
     \text{Ox.:}\quad  & \ce{8 \overset{+II}{Fe^{2+}}_{(aq)} + 20 OH^-_{(aq)} &  & -> 8 \overset{+III}{Fe(OH)3}_{(s)} + 8 e^- + 4 H2O_{(l)}} \\
@@ -121,7 +118,11 @@ Dadurch ist \ce{Fe^{2+}} im Basischen ein erheblich stärkeres Reduktionsmittel 
 Das flüchtige Ammoniak hydrolysiert am befeuchteten Indikatorpapier und erhöht dort den pH-Wert, was die Grünfärbung erklärt.\cite{skript}
 
 \subsubsection{Fehlerbetrachtung}
-Sollte das Becherglas im zweiten Teilversuch erhitzt werden, muss ein Sieden der Lösung vermieden werden, da alkalische Spritzer sonst direkt das Indikatorpapier färben würden und einen falsch-positiven Befund erzeugen könnten. Außerdem ist darauf zu achten, dass ausreichend NaOH für ein deutlich basisches Milieu vorhanden ist.
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item Eine zu schnelle Zugabe der Schwefelsäure oder Erschütterungen können zu einer ungewollten Durchmischung der Phasen führen. Dadurch bildet sich der charakteristische braune Ring nur unscharf aus oder bleibt im Extremfall ganz aus.
+    \item Die braune Gasentwicklung zeigt, dass das Milieu lokal noch nicht ausreichend basisch war, da sich die \ce{NaOH}-Plätzchen womöglich nicht schnell genug gelöst haben. Zudem könnte Luftsauerstoff das \ce{Fe^{2+}} vorzeitig oxidiert oder ein undichtes Uhrglas den Nachweis des flüchtigen Ammoniaks abgeschwächt haben.
+\end{enumerate}
+
 
 \subsection{Versuch 3: Redox-Amphoterie, Dis- und Synproportionierung}
 
@@ -131,17 +132,17 @@ Anhand von Mangan- und Wasserstoffperoxid-Reaktionen sollen die Begriffe Synprop
 \subsubsection{Durchführung}
 \begin{enumerate}[label=\textbf{\alph*)}]
     \item In einem Reagenzglas wurde \ce{KMnO4} mit einer NaOH-Perle in wenig demineralisiertem Wasser gelöst. In einem zweiten Reagenzglas wurde eine Spatelspitze \ce{MnSO4} in demin. Wasser gelöst. Anschließend wurden wenige Tropfen der \ce{MnSO4}-Lösung vorsichtig zur Permanganatlösung gegeben.
-    \item Zu wenigen Millilitern einer 30\,\%igen \ce{H2O2}-Lösung (max. \SI{1}{cm} Füllhöhe) wurde in einem Reagenzglas eine Spatelspitze \ce{MnO2} gegeben. Anschließend wurde eine Glimmspanprobe durchgeführt.
+    \item Zu wenigen Millilitern einer 30\,\%igen \ce{H2O2}-Lösung wurde in einem Reagenzglas eine Spatelspitze \ce{MnO2} gegeben. Anschließend wurde eine Glimmspanprobe durchgeführt.
     \item Einige Milliliter einer stark verdünnten \ce{H2O2}-Lösung wurden in einem Reagenzglas mit einer NaOH-Perle versetzt. Danach wurden einige Tropfen einer \ce{MnSO4}-Lösung hinzugegeben.
     \item Einige Milliliter einer verdünnten \ce{KMnO4}-Lösung wurden mit wenigen Tropfen Schwefelsäure angesäuert und anschließend tropfenweise mit einer 30\,\%igen \ce{H2O2}-Lösung versetzt.
 \end{enumerate}
 
 \subsubsection{Beobachtung}
 \begin{enumerate}[label=\textbf{\alph*)}]
-    \item Die violette Permanganatlösung entfärbte sich bei Zugabe der farblosen $\ce{MnSO4}$-Lösung und es bildete sich ein brauner Feststoff ($\ce{MnO2}$).
-    \item Bei Zugabe von $\ce{MnO2}$ zur $\ce{H2O2}$-Lösung entstand sofort eine starke Gasentwicklung; der glimmende Span entzündete sich (Sauerstoff).
+    \item Die violette Permanganatlösung entfärbte sich bei Zugabe der farblosen $\ce{MnSO4}$-Lösung und es fiel $\ce{MnO2}$ als brauner Feststoff aus.
+    \item Bei Zugabe von $\ce{MnO2}$ zur $\ce{H2O2}$-Lösung entstand sofort eine starke Gasentwicklung und die Glimmspanprobe als Sauerstoffnachweiß war positiv.
     \item Es bildete sich ein dunkelbrauner Feststoff bei gleichzeitiger Gasentwicklung.
-    \item Die violette Lösung entfärbte sich graduell über Rot und Braun schließlich vollständig; gleichzeitig war Gasentwicklung zu beobachten.
+    \item Die violette Lösung entfärbte sich graduell über Rot und Braun schließlich vollständig. Gleichzeitig war eine Gasentwicklung zu beobachten.
 \end{enumerate}
 
 \subsubsection{Auswertung}
@@ -154,10 +155,10 @@ $\ce{Mn^{2+}}$ (+II) und $\ce{MnO4^-}$ (+VII) reagieren zu $\ce{MnO2}$ (+IV):
     \hline
     \text{Ges.:}\quad & \ce{3 Mn^{2+}_{(aq)} + 2 MnO4^-_{(aq)} + 4 OH^-_{(aq)} -> 5 MnO2_{(s)} + 2 H2O_{(l)}}
 \end{align}
-Beide Mangan-Spezies konvergieren auf die mittlere Oxidationsstufe +IV. Dies ist eine Synproportionierung gemäß der Definition in Abschnitt 1.4.\cite{skript}
+Beide Mangan-Spezies konvergieren auf die mittlere Oxidationsstufe +IV. Dies ist eine Synproportionierung gemäß der Definition in \ref{subsec:synprop}.\cite{skript}
 
 \paragraph{b) Disproportionierung von Wasserstoffperoxid}
-$\ce{MnO2}$ wirkt hier als Katalysator. Der Sauerstoff in $\ce{H2O2}$ liegt in der mittleren Oxidationsstufe $-$I vor und disproportioniert zu $-$II (Wasser) und 0 (Sauerstoff):
+$\ce{MnO2}$ wirkt hier als Katalysator. Der Sauerstoff in $\ce{H2O2}$ liegt in der mittleren Oxidationsstufe $-$I vor und disproportioniert gemäs der Definition in \ref{subsec:disprop} zu $\ce{H2O}$ ($-$II) und $\ce{O2}$ (0):
 \begin{align}
     \text{Ox.:}\quad  & \ce{\overset{-I}{H2O2}_{(aq)} -> \overset{0}{O2}_{(g)} ^ + 2 H^+_{(aq)} + 2 e^-}    \\
     \text{Red.:}\quad & \ce{\overset{-I}{H2O2}_{(aq)} + 2 H^+_{(aq)} + 2 e^- -> 2 \overset{-II}{H2O}_{(l)}} \\
@@ -167,7 +168,7 @@ $\ce{MnO2}$ wirkt hier als Katalysator. Der Sauerstoff in $\ce{H2O2}$ liegt in d
 Die positive Glimmspanprobe bestätigt die Bildung von Sauerstoff.\cite{skript}
 
 \paragraph{c) Oxidative Wirkung von $\ce{H2O2}$ im Basischen}
-Im basischen Milieu mit $\ce{Mn^{2+}}$ als Reaktionspartner wirkt $\ce{H2O2}$ als Oxidationsmittel; $\ce{Mn^{2+}}$ wird zu $\ce{MnO2}$ oxidiert:
+Im basischen Milieu mit $\ce{Mn^{2+}}$ als Reaktionspartner wirkt $\ce{H2O2}$ als Oxidationsmittel. $\ce{Mn^{2+}}$ wird zu $\ce{MnO2}$ oxidiert:
 \begin{align}
     \text{Ox.:}\quad  & \ce{\overset{+II}{Mn^{2+}}_{(aq)} + 4 OH^-_{(aq)} -> \overset{+IV}{Mn}O2_{(s)} + 2 H2O_{(l)} + 2 e^-} \\
     \text{Red.:}\quad & \ce{\overset{-I}{H2O2}_{(aq)} + 2 e^- -> 2 \overset{-II}{O}H^-_{(aq)}}                                \\
@@ -176,7 +177,7 @@ Im basischen Milieu mit $\ce{Mn^{2+}}$ als Reaktionspartner wirkt $\ce{H2O2}$ al
 \end{align}
 
 \paragraph{d) Reduktive Wirkung von $\ce{H2O2}$ im Sauren}
-Gegenüber dem starken Oxidationsmittel $\ce{KMnO4}$ im sauren Milieu wirkt $\ce{H2O2}$ als Reduktionsmittel; $\ce{MnO4^-}$ (+VII) wird zu $\ce{Mn^{2+}}$ (+II) reduziert:
+Gegenüber dem starken Oxidationsmittel $\ce{KMnO4}$ im sauren Milieu wirkt $\ce{H2O2}$ als Reduktionsmittel. $\ce{MnO4^-}$ (+VII) wird zu $\ce{Mn^{2+}}$ (+II) reduziert:
 \begin{align}
     \text{Ox.:}\quad  & \ce{5 \overset{-I}{H2O2}_{(aq)} -> 5 \overset{0}{O2}_{(g)} ^ + 10 H^+_{(aq)} + 10 e^-}                         \\
     \text{Red.:}\quad & \ce{2 \overset{+VII}{Mn}O4^-_{(aq)} + 16 H^+_{(aq)} + 10 e^- -> 2 \overset{+II}{Mn^{2+}}_{(aq)} + 8 H2O_{(l)}} \\
@@ -186,24 +187,29 @@ Gegenüber dem starken Oxidationsmittel $\ce{KMnO4}$ im sauren Milieu wirkt $\ce
 Die Entfärbung der violetten Permanganatlösung zeigt den vollständigen Verbrauch von $\ce{MnO4^-}$ an. Die Versuche c) und d) verdeutlichen die Redoxamphoterie von $\ce{H2O2}$: Je nach Reaktionspartner und Milieu kann es als Oxidations- oder Reduktionsmittel fungieren.\cite{skript}
 
 \subsubsection{Fehlerbetrachtung}
-Da $\ce{MnO2}$ als Katalysator wirkt, ist der Verbrauch nicht stöchiometrisch -- eine zu große zugegebene Menge ändert zwar die Reaktionsgeschwindigkeit, nicht aber das Ergebnis. Die stark exotherme Disproportionierung von konzentriertem $\ce{H2O2}$ kann bei zu großen Mengen und hoher Katalysatorkonzentration unkontrolliert verlaufen.
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item Eine mögliche Fehlerquelle besteht darin, dass sich die \ce{NaOH}-Perle noch nicht vollständig gelöst hatte, wodurch das Milieu lokal nicht ausreichend basisch war. Zudem könnte eine ungenaue Dosierung der Edukte (wie etwa ein Überschuss an \ce{KMnO4}) dazu geführt haben, dass sich die Lösung nicht komplett entfärbt.
+    \item Ein verfälschtes Ergebnis der Glimmspanprobe könnte darauf zurückzuführen sein, dass das Sauerstoffgas vorzeitig entwichen ist.
+    \item Als Ursache für die unerwartete Gasentwicklung kommt eine Nebenreaktion in Betracht in der das frisch ausgefällte \ce{MnO2} wirkt sofort als Katalysator gewirkt hat und das restliche \ce{H2O2} teilweise zu Sauerstoff zersetzt hat. Dies äußert sich durch ein Aufschäumen und verfälscht die Stöchiometrie der eigentlichen Reaktion.
+    \item Bei der Verwendung von zu viel $\ce{KMnO4}$ kann es zu lilafarbenen Rückstanden kommen, wodurch die Entfärbung nicht vollständig verlaufen wäre.
+\end{enumerate}
 
 
 \subsection{Versuch 4: Iodometrische Redox-Titration einer $\ce{Cu^{2+}}$-Lösung}
 
 \subsubsection{Aufgabenstellung}
-Die Stoffmenge einer $\ce{Cu^{2+}}$-haltigen Lösung soll mittels iodometrischer Redoxtitration bestimmt.
+Die Stoffmenge einer $\ce{Cu^{2+}}$-haltigen Lösung soll mittels iodometrischer Redoxtitration bestimmt werden.
 
 \subsubsection{Durchführung}
 \begin{enumerate}[label=\textbf{\alph*)}]
-    \item Die Analysenlösung wurde in einem 100\,ml-Messkolben mit demineralisiertem Wasser bis zur Marke aufgefüllt und durch kräftiges Schütteln homogenisiert.
-    \item Anschließend wurden 25\,ml der Lösung mit einer Vollpipette in einen Erlenmeyerkolben überführt und mit demin. Wasser auf etwa 150\,ml verdünnt. Danach wurde Essigsäure zugegeben und ca. 2\,g in 10\,ml Wasser gelöstes Kaliumiodid hinzugefügt. Es bildete sich ein Niederschlag.
-    \item Die Lösung wurde mit ca. 3\,ml einer Stärkelösung versetzt, wobei sich eine blaue Färbung einstellte.
-    \item Anschließend wurde mit einer 0,1\,M \ce{Na2S2O3}-Maßlösung aus der Bürette titriert, bis die blaue Färbung vollständig verschwand und mindestens eine Minute farblos blieb. Die Titration wurde zur Kontrolle ein zweites Mal durchgeführt.
+    \item Die Analysenlösung wurde mit demineralisiertem Wasser bis zur $\SI{100}{ml}$ Marke aufgefüllt und durch kräftiges Schütteln homogenisiert.
+    \item Anschließend wurden 25\,ml der Lösung mit einer Vollpipette in einen Erlenmeyerkolben überführt und mit demin. Wasser auf 150\,ml verdünnt. Danach wurde Essigsäure zugegeben und ca. 2\,g in 10\,ml Wasser gelöstes Kaliumiodid hinzugefügt.
+    \item Die Lösung wurde mit ca. 3\,ml einer Stärkelösung versetzt.
+    \item Anschließend wurde mit einer 0,1\,M \ce{Na2S2O3}-Maßlösung aus der Bürette titriert, bis die türkis Färbung vollständig verschwand.
 \end{enumerate}
 
 \subsubsection{Beobachtung}
-Nach Zugabe von Kaliumiodid bildete sich ein cremefarbener Niederschlag ($\ce{CuI}$) und die Lösung färbte sich gelbbraun durch das freigesetzte $\ce{I2}$. Nach Stärkezugabe wechselte die Farbe nach intensiv Blau. Beim Titrieren mit Thiosulfat wurde die Blaufärbung zunehmend heller und verschwand am Äquivalenzpunkt vollständig (Lösung farblos).
+Nach Zugabe von Kaliumiodid bildete sich ein cremefarbener Niederschlag ($\ce{CuI}$) und die Lösung färbte sich gelbbraun durch das freigesetzte $\ce{I2}$. Nach Zugabe der Stärkelösung wechselte die Farbe nach türkis. Beim Titrieren mit Thiosulfat wurde die Türkisfärbung zunehmend heller und verschwand am Äquivalenzpunkt vollständig, wodurch nur noch die milchige Stärkelösung zu sehen war.
 
 \subsubsection{Auswertung}
 
