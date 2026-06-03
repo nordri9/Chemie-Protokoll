@@ -2,89 +2,69 @@
 
 \subsection{Säure-Base-Theorien}
 
-Für Säure-Base-Reaktionen ist die Brønsted-Theorie zentral. Säuren sind Protonendonatoren, Basen Protonenakzeptoren. Eine Säure-Base-Reaktion ist damit eine Protonenübertragung:
+Zur Beschreibung von Säure-Base-Reaktionen wird in diesem Versuch die Brønsted-Theorie verwendet. Demnach ist eine Säure ein Protonendonator und eine Base ein Protonenakzeptor. Eine Säure-Base-Reaktion besteht somit in der Übertragung eines Protons von der Säure HA auf die Base~B:
 
 \begin{equation}
     \ce{HA + B <=> A^- + HB+}
     \label{eq:brønsted_allgemein}
 \end{equation}
 
-Dabei entstehen konjugierte Säure-Base-Paare. Je stärker eine Säure, desto schwächer ist ihre konjugierte Base \cite{skript}.
+Dabei bilden HA/\ce{A^-} sowie B/\ce{HB+} jeweils konjugierte Säure-Base-Paare. Je stärker eine Säure, desto schwächer ist ihre konjugierte Base und umgekehrt \cite{skript}.
 
 \subsection{Autoprotolyse des Wassers und pH-Wert}
-Wasser ist amphoter und es kommt zur Autoprotolyse\cite{skript}:
+
+Wasser ist amphoter, d.\,h.\ es kann sowohl als Protonendonator als auch als Protonenakzeptor reagieren. Daher findet in reinem Wasser eine Selbstionisierung, die sogenannte Autoprotolyse, statt \cite{skript}:
+
 \begin{equation}
-    \ce{2H2O <=> H3O+ + OH-}
+    \ce{2 H2O <=> H3O+ + OH-}
     \label{eq:autoprotolyse}
 \end{equation}
 
+Das zugehörige Gleichgewichtsprodukt, das Ionenprodukt des Wassers, ist bei \SI{25}{\celsius} definiert als:
 
-Das Ionenprodukt des Wassers ist definiert als:
 \begin{equation}
-    K_\mathrm{W} = [\ce{H3O+}] \cdot [\ce{OH-}]
+    K_\mathrm{W} = [\ce{H3O+}] \cdot [\ce{OH-}] = \SI{1e-14}{\mole\squared\per\liter\squared}
     \label{eq:kw_definition}
 \end{equation}
 
+Der pH-Wert ist als negativer dekadischer Logarithmus der Hydroniumionen-Konzentration definiert:
 
-Bei \SI{25}{\celsius} gilt $K_\mathrm{W} = \SI{10e-14}{\mole\squared\per\liter\squared}$.\\
-Für neutrales Wasser folgt:
 \begin{equation}
-    [\ce{H3O+}] = [\ce{OH-}] = 10^{-7}\,\si{\mole\per\liter}
-    \label{eq:neutralwasser}
-\end{equation}
-
-Der pH-Wert ist definiert als:
-\begin{equation}
-    \mathrm{pH} = -\log [\ce{H3O+}]
+    \mathrm{pH} = -\log \frac{[\ce{H3O+}]}{\si{\mole\per\liter}}
     \label{eq:ph_definition}
 \end{equation}
 
-Es gilt außerdem:
-\begin{equation}
-    \mathrm{p}K_\mathrm{W} = \mathrm{pH} + \mathrm{pOH}
-    \label{eq:pkw_beziehung}
-\end{equation}
+Für neutrales Wasser bei \SI{25}{\celsius} folgt hieraus pH\,=\,7. Analog gilt \(\mathrm{pOH} = -\log[\ce{OH-}]\) sowie \(\mathrm{pK_W} = \mathrm{pH} + \mathrm{pOH} = 14\).
 
 \subsection{Säure- und Basenstärke}
 
-Die Säurestärke wird durch die Säurekonstante beschrieben \cite{skript}:
+Die Stärke einer Säure HA in wässriger Lösung wird durch ihre Säurekonstante $K_\mathrm{S}$ beschrieben, die das Gleichgewicht der Protolysereaktion quantifiziert \cite{skript}:
+
 \begin{equation}
     K_\mathrm{S} =
     \frac{[\ce{H3O+}][\ce{A^-}]}{[\ce{HA}]}
     \label{eq:ks_definition}
 \end{equation}
 
-Der pKS-Wert ist definiert als:
-\begin{equation}
-    \mathrm{p}K_\mathrm{S} = -\log K_\mathrm{S}
-    \label{eq:pks_definition}
-\end{equation}
+Ein großer $K_\mathrm{S}$-Wert (kleiner $\mathrm{p}K_\mathrm{S} = -\log K_\mathrm{S}$) kennzeichnet eine starke Säure. Für eine schwache Säure (d.\,h.\ $K_\mathrm{S} \ll c_0$) vereinfacht sich die exakte Berechnung durch die Näherung, dass die Abnahme der Ausgangskonzentration vernachlässigt werden kann, zu:
 
-Für schwache Säuren gilt näherungsweise:
 \begin{equation}
-    [\ce{H3O+}] = \sqrt{K_\mathrm{S} \cdot c_0}
+    [\ce{H3O+}] \approx \sqrt{K_\mathrm{S} \cdot c_0}
     \label{eq:schwache_saeure_nahe}
 \end{equation}
 
-\subsection{Protolysegleichgewichte}
-
-Für konjugierte Säure-Base-Paare gilt \cite{atkins_kurzlehrbuch_2020}:
+Analog gilt für konjugierte Säure-Base-Paare die Beziehung \cite{atkins_kurzlehrbuch_2020}:
 
 \begin{equation}
     K_\mathrm{S} \cdot K_\mathrm{B} = K_\mathrm{W}
     \label{eq:ks_kb_beziehung}
 \end{equation}
 
-Daraus folgt:
-
-\begin{equation}
-    \mathrm{p}K_\mathrm{S} + \mathrm{p}K_\mathrm{B} = \mathrm{p}K_\mathrm{W}
-    \label{eq:pk_beziehung}
-\end{equation}
+wobei $K_\mathrm{B}$ die Basenkonstante der konjugierten Base ist.
 
 \subsection{Puffersysteme}
 
-Der pH-Wert eines Puffers ergibt sich aus der Henderson-Hasselbalch-Gleichung \cite{skript}:
+Ein Puffer ist ein System aus einer schwachen Säure und ihrer konjugierten Base (bzw.\ einer schwachen Base und ihrer konjugierten Säure), das dem pH-Wert einer Lösung gegenüber Zugabe von Säure oder Base Widerstand leistet. Der pH-Wert eines Acetat-Puffers ergibt sich aus der Henderson-Hasselbalch-Gleichung \cite{skript}:
 
 \begin{equation}
     \mathrm{pH} = \mathrm{p}K_\mathrm{S}
@@ -94,49 +74,36 @@ Der pH-Wert eines Puffers ergibt sich aus der Henderson-Hasselbalch-Gleichung \c
     \label{eq:henderson_hasselbalch}
 \end{equation}
 
-Für gleiche Konzentrationen gilt:
-
-\begin{equation}
-    [\ce{A^-}] = [\ce{HA}] \Rightarrow \mathrm{pH} = \mathrm{p}K_\mathrm{S}
-    \label{eq:puffer_halb}
-\end{equation}
+Die maximale Pufferwirkung liegt vor, wenn \([\ce{A^-}] = [\ce{HA}]\) gilt, d.\,h.\ wenn pH\,=\,\(\mathrm{p}K_\mathrm{S}\).
 
 \subsection{Indikatoren}
 
-Indikatoren stehen im Gleichgewicht \cite{mortimer_muller}:
+Säure-Base-Indikatoren sind schwache Säuren oder Basen, deren protonierte Form (HIn) und deprotonierte Form (\ce{In^-}) unterschiedliche Farben aufweisen. Das pH-abhängige Gleichgewicht \cite{mortimer_muller}
 
 \begin{equation}
     \ce{HIn <=> H+ + In^-}
     \label{eq:indikator_gleichgewicht}
 \end{equation}
 
-Der Umschlagbereich liegt bei:
-
-\begin{equation}
-    \mathrm{pH} \approx \mathrm{p}K_\mathrm{In} \pm 1
-    \label{eq:indikator_bereich}
-\end{equation}
+bestimmt das Verhältnis beider Formen. Der sichtbare Farbumschlag findet im Bereich
+\(\mathrm{pH} \approx \mathrm{p}K_\mathrm{In} \pm 1\)
+statt, in dem beide Formen in vergleichbaren Konzentrationen vorliegen.
 
 \subsection{Säure-Base-Titration}
-%MEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH%
-Am Äquivalenzpunkt gilt \cite{skript}:
+
+Bei einer Säure-Base-Titration wird die unbekannte Konzentration einer Säure durch Zugabe einer Maßlösung bekannter Base bestimmt. Am Äquivalenzpunkt sind die Stoffmengen von Säure und Base gleich \cite{skript}:
 
 \begin{equation}
-    n(\ce{HA}) = n(\ce{OH^-})
+    n(\ce{HA}) = n(\ce{OH^-}) = c \cdot V
     \label{eq:aequivalenzpunkt}
 \end{equation}
 
-mit:
-
-\begin{equation}
-    n = c \cdot V
-    \label{eq:stoffmenge}
-\end{equation}
-
-Für schwache Säuren erfolgt zusätzlich Hydrolyse \cite{holleman_wiberg}:
+Bei der Titration einer schwachen Säure liegt am Äquivalenzpunkt ausschließlich das konjugierte Anion \ce{A^-} vor, welches mit Wasser zur schwach basischen Lösung reagiert (Protolyse der konjugierten Base) \cite{holleman_wiberg}:
 
 \begin{equation}
     \ce{A^- + H2O <=> HA + OH^-}
     \label{eq:hydrolyse}
 \end{equation}
+
+Der Äquivalenzpunkt liegt daher bei pH\,>\,7 und muss mit einem Indikator, dessen Umschlagsbereich im basischen liegt (z.\,B.\ Phenolphthalein, pH\,8{,}2--10{,}0), detektiert werden.
 \newpage
