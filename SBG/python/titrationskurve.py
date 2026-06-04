@@ -44,7 +44,7 @@ for Vb in V_base_added:
         pH = 14 - pOH
 
     pH_values.append(pH)
-
+    
 # -----------------------------
 # Plot
 # -----------------------------
@@ -59,17 +59,31 @@ plt.axvline(V_half*1000, color="orange", linestyle="--")
 
 # Äquivalenzpunkt markieren
 plt.scatter(V_eq*1000, 9.12, color="red", zorder=5,
-            label=f"Äquivalenzpunkt pH≈9.12")
+            label="Äquivalenzpunkt pH≈9.12")
 plt.axvline(V_eq*1000, color="red", linestyle="--")
 
-# Achsen & Titel
-plt.title("Titration von Essigsäure mit Natronlauge")
-plt.xlabel("zugegebene NaOH [mL]")
+# Achsenbeschriftungen
+plt.xlabel("Zugegebenes Volumen NaOH [mL]")
 plt.ylabel("pH-Wert")
-plt.grid(True)
-plt.legend()
+
+# Achsenskalierung
 plt.ylim(0, 14)
 plt.xlim(0, 22)
+
+# pH-Achse in 1er-Schritten beschriften
+plt.yticks(np.arange(0, 15, 1))
+
+# Gitternetzlinien entfernen
+# plt.grid(True)
+
+# Legende anzeigen
+plt.legend()
+
+# Layout optimieren
 plt.tight_layout()
-plt.savefig("titrationskurve.pdf")  # speichert die Grafik als PNG
-plt.close()  # schließt die Grafik, gut für Skripte
+
+# Grafik als PDF speichern
+plt.savefig("titrationskurve.pdf")
+
+# Grafik schließen, gut für Skripte
+plt.close()
