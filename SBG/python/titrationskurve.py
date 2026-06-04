@@ -83,7 +83,7 @@ plt.legend()
 plt.tight_layout()
 
 # Grafik als PDF speichern
-plt.savefig("titrationskurve.pdf")
+plt.savefig("python/titrationskurve.pdf")
 
 # Grafik schließen, gut für Skripte
 plt.close()
