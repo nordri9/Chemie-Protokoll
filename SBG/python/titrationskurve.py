@@ -44,7 +44,7 @@ for Vb in V_base_added:
         pH = 14 - pOH
 
     pH_values.append(pH)
-
+    
 # -----------------------------
 # Plot
 # -----------------------------
@@ -69,6 +69,21 @@ plt.grid(False)
 plt.legend()
 plt.ylim(0, 14)
 plt.xlim(0, 22)
+
+# pH-Achse in 1er-Schritten beschriften
+plt.yticks(np.arange(0, 15, 1))
+
+# Gitternetzlinien entfernen
+# plt.grid(True)
+
+# Legende anzeigen
+plt.legend()
+
+# Layout optimieren
 plt.tight_layout()
-plt.savefig("titrationskurve.pdf")  # speichert die Grafik als PNG
-plt.close()  # schließt die Grafik, gut für Skripte
+
+# Grafik als PDF speichern
+plt.savefig("python/titrationskurve.pdf")
+
+# Grafik schließen, gut für Skripte
+plt.close()
