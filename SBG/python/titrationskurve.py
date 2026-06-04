@@ -58,15 +58,14 @@ plt.scatter(V_half*1000, pKa, color="orange", zorder=5,
 plt.axvline(V_half*1000, color="orange", linestyle="--")
 
 # Äquivalenzpunkt markieren
-plt.scatter(V_eq*1000, 9.12, color="red", zorder=5,
-            label=f"Äquivalenzpunkt pH≈9.12")
+plt.scatter(V_eq*1000, 8.62, color="red", zorder=5,
+            label=f"Äquivalenzpunkt pH≈8.62")
 plt.axvline(V_eq*1000, color="red", linestyle="--")
 
 # Achsen & Titel
-plt.title("Titration von Essigsäure mit Natronlauge")
-plt.xlabel("zugegebene NaOH [mL]")
-plt.ylabel("pH-Wert")
-plt.grid(True)
+plt.xlabel("zugegebenes Volumen 0,1 mol/L NaOH [mL]", fontsize=16)
+plt.ylabel("pH-Wert", fontsize=16)
+plt.grid(False)
 plt.legend()
 plt.ylim(0, 14)
 plt.xlim(0, 22)
