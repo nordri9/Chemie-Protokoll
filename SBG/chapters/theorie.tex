@@ -1,49 +1,84 @@
 \section{Theorie}
 
-\subsection{Säure-Base-Theorien}
+\subsection{Säure-Base-Theorie}
 
-Für Säure-Base-Reaktionen ist die Brønsted-Theorie zentral. Säuren sind Protonendonatoren, Basen Protonenakzeptoren. Eine Säure-Base-Reaktion ist damit eine Protonenübertragung:
-
-\begin{equation}
-    \ce{HA + B <=> A^- + HB+}
-    \label{eq:brønsted_allgemein}
-\end{equation}
-
-Dabei entsteht für HA die konjugierte Base und für B die konjugierte Säure, zusammen bilden sie ein konjugiertes Säure-Base-Paar. Je stärker eine Säure, desto schwächer ist ihre konjugierte Base \cite{skript}.
+Das grundlegende Modell zur Beschreibung von Protolysen ist die Säure-Base-Theorie nach Brønsted. Sie definiert Säuren als Protonendonatoren und Basen als Protonenakzeptoren.
 
 \subsection{Autoprotolyse des Wassers und pH-Wert}
-Wasser ist amphoter, das heißt es kann sowohl als Säure als auch als Base reagieren, und es kommt zur Autoprotolyse\cite{skript}:
+
+Anhand der Autoprotolyse des Wassers lassen sich sowohl die Eigenschaften von Ampholyten als auch die Prinzipien protolytischer Reaktionen veranschaulichen. Dabei läuft die in \eqref{eq:protolyse_wasser} dargestellte Reaktion ab. \cite{skript}
 \begin{equation}
-    \ce{2H2O <=> H3O+ + OH-}
-    \label{eq:autoprotolyse}
+    \ce{2H2O_{\mathrm{(l)}} <=> H3O+ _{\mathrm{(aq)}} + OH- _{\mathrm{(aq)}}}
+    \label{eq:protolyse_wasser}
+\end{equation}
+Hierbei reagiert ein Wassermolekül als Protonenakzeptor und ein zweites als Protonendonator. Bei der Rückreaktion fungiert wiederum das entstehende Oxonium-Ion als Protonendonator und das Hydroxid-Ion als Protonenakzeptor \cite{skript}.
+
+Für diese Gleichgewichtsreaktion \eqref{eq:protolyse_wasser} lässt sich nun das Massenwirkungsgesetz \eqref{eq:mwg_wasser} aufstellen.
+\begin{equation}
+    K = \frac{[\ce{H3O+}][\ce{OH-}]}{[\ce{H2O}]^2}
+    \label{eq:mwg_wasser}
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Die Konzentration des Wassers ist dabei näherungsweise als konstant zu betrachten. Damit ergibt sich aus dem Massenwirkungsgesetz \eqref{eq:mwg_wasser} der $K_{\mathrm{w}}$-Wert \eqref{eq:KW-Wert} wie folgt.
+%\begin{equation}
+%    K_{\mathrm{w}} = [\ce{H+}][\ce{OH-}]
+%    \label{eq:KW-Wert}
+%\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Das Ionenprodukt des Wassers lässt sich direkt aus dem Massenwirkungsgesetz ableiten, da die Konzentration des Wassers als konstant angenommen wird, und deswegen gilt:
+Da die Konzentration des Wassers in verdünnten wässrigen Lösungen etwa \SI{55,5}{\frac{\mole}{l}} beträgt und folglich nahezu konstant ist, kann sie mit der Gleichgewichtskonstanten $K$ zu einer neuen Konstante zusammengefasst werden. Dadurch wird das Ionenprodukt des Wassers $K_{\mathrm{w}}$ definiert \eqref{eq:KW-Wert}. \cite{skript}
+
 \begin{equation}
-    K_\mathrm{W} = [\ce{H3O+}] \cdot [\ce{OH-}]
-    \label{eq:kw_definition}
+    K_{\mathrm{w}} = K \cdot [\ce{H2O}]^2 = [\ce{H3O+}] \cdot [\ce{OH-}]
+    \label{eq:KW-Wert}
 \end{equation}
 
+Bei \SI{25}{\celsius} beträgt das Ionenprodukt des Wassers $K_\mathrm{W} = \SI{e-14}{  \frac{\mole\squared}{\liter\squared}}$. Da solche Ionenkonzentrationen mehrere Größenordnungen unter der Stoffmengenkonzentration des Wassers liegen, verwendet man als Maß für den sauren oder basischen Charakter einer Lösung den pH-Wert \eqref{eq:ph_definition}. \cite{skript}
 
-Bei \SI{25}{\celsius} gilt $K_\mathrm{W} = \SI{1e-14}{\mole\squared\per\liter\squared}$.\\
-Für neutrales Wasser folgt:
-\begin{equation}
-    [\ce{H3O+}] = [\ce{OH-}] = 10^{-7}\,\si{\mole\per\liter}
-    \label{eq:neutralwasser}
-\end{equation}
-
-Der pH-Wert ist definiert als der negative dekadische Logarithmus der Oxoniumionenkonzentration \cite{skript}:
 \begin{equation}
     \mathrm{pH} = -\log [\ce{H3O+}]
     \label{eq:ph_definition}
 \end{equation}
 
-Es gilt außerdem der Zusammenhang zwischen dem pH-Wert und dem pOH-Wert \cite{skript}:
-\begin{equation}
-    \mathrm{p}K_\mathrm{W} = \mathrm{pH} + \mathrm{pOH}
-    \label{eq:pkw_beziehung}
-\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Autoprotolyse des Wassers und pH-Wert}
+%Wasser ist amphoter, das heißt es kann sowohl als Säure als auch als Base reagieren, und es kommt zur Autoprotolyse\cite{skript}:
+%\begin{equation}
+%    \ce{2H2O <=> H3O+ + OH-}
+%    \label{eq:autoprotolyse}
+%\end{equation}
+%
+%
+%Das Ionenprodukt des Wassers lässt sich direkt aus dem Massenwirkungsgesetz ableiten, da die Konzentration des Wassers als konstant angenommen wird, und deswegen gilt:
+%\begin{equation}
+%    K_\mathrm{W} = [\ce{H3O+}] \cdot [\ce{OH-}]
+%    \label{eq:kw_definition}
+%\end{equation}
+%
+%
+%Bei \SI{25}{\celsius} gilt $K_\mathrm{W} = \SI{1e-14}{\mole\squared\per\liter\squared}$.\\
+%Für neutrales Wasser folgt:
+%\begin{equation}
+%    [\ce{H3O+}] = [\ce{OH-}] = 10^{-7}\,\si{\mole\per\liter}
+%    \label{eq:neutralwasser}
+%\end{equation}
+%
+%Der pH-Wert ist definiert als der negative dekadische Logarithmus der Oxoniumionenkonzentration \cite{skript}:
+%\begin{equation}
+%    \mathrm{pH} = -\log [\ce{H3O+}]
+%    \label{eq:ph_definition}
+%\end{equation}
+%
+%Es gilt außerdem der Zusammenhang zwischen dem pH-Wert und dem pOH-Wert \cite{skript}:
+%\begin{equation}
+%    \mathrm{p}K_\mathrm{W} = \mathrm{pH} + \mathrm{pOH}
+%    \label{eq:pkw_beziehung}
+%\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Säure-Base-Theorie nach Brønsted}
+
+
 
 \subsection{Säure- und Basenstärke}
 
