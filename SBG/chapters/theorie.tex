@@ -2,7 +2,7 @@
 
 \subsection{Säure-Base-Theorie}
 
-Das grundlegende Modell zur Beschreibung von Protolysen ist die Säure-Base-Theorie nach Brønsted. Sie definiert Säuren als Protonendonatoren und Basen als Protonenakzeptoren.
+Das grundlegende Modell zur Beschreibung von Protolysen ist die Säure-Base-Theorie nach Brønsted. Sie definiert Säuren als Protonendonatoren und Basen als Protonenakzeptoren. Nach dieser Theorie können protolytische Reaktionen sowohl in der flüssigen als auch in der Gasphase ablaufen.
 
 \subsection{Autoprotolyse des Wassers und pH-Wert}
 
@@ -30,7 +30,7 @@ Für diese Gleichgewichtsreaktion \eqref{eq:protolyse_wasser} lässt sich nun da
 Da die Konzentration des Wassers in verdünnten wässrigen Lösungen etwa \SI{55,5}{\frac{\mole}{l}} beträgt und folglich nahezu konstant ist, kann sie mit der Gleichgewichtskonstanten $K$ zu einer neuen Konstante zusammengefasst werden. Dadurch wird das Ionenprodukt des Wassers $K_{\mathrm{w}}$ definiert \eqref{eq:KW-Wert}. \cite{skript}
 
 \begin{equation}
-    K_{\mathrm{w}} = K \cdot [\ce{H2O}]^2 = [\ce{H3O+}] \cdot [\ce{OH-}]
+    K_{\mathrm{w}} = K \cdot [\ce{H2O}]^2 = [\ce{H3O+}] \cdot [\ce{OH-}] %kürzen?
     \label{eq:KW-Wert}
 \end{equation}
 
@@ -40,6 +40,8 @@ Bei \SI{25}{\celsius} beträgt das Ionenprodukt des Wassers $K_\mathrm{W} = \SI{
     \mathrm{pH} = -\log [\ce{H3O+}]
     \label{eq:ph_definition}
 \end{equation}
+
+% pKw?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Autoprotolyse des Wassers und pH-Wert}
@@ -76,8 +78,81 @@ Bei \SI{25}{\celsius} beträgt das Ionenprodukt des Wassers $K_\mathrm{W} = \SI{
 %    \label{eq:pkw_beziehung}
 %\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - temp felix version
+\subsection{Die Autoprotolyse des Wassers -temp felix k}
+
+Die Autoprotolyse des Ampholyten Wasser ist ein anschauliches Beispiel
+sowohl für die Eigenschaften eines Ampholyten als auch für Protolysen
+insgesamt. Dabei findet Reaktion \eqref{eq:Autoprotolyse} statt\cite{skript}.
+\begin{equation}
+    \text{H}_{2}\text{O}_{(\text{l})}+\text{H}_{2}\text{O}_{(\text{l})}\rightleftharpoons\text{H}_{3}\text{O}^{+}_{(\text{aq})}+\text{OH}^{-}_{\text{(aq)}}\label{eq:Autoprotolyse}
+\end{equation}
+
+Hierbei reagiert das ein Wasserstoffmolekül als Protonenakzeptor und
+ein anderes Molekül als Protonendonator. Bei der Rückreaktion reagiert
+wiederum das Oxonium-Ion als Protonendonator und das Hydroxid-Ion
+als Protonenakzeptor.\cite{skript}
+
+Für diese Reaktion lässt sich nun das Massenwirkungsgesetz (MWG) \eqref{eq:mwg}
+aufstellen.
+\begin{equation}
+    K=\frac{[\text{H}_{3}\text{O}^{+}][\text{OH}^{-}]}{[\text{H}_{2}\text{O}]^{2}}\label{eq:mwg}
+\end{equation}
+Aus diesem lässt sich dann durch Multiplikation mit der Konzentration
+des Wassers, die aufgrund der Tatsache, dass nur sehr wenige Wassermoleküle
+dissoziieren, nahezu konstant bleibt, folgern \cite{skript}:
+\begin{equation}
+    K_{\text{w}}=[\text{H}_{3}\text{O}^{+}][\text{OH}^{-}]\label{eq:Kw}
+\end{equation}
+Bei $T=25{^{\circ}}\text{C}$ ist das Ionenprodukt des Wassers $K_{\text{w}}=10^{-14}\,\frac{\text{mol}^{2}}{\text{l}^{2}}$.
+Da in der Säure-Base-Chemie auftretende Zahlenwerte häufig sehr klein
+sind, werden sie meistens stattdessen als p-Werte angegeben, also
+als negativer dekadischer Logarithmus. Daraus folgt, dass $\text{p}K_{\text{W}}=14$.
+Genauso gibt es entsprechend den pH-Wert \eqref{eq:ph}, der die Konzentration
+an Oxoniumionen angibt, welcher bei Standardbedingungen bei 7 liegt.
+\begin{equation}
+    \text{pH}=-\log([\text{H}^{+}])\label{eq:ph}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Säure-Base-Theorie nach Brønsted}
 
+Die Brønsted-Theorie besagt, dass die Zugabe einer Säure zu einer wässrigen Lösung die Konzentration von Oxoniumionen erhöht, während die Zugabe einer Base diese senkt. Dabei kennzeichnet ein pH-Wert unter 7 eine saure, ein pH-Wert über 7 eine basische Lösung. Aus Gleichung Nr.\eqref{eq:Kw} und $K_{\text{w}}$ folgt, dass die Summe des pH-Wert und pOH-Wert bei Normalbedingungen immer 14 ist, wodurch sich der $\text{pH}$-Wert aus dem $\text{pOH}$-Wert und umgekehrt berechnen lassen. Zudem ist nach der Brønsted-Theorie jeder Säure und Base ein $K_{\text{S}}$-, bzw. $\text{p}K_{\text{S}}$-Wert\cite{skript}, welcher die Gleichgewichtskonstante $K$ des Reaktionsgleichgewichts zwischen einer Säure und deren konjugierter Base darstellt, zugeordnet. Dieser Wert wird aus der Gleichgewichtskonstante $K$ durch Multiplikation mit der Konzentration des Wasser berechnet. \newline
+Aus $K_{\text{w}}$ und aus \eqref{eq:Kw}
+folgt, dass die Summe aus pH-Wert und pOH-Wert unter Normalbedingungen
+immer 14 ist. Damit lässt sich aus dem $\text{pH}$-Wert der $\text{pOH}$-Wert
+und umgekehrt berechnen. Nach der Brønsted-Theorie ist außerdem jeder
+Säure und jeder Base ein Wert zugeordnet, der die Gleichgewichtskonstante
+$K$ der Reaktionsgleichgewichts zwischen Säure und konjugierter Base
+repräsentiert. Dieser Wert ist der $K_{\text{S}}$-, bzw. $\text{p}K_{\text{S}}$-Wert
+\cite{skript}. Dieser wird aus $K$ durch Multiplikation mit der
+Konzentration des Wassers berechnet.
+\begin{equation}
+    K_{\text{S}}=\frac{[\text{H}_{3}\text{O}^{+}][\text{A}^{-}]}{[\text{HA}]}
+\end{equation}
+Daneben gibt es für Basen den $\text{p}K_{\text{B}}$-Wert, der mit
+dem $\text{p}K_{\text{S}}$-Wert der konjugierten Säure gemäß Gleichung
+\eqref{eq:pkbpks} verknüpft ist.
+\begin{equation}
+    \text{p}K_{\text{S}}+\text{p}K_{\text{B}}=14\label{eq:pkbpks}
+\end{equation}
+
+Bei starken Säuren, die nahezu bis vollständig dissoziieren, ergibt
+sich der pH-Wert dann gemäß Gleichung \eqref{eq:phs}, denn hier wird
+genähert, dass die initiale Konzentration der hinzugegebenen Säure
+gleich der Konzentration Oxonium-Ionen nach Dissoziiation.
+\begin{equation}
+    \text{pH}=-\log(c_{0})\label{eq:phs}
+\end{equation}
+Der pH-Wert einer schwachen Säure ist \eqref{eq:phw} \cite{zsfg_maier}.
+Die hier genutzte Vereinfachung ist, dass bei einem hohen $\text{p}K_{\text{S}}$-Wert
+die Initialkonzentration der zugegebenen Säure und die spätere nicht
+dissoziierte Konzentration nahezu identisch sind.
+\begin{equation}
+    \text{pH}=\frac{1}{2}(\text{p}K_{\text{S}}-\log(c_{0}))\label{eq:phw}
+\end{equation}
 
 
 \subsection{Säure- und Basenstärke}
