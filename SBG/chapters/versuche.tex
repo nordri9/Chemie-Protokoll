@@ -111,7 +111,7 @@ In jeweils fünf Reagenzgläsern werden getrennt \SI{0,1}{\mole\per\liter} Salzs
 Anschließend wird jede der vier Lösungsreihen jeweils mit den Indikatorlösungen Methylorange (MO), Methylrot (MR), Bromthymolblau (BTB), Phenolphthalein (PT) sowie Universalindikator (UI) versetzt, wobei in jeder Reihe jedes Reagenzglas einen anderen Indikator enthält. Die dabei auftretenden Farben werden beobachtet und dokumentiert.
 
 \subsubsection{Beobachtungen}
-Tabelle \ref{tab:indikator_beobachtung} listet die beobachteten Farben der Indikatoren in den einzelnen Lösungen auf. 
+Tabelle \ref{tab:indikator_beobachtung} listet die beobachteten Farben der Indikatoren in den einzelnen Lösungen auf.
 
 \begin{table}[H]
     \centering
@@ -130,9 +130,6 @@ Tabelle \ref{tab:indikator_beobachtung} listet die beobachteten Farben der Indik
 \end{table}
 
 \subsubsection{Auswertung}
-
-Die beobachteten Farbreaktionen stimmen mit den Literaturwerten der Umschlagsbereiche der verwendeten Indikatoren überein. Die einzelnen Indikatoren eignen sich daher zur Bestimmung von pH-Werten in den in Tabelle \ref{tab:indikatoren} angegebenen Bereichen.
-
 \begin{table}[H]
     \centering
     \caption{Literaturbekannte Umschlagsbereiche der verwendeten Indikatoren}
@@ -141,29 +138,43 @@ Die beobachteten Farbreaktionen stimmen mit den Literaturwerten der Umschlagsber
         \hline
         \textbf{Indikator} & \textbf{Umschlagsbereich (Literatur)} \\
         \hline
-        Methylorange       & 3,1 -- 4,4                            \\
+        Methylorange       & 3,1 -- 4,5                            \\
         Methylrot          & 4,2 -- 6,3                            \\
         Bromthymolblau     & 6,0 -- 7,6                            \\
-        Phenolphthalein    & 8,2 -- 10,0                           \\
+        Phenolphthalein    & 8,3 -- 10,0                           \\
         Universalindikator & ca. 1 -- 14                           \\
         \hline
     \end{tabular}
 \end{table}
 
-Der Universalindikator besteht aus einem Gemisch mehrerer Säure-Base-Indikatoren mit unterschiedlichen Umschlagsbereichen. Dadurch kann ein großer pH-Bereich durch verschiedene Farben dargestellt und der pH-Wert einer Lösung näherungsweise bestimmt werden \cite{mortimer_muller}.
+Da der Universalindikator aus einer Mischung diverser Einzelsubstanzen besteht, kann er im Gegensatz zu Einzelindikatoren kontinuierliche Farbwechsel über das gesamte pH-Spektrum anzeigen. \cite{noauthor_universalindikator_nodate}
 
-Der Vorteil des Universalindikators liegt in seiner breiten Anwendbarkeit. Im Vergleich dazu kann mit Einzelindikatoren ein Umschlagspunkt genauer bestimmt werden, da sie einen schärferen Farbumschlag besitzen. Allerdings treten bei beiden Indikatoren Ungenauigkeiten auf, da die Farbzuordnung lediglich eine grobe Abschätzung des pH-Wertes ermöglicht.
+In den sauren Proben bei $\text{pH} = 0{,}7$ und $\text{pH} = 2{,}6$ färbt sich die Lösung rot, während die basischen Proben bei $\text{pH} = 11{,}3$ und $\text{pH} = 12{,}6$ violett erscheinen.
+Diese experimentellen Resultate bestätigen die theoretischen Umschlagbereiche, die in der Literatur mit $\text{pH} = 0$ bis $3$ für Rot und $\text{pH} = 10$ bis $14$ für blauviolett angegeben werden. \cite{mortimer_muller} \newline
+
+Für Methylorange lässt sich zwischen den sauren und basischen Messpunkten ein Farbwechsel von Rot nach Orange beobachten.
+Dieses Verhalten ist konsistent mit dem theoretischen Umschlagbereich, der bei $\text{pH} = 3{,}1$ bis $4{,}4$ liegt. \newline
+
+
+Methylrot zeigt über die getesteten Lösungen einen analogen Farbumschlag von Pink zu Gelb, was sich in das Literaturintervall \ref{tab:indikatoren} einfügt. \cite{mortimer_muller}\newline
+
+Die Zugabe von Bromthymolblau führt in der stark sauren Umgebung zu einer gelben und in der basischen Umgebung zu einer blauen Färbung.
+Dies korreliert mit den zugehörigen Literaturwerten \ref{tab:indikatoren} für den Farbumschlag. \cite{mortimer_muller}\newline
+
+
+Phenolphthalein liegt im sauren Milieu stets farblos vor und deprotoniert erst im alkalischen Bereich zu einer sichtbaren, pinken Spezies.
+Diese Beobachtung deckt sich mit dem bekannten Werten \ref{tab:indikatoren}. \cite{mortimer_muller}
 
 \subsubsection{Fehlerbetrachtung}
 
-Mögliche Fehlerquellen wären Verunreinigungen der Reagenzgläser oder eine unzureichende Durchmischung der Lösungen. Zusätzlich könnten Beleuchtung und Betrachtungswinkel die Wahrnehmung der Farben beeinflusst haben.
+Primäre Fehlerquellen sind Kalibrierungsungenauigkeiten der pH-Elektrode sowie mögliche Verunreinigungen der Probenlösungen. Zudem ist die visuelle Bestimmung der Farbumschläge stets subjektiv, was geringfügige Abweichungen von den theoretischen Literaturwerten erklärt.
 
 \subsection{Versuch 3: Titration von Essigsäure}
 \subsubsection{Aufgabenstellung}
 Die Stoffmenge an Essigsäure in einer Lösung unbekannter Konzentration soll durch eine Säure-Base-Titration mit \SI{0,1}{\mole\per\liter} Natronlauge bestimmt werden.
 
 \subsubsection{Durchführung}
-Ein Analysenkolben, mit der zu analysierenden Lösung, wird mit demineralisiertem Wasser bis zur \SI{100}{\milli\liter}-Marke aufgefüllt und durchmischt. Mit einer Vollpipette werden \SI{25}{\milli\liter} dieser Lösung entnommen und in einen Erlenmeyerkolben überführt und erneut mit demineralisiertem Wasser auf \SI{100}{\milli\liter} aufgefüllt. Anschließend wird die Lösung mit wenigen Tropfen Phenolphthalein versetzt und erneut durch vorsichtiges Schwenken gemischt.
+Ein Analysenkolben mit der zu analysierenden Lösung wird mit demineralisiertem Wasser bis zur \SI{100}{\milli\liter}-Marke aufgefüllt und durchmischt. Mit einer Vollpipette werden \SI{25}{\milli\liter} dieser Lösung entnommen und in einen Erlenmeyerkolben überführt und erneut mit demineralisiertem Wasser auf \SI{100}{\milli\liter} aufgefüllt. Anschließend wird die Lösung mit wenigen Tropfen Phenolphthalein versetzt und erneut durch vorsichtiges Schwenken gemischt.
 
 Die Bürette wird mit \SI{0,1}{\mole\per\liter} Natronlauge bis zur Nullmarke gefüllt. Die Titration wird bis zum Farbumschlag von farblos nach leicht rosa durchgeführt, wobei der Erlenmeyerkolben kontinuierlich geschwenkt wird.
 
