@@ -266,67 +266,83 @@ Weitere Abweichungen können durch das Ablesen der Bürette sowie durch kleine U
 
 Insgesamt ist die Übereinstimmung mit dem Literaturwert jedoch als sehr gut zu bewerten.
 
-\subsection{Berechnung einer Puffermischung}
-\subsubsection{Aufgabenstellung}
-Mithilfe der Henderson-Hasselbalch-Gleichung soll eine Puffermischung aus Essigsäure und Natriumacetat betrachtet werden, die bei einem pH-Wert von 5{,}5 ihre maximale Pufferwirkung entfaltet.
 
-Gegeben sind \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung. Gesucht ist die benötigte Menge an Natriumacetat, die in der Essigsäurelösung gelöst werden muss um die gewünschte Pufferwirkung zu erzielen, sowie die Einwaage an Natriumacetat-Trihydrat (\ce{NaCH3COO * 3 H2O}).
+\subsection{Berechnung einer Puffermischung}
+
+\subsubsection{Aufgabenstellung}
+
+Mithilfe der Henderson-Hasselbalch-Gleichung soll die Zusammensetzung einer Puffermischung aus Essigsäure und Natriumacetat bestimmt werden, die bei einem pH-Wert von 5{,}5 ihre maximale Pufferwirkung entfaltet.
+
+Gegeben sind \SI{10}{ml} einer \SI{0,1}{\frac{\mole}{l}} Essigsäurelösung. Gesucht sind die erforderliche Stoffmenge an Natriumacetat, die daraus resultierende Konzentration in der Puffermischung sowie die entsprechende Einwaage an Natriumacetat-Trihydrat (\ce{CH3COONa * 3 H2O}).
 
 \subsubsection{Berechnung}
-Die Berechnung erfolgt über die Henderson-Hasselbalch-Gleichung \ref{eq:henderson_hasselbalch}.
 
-Für Essigsäure wird der Literaturwert \(\mathrm{p}K_\mathrm{S} = 4{,}76\) eingesetzt \cite{nist_chemistry_webbook}.
-
-\begin{equation}
-    \begin{aligned}
-        5{,}5                                  & = 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
-        0{,}74                                 & = \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)          \\
-        \frac{[\ce{CH3COO^-}]}{[\ce{CH3COOH}]} & = 10^{0{,}74} = 5{,}5
-    \end{aligned}
-\end{equation}
-
-Die Stoffmenge der Essigsäure ergibt sich aus der Gleichung.
+Die Berechnung erfolgt mithilfe der Henderson-Hasselbalch-Gleichung \ref{eq:henderson_hasselbalch}. Für Essigsäure wird der Literaturwert \(\mathrm{p}K_\mathrm{S} = 4{,}76\) verwendet \cite{nist_chemistry_webbook}.
 
 \begin{equation}
     \begin{aligned}
-        n(\ce{CH3COOH}) & = c \cdot V                                          \\
-                        & = \SI{0,1}{\mole\per\liter} \cdot \SI{0,010}{\liter} \\
-                        & = \SI{1,0e-3}{\mole}
+        5{,}5
+            & = 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
+        0{,}74
+            & = \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
+        \frac{[\ce{CH3COO^-}]}{[\ce{CH3COOH}]}
+            & = 10^{0{,}74} = 5{,}5
     \end{aligned}
 \end{equation}
 
-Für das benötigte Acetat-Ion folgt aus der Berechnung.
+Damit ergibt sich für die maximale Pufferwirkung bei pH 5{,}5 ein Konzentrationsverhältnis von Acetat zu Essigsäure von 5{,}5 : 1.
+
+Die Stoffmenge der eingesetzten Essigsäure wird nach Gleichung \ref{eq:essigsaeure_stoffmenge} berechnet.
 
 \begin{equation}
+    \label{eq:essigsaeure_stoffmenge}
     \begin{aligned}
-        n(\ce{CH3COO^-}) & = 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
-                         & = \SI{5,5e-3}{\mole}
+        n(\ce{CH3COOH})
+            & = c \cdot V \\
+            & = \SI{0,1}{\mole\per\liter} \cdot \SI{0,010}{\liter} \\
+            & = \SI{1,0e-3}{\mole}
     \end{aligned}
 \end{equation}
-Die Konzentration der benötigten Natriumacetatlösung ergibt sich aus der Stoffmenge und dem Volumen der Lösung.
+
+Aus dem zuvor berechneten Verhältnis von Acetat zu Essigsäure ergibt sich nach Gleichung \ref{eq:acetat_stoffmenge} die benötigte Stoffmenge an Acetat-Ionen.
 
 \begin{equation}
+    \label{eq:acetat_stoffmenge}
     \begin{aligned}
-        c(\ce{CH3COONa}) & = \frac{n}{V}                                   \\
-                         & = \frac{\SI{5,5e-3}{\mole}}{\SI{0,010}{\liter}} \\
-                         & = \SI{0,55}{\mole\per\liter}
+        n(\ce{CH3COO^-})
+            & = 5{,}5 \cdot n(\ce{CH3COOH}) \\
+            & = 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
+            & = \SI{5,5e-3}{\mole}
     \end{aligned}
 \end{equation}
 
-\vspace{0.5em}
+Da Natriumacetat vollständig in Natrium- und Acetat-Ionen dissoziiert, entspricht die benötigte Stoffmenge an Natriumacetat der Stoffmenge an Acetat-Ionen.
 
-Für die Einwaage von Natriumacetat-Trihydrat (\ce{CH3COONa * 3 H2O}) mit \(M = \SI{136,08}{\gram\per\mole}\) ergibt sich folgende Beziehung:
+Bezogen auf das Gesamtvolumen von \SI{10}{\milli\liter} ergibt sich daraus die Konzentration:
 
 \begin{equation}
+    \label{eq:natriumacetat_konzentration}
     \begin{aligned}
-        m & = n \cdot M                                            \\
-          & = \SI{5,5e-3}{\mole} \cdot \SI{136,08}{\gram\per\mole} \\
-          & = \SI{0,75}{\gram}
+        c(\ce{CH3COONa})
+            & = \frac{n}{V} \\
+            & = \frac{\SI{5,5e-3}{\mole}}{\SI{0,010}{\liter}} \\
+            & = \SI{0,55}{\mole\per\liter}
     \end{aligned}
 \end{equation}
 
-Damit müssen \SI{0,75}{\gram} Natriumacetat-Trihydrat in \SI{10}{\milli\liter} einer \SI{0,1}{\mole\per\liter} Essigsäurelösung gelöst werden.
+Für die Einwaage von Natriumacetat-Trihydrat (\ce{CH3COONa * 3 H2O}) mit der molaren Masse $M = \SI{136,08}{\frac{\gram}{\mole}}$ ergibt sich nach Gleichung \ref{eq:einwaage_natriumacetat} die benötigte Masse:
 
+\begin{equation}
+    \label{eq:einwaage_natriumacetat}
+    \begin{aligned}
+        m
+            & = n \cdot M \\
+            & = \SI{5,5e-3}{\mole} \cdot \SI{136,08}{\frac{\gram}{\mole}} \\
+            & = \SI{0,75}{\gram}
+    \end{aligned}
+\end{equation}
+
+Zur Herstellung der Puffermischung müssen \SI{0,75}{\gram} Natriumacetat-Trihydrat in \SI{10}{\milli l} einer \SI{0,1}{\frac{\mole}{l}} Essigsäurelösung gelöst werden. Die dabei eingebrachte Stoffmenge an Natriumacetat entspricht einer Konzentration von \SI{0,55}{\frac{\mole}{l}}.
 \newpage
 
 \section{Zusammenfassung}
