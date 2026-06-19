@@ -6,14 +6,14 @@ Das grundlegende Modell zur Beschreibung von Protolysen ist die Säure-Base-Theo
 
 \subsection{Autoprotolyse des Wassers und $\text{pH}$-Wert}
 
-Anhand der Autoprotolyse des Wassers lassen sich sowohl die Eigenschaften von Ampholyten als auch die Prinzipien protolytischer Reaktionen veranschaulichen. Dabei läuft die in \eqref{eq:protolyse_wasser} dargestellte Reaktion ab. \cite{skript}
+Anhand der Autoprotolyse des Wassers lassen sich sowohl die Eigenschaften von Ampholyten als auch die Prinzipien protolytischer Reaktionen veranschaulichen. Dabei läuft die in \eqref{eq:protolyse_wasser} dargestellte Reaktion ab.
 \begin{equation}
     \ce{2H2O_{\mathrm{(l)}} <=> H3O+ _{\mathrm{(aq)}} + OH- _{\mathrm{(aq)}}}
     \label{eq:protolyse_wasser}
 \end{equation}
 Hierbei reagiert ein Wassermolekül als Protonenakzeptor und ein zweites als Protonendonator. Bei der Rückreaktion fungiert wiederum das entstehende Oxonium-Ion als Protonendonator und das Hydroxid-Ion als Protonenakzeptor \cite{skript}.
 
-Für diese Gleichgewichtsreaktion \eqref{eq:protolyse_wasser} lässt sich nun das Massenwirkungsgesetz \eqref{eq:mwg_wasser} aufstellen.
+Für die in \eqref{eq:protolyse_wasser} dargestellte Gleichgewichtsreaktion lässt sich das Massenwirkungsgesetz nach \eqref{eq:mwg_wasser} formulieren.
 \begin{equation}
     K = \frac{[\ce{H3O+}][\ce{OH-}]}{[\ce{H2O}]^2}
     \label{eq:mwg_wasser}
@@ -27,188 +27,52 @@ Für diese Gleichgewichtsreaktion \eqref{eq:protolyse_wasser} lässt sich nun da
 %\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Da die Konzentration des Wassers in verdünnten wässrigen Lösungen etwa \SI{55,5}{\frac{\mole}{l}} beträgt und folglich nahezu konstant ist, kann sie mit der Gleichgewichtskonstanten $K$ zu einer neuen Konstante zusammengefasst werden. Dadurch wird das Ionenprodukt des Wassers $K_{\mathrm{w}}$ definiert \eqref{eq:KW-Wert}. \cite{skript}
+Da die Konzentration des Wassers in verdünnten wässrigen Lösungen etwa \SI{55,5}{\frac{\mole}{l}} beträgt und folglich nahezu konstant ist, kann sie mit der Gleichgewichtskonstanten $K$ zu einer neuen Konstante zusammengefasst werden. Dadurch wird das Ionenprodukt des Wassers $K_{\mathrm{w}}$ in \eqref{eq:KW-Wert} definiert. \cite{skript}
 
 \begin{equation}
     K_{\mathrm{w}} = K \cdot [\ce{H2O}]^2 = [\ce{H3O+}] \cdot [\ce{OH-}] %kürzen?
     \label{eq:KW-Wert}
 \end{equation}
 
-Bei \SI{25}{\celsius} beträgt das Ionenprodukt des Wassers $K_\mathrm{W} = \SI{e-14}{  \frac{\mole\squared}{l\squared}}$. Da solche Ionenkonzentrationen mehrere Größenordnungen unter der Stoffmengenkonzentration des Wassers liegen, verwendet man als Maß für den sauren oder basischen Charakter einer Lösung den $\text{pH}$-Wert \eqref{eq:ph_definition}. \cite{skript}
+Bei \SI{25}{\celsius} beträgt das Ionenprodukt des Wassers $K_\mathrm{W} = \SI{e-14}{  \frac{\mole\squared}{l\squared}}$. Da solche Ionenkonzentrationen mehrere Größenordnungen unter der Stoffmengenkonzentration des Wassers liegen, wird als Maß für den sauren oder basischen Charakter einer Lösung der pH-Wert gemäß \eqref{eq:ph_definition} verwendet. \cite{skript}
 
 \begin{equation}
     \mathrm{pH} = -\log [\ce{H3O+}]
     \label{eq:ph_definition}
 \end{equation}
 
-% pKw?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{Autoprotolyse des Wassers und $\text{pH}$-Wert}
-%Wasser ist amphoter, das heißt es kann sowohl als Säure als auch als Base reagieren, und es kommt zur Autoprotolyse\cite{skript}:
-%\begin{equation}
-%    \ce{2H2O <=> H3O+ + OH-}
-%    \label{eq:autoprotolyse}
-%\end{equation}
-%
-%
-%Das Ionenprodukt des Wassers lässt sich direkt aus dem Massenwirkungsgesetz ableiten, da die Konzentration des Wassers als konstant angenommen wird, und deswegen gilt:
-%\begin{equation}
-%    K_\mathrm{W} = [\ce{H3O+}] \cdot [\ce{OH-}]
-%    \label{eq:kw_definition}
-%\end{equation}
-%
-%
-%Bei \SI{25}{\celsius} gilt $K_\mathrm{W} = \SI{1e-14}{\mole\squared\perl\squared}$.\\
-%Für neutrales Wasser folgt:
-%\begin{equation}
-%    [\ce{H3O+}] = [\ce{OH-}] = 10^{-7}\,\si{\mole\perl}
-%    \label{eq:neutralwasser}
-%\end{equation}
-%
-%Der $\text{pH}$-Wert ist definiert als der negative dekadische Logarithmus der Oxoniumionenkonzentration \cite{skript}:
-%\begin{equation}
-%    \mathrm{pH} = -\log [\ce{H3O+}]
-%    \label{eq:ph_definition}
-%\end{equation}
-%
-%Es gilt außerdem der Zusammenhang zwischen dem $\text{pH}$-Wert und dem pOH-Wert \cite{skript}:
-%\begin{equation}
-%    \mathrm{p}K_\mathrm{W} = \mathrm{pH} + \mathrm{pOH}
-%    \label{eq:pkw_beziehung}
-%\end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - temp felix version
-%\subsection{Die Autoprotolyse des Wassers -temp felix k}
-%
-%Die Autoprotolyse des Ampholyten Wasser ist ein anschauliches Beispiel
-%sowohl für die Eigenschaften eines Ampholyten als auch für Protolysen
-%insgesamt. Dabei findet Reaktion \eqref{eq:Autoprotolyse} statt\cite{skript}.
-%\begin{equation}
-%    \text{H}_{2}\text{O}_{(\text{l})}+\text{H}_{2}\text{O}_{(\text{l})}\rightleftharpoons\text{H}_{3}\text{O}^{+}_{(\text{aq})}+\text{OH}^{-}_{\text{(aq)}}\label{eq:Autoprotolyse}
-%\end{equation}
-%
-%Hierbei reagiert das ein Wasserstoffmolekül als Protonenakzeptor und
-%ein anderes Molekül als Protonendonator. Bei der Rückreaktion reagiert
-%wiederum das Oxonium-Ion als Protonendonator und das Hydroxid-Ion
-%als Protonenakzeptor.\cite{skript}
-%
-%Für diese Reaktion lässt sich nun das Massenwirkungsgesetz (MWG) \eqref{eq:mwg}
-%aufstellen.
-%\begin{equation}
-%    K=\frac{[\text{H}_{3}\text{O}^{+}][\text{OH}^{-}]}{[\text{H}_{2}\text{O}]^{2}}\label{eq:mwg}
-%\end{equation}
-%Aus diesem lässt sich dann durch Multiplikation mit der Konzentration
-%des Wassers, die aufgrund der Tatsache, dass nur sehr wenige Wassermoleküle
-%dissoziieren, nahezu konstant bleibt, folgern \cite{skript}:
-%\begin{equation}
-%    K_{\text{w}}=[\text{H}_{3}\text{O}^{+}][\text{OH}^{-}]\label{eq:Kw}
-%\end{equation}
-%Bei $T=25{^{\circ}}\text{C}$ ist das Ionenprodukt des Wassers $K_{\text{w}}=10^{-14}\,\frac{\text{mol}^{2}}{\text{l}^{2}}$.
-%Da in der Säure-Base-Chemie auftretende Zahlenwerte häufig sehr klein
-%sind, werden sie meistens stattdessen als p-Werte angegeben, also
-%als negativer dekadischer Logarithmus. Daraus folgt, dass $\text{p}K_{\text{W}}=14$.
-%Genauso gibt es entsprechend den $\text{pH}$-Wert \eqref{eq:ph}, der die Konzentration
-%an Oxoniumionen angibt, welcher bei Standardbedingungen bei 7 liegt.
-%\begin{equation}
-%    \text{pH}=-\log([\text{H}^{+}])\label{eq:ph}
-%\end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Säure-Base-Theorie nach Brønsted}
 
 Die Brønsted-Theorie besagt, dass die Zugabe einer Säure zu einer wässrigen Lösung die Konzentration von Oxoniumionen erhöht, während die Zugabe einer Base diese verringert.
 Lösungen mit einem $\text{pH}$-Wert kleiner als 7 werden daher als sauer, Lösungen mit einem $\text{pH}$-Wert größer als 7 als basisch gekennzeichnet.
-Aus dem Ionenprodukt des Wassers \eqref{eq:KW-Wert} folgt außerdem, dass bei \SI{25}{\celsius} die Summe aus $\text{pH}$-Wert und pOH-Wert stets 14 beträgt, sodass sich aus einer der beiden Größen jeweils die andere berechnen lässt. Zur Beschreibung der Säurestärke dient die Säurekonstante $K_\mathrm{S}$ beziehungsweise der zugehörige $\text{p}K_{\text{S}}$-Wert. Dabei ergibt sich $K_\mathrm{S}$ in Gleichung \eqref{eq:Ks_wert} aus der Gleichgewichtskonstanten der Protolyse \eqref{eq:mwg_wasser}, indem diese mit der Konzentration des Wassers Multipliziert wird \cite{skript}. %konjugiert erklären
+Aus dem Ionenprodukt des Wassers in \eqref{eq:KW-Wert} folgt außerdem, dass bei \SI{25}{\celsius} die Summe aus $\text{pH}$-Wert und pOH-Wert stets 14 beträgt, sodass sich aus einer der beiden Größen jeweils die andere berechnen lässt. Zur Beschreibung der Säurestärke dient die Säurekonstante $K_\mathrm{S}$ beziehungsweise der zugehörige $\text{p}K_{\text{S}}$-Wert. Dabei ergibt sich $K_\mathrm{S}$ in \eqref{eq:Ks_wert} aus der Gleichgewichtskonstanten der Protolyse, indem diese mit der Konzentration des Wassers Multipliziert wird \cite{skript}.
 
-%Zudem ist nach der Brønsted-Theorie jeder Säure und Base ein $K_{\text{S}}$-, bzw. $\text{p}K_{\text{S}}$-Wert\cite{skript}, welcher die Gleichgewichtskonstante $K$ des Reaktionsgleichgewichts zwischen einer Säure und deren konjugierter Base darstellt, zugeordnet. Dieser Wert wird aus der Gleichgewichtskonstante $K$ durch Multiplikation mit der Konzentration des Wasser berechnet. \newline
-%
-%Nach der Brønsted-Theorie erhöht die Zugabe einer Säure zu einer wässrigen
-%Lösung die Konzentration von Oxoniumionen, während die Zugabe einer
-%Base diese senkt. Dabei werden Lösungen mit einem pH-Wert kleiner
-%als 7 als sauer bezeichnet, während Lösungen mit einem pH-Wert größer
-%als 7 als basisch bezeichnet werden. Aus $K_{\text{w}}$ und aus \eqref{eq:Kw}
-%folgt, dass die Summe aus pH-Wert und pOH-Wert unter Normalbedingungen
-%immer 14 ist. Damit lässt sich aus dem $\text{pH}$-Wert der $\text{pOH}$-Wert
-%und umgekehrt berechnen. Nach der Brønsted-Theorie ist außerdem jeder
-%Säure und jeder Base ein Wert zugeordnet, der die Gleichgewichtskonstante
-%$K$ der Reaktionsgleichgewichts zwischen Säure und konjugierter Base
-%repräsentiert. Dieser Wert ist der $K_{\text{S}}$-, bzw. $\text{p}K_{\text{S}}$-Wert
-%\cite{skript}. Dieser wird aus $K$ durch Multiplikation mit der
-%Konzentration des Wassers berechnet.
 \begin{equation}
     K_{\text{S}}=\frac{[\text{H}_{3}\text{O}^{+}][\text{A}^{-}]}{[\text{HA}]}
     \label{eq:Ks_wert}
 \end{equation}
 
-Für Basen wird die Basenstärke entsprechend durch den $\text{p}K_{\text{B}}$-Wert beschrieben, der mit dem $\text{p}K_{\text{S}}$-Wert der konjugierten Säure über Gleichung \eqref{eq:pkbpks} zusammenhängt.
+Für Basen wird die Basenstärke entsprechend durch den $\text{p}K_{\text{B}}$-Wert beschrieben, der mit dem $\text{p}K_{\text{S}}$-Wert der konjugierten Säure über \eqref{eq:pkbpks} zusammenhängt.
 \begin{equation}
     \text{p}K_{\text{S}}+\text{p}K_{\text{B}}=14\label{eq:pkbpks}
 \end{equation}
 
-Für starke Säuren, welche vollständig dissoziieren, errechnet sich der pH-Wert mit Gleichung \eqref{eq:phs}.
+Für starke Säuren, welche vollständig dissoziieren, errechnet sich der pH-Wert mit \eqref{eq:phs}.
 \begin{equation}
     \text{pH}=-\log(c_{0})\label{eq:phs}
 \end{equation}
 Bei dieser wird angenommen, dass die anfängliche Konzentration der hinzugegebenen Säure gleich der Konzentration Oxonium-Ionen nach der Dissoziiation ist.\\
 
-Der pH-Wert einer schwachen Säure ergibt sich aus Gleichung \eqref{eq:phw}. \cite{skript}
+Der pH-Wert einer schwachen Säure ergibt sich aus \eqref{eq:phw}. \cite{skript}
 \begin{equation}
     \text{pH}=\frac{1}{2}(\text{p}K_{\text{S}}-\log(c_{0}))\label{eq:phw}
 \end{equation}
 Hierbei vereinfacht man mit der Annahme, dass bei einem hohen $\text{p}K_{\text{S}}$-Wert nur ein Bruchteil der zugegebenen Säure dissoziiert.
 
-%\subsection{Säure- und Basenstärke}
-%
-%Die Säurestärke beschreibt wie gut eine Säure Protonen abgeben kann, und wird durch die Säurekonstante beschrieben. Die Säurekonstante lässt sich aus dem Massenwirkungsgesetz für die Reaktion \ref{eq:brønsted_allgemein} ableiten, in dem die Konzentration des Wassers als konstant angenommen wird \cite{skript}:
-%\begin{equation}
-%    K_\mathrm{S} =
-%    \frac{[\ce{H3O+}][\ce{A^-}]}{[\ce{HA}]}
-%    \label{eq:ks_definition}
-%\end{equation}
-%
-%Der p$K$S-Wert ist definiert als der negative dekadische Logarithmus der Säurekonstante \cite{skript}:
-%\begin{equation}
-%    \mathrm{p}K_\mathrm{S} = -\log K_\mathrm{S}
-%    \label{eq:pks_definition}
-%\end{equation}
-%
-%Für schwache Säuren gilt mithilfe der Näherung, dass die Konzentration der Säure vor und nach der Reaktion nahezu gleich ist\cite{skript}:
-%\begin{equation}
-%    [\ce{H3O+}] = \sqrt{K_\mathrm{S} \cdot c_0}
-%    \label{eq:schwache_saeure_nahe}
-%\end{equation}
-%
-%\subsection{Protolysegleichgewichte}
-%
-%Für konjugierte Säure-Base-Paare gilt, die Beziehung lässt sich wie folgt herleiten \cite{atkins_kurzlehrbuch_2020}:
-%\begin{equation}
-%    K_\mathrm{S} \cdot K_\mathrm{B} = \frac{[\ce{H3O+}][\ce{A^-}]}{[\ce{HA}]} \cdot \frac{[\ce{OH-}][\ce{HA}]}{[\ce{A^-}]} = [\ce{H3O+}] \cdot [\ce{OH-}] = K_\mathrm{W}
-%    \label{eq:ks_kb_herleitung}
-%\end{equation}
-%\begin{equation}
-%    K_\mathrm{S} \cdot K_\mathrm{B} = K_\mathrm{W}
-%    \label{eq:ks_kb_beziehung}
-%\end{equation}
-
-%\subsection{Puffersysteme}
-%
-%Ein Puffersystem besteht aus einem konjugierten Säure-Base-Paar, dabei kann die Säure Basen abfangen und die Base Säuren abfangen, dadurch bleibt der pH-Wert stabil. Der pH-Wert eines Puffers ergibt sich aus der Henderson-Hasselbalch-Gleichung \cite{skript}:
-%
-%\begin{equation}
-%    \mathrm{pH} = \mathrm{p}K_\mathrm{S}
-%    + \log \left(
-%    \frac{[\ce{A^-}]}{[\ce{HA}]}
-%    \right)
-%    \label{eq:henderson_hasselbalch}
-%\end{equation}
-
 
 \subsection{Puffersysteme}
 
-Ein Puffersystem ist eine Lösung, die den pH-Wert bei Zugabe kleiner Mengen an Säuren oder Basen in einem bestimmten Bereich annähernd konstant hält. Es besteht aus einer schwachen Säure \ce{HA} und ihrer konjugierten Base \ce{A^-}. Bei Zugabe einer Säure verschiebt sich das Protolysegleichgewicht in Richtung der nicht dissoziierten Form \ce{HA}, während es sich bei Zugabe einer Base in Richtung der dissoziierten Form \ce{A^-} verschiebt. Auf diese Weise werden zugeführte Oxonium- beziehungsweise Hydroxidionen teilweise abgefangen, sodass die pH-Änderung abgeschwächt wird. Der pH-Wert einer solchen Lösung lässt sich mit der Henderson-Hasselbalch-Gleichung \eqref{eq:henderson_hasselbalch} beschreiben. \cite{skript}
+Ein Puffersystem ist eine Lösung, die den pH-Wert bei Zugabe kleiner Mengen an Säuren oder Basen in einem bestimmten Bereich annähernd konstant hält. Es besteht aus einer schwachen Säure \ce{HA} und ihrer konjugierten Base \ce{A^-}. Bei Zugabe einer Säure verschiebt sich das Protolysegleichgewicht in Richtung der nicht dissoziierten Form \ce{HA}, während es sich bei Zugabe einer Base in Richtung der dissoziierten Form \ce{A^-} verschiebt. Auf diese Weise werden zugeführte Oxonium- beziehungsweise Hydroxidionen teilweise abgefangen, sodass die pH-Änderung abgeschwächt wird. Der pH-Wert einer solchen Lösung lässt sich mit der Henderson-Hasselbalch-\eqref{eq:henderson_hasselbalch} beschreiben. \cite{skript}
 \begin{equation}
     \mathrm{pH} = \mathrm{p}K_\mathrm{S} + \log \left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)
     \label{eq:henderson_hasselbalch}
