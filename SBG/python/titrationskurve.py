@@ -5,15 +5,17 @@ import matplotlib.pyplot as plt
 # -----------------------------
 # Parameter
 # -----------------------------
-c_acid = 0.0448          # mol/L (verdünnte Essigsäure)
-V_acid = 0.025           # L
+c_acid = 0.0112#0.0448          # mol/L (verdünnte Essigsäure)
+V_acid = 0.1           # L
 Ka = 1.8e-5
-pKa = -np.log10(Ka)
+pKa = 4.75#-np.log10(Ka)
 c_base = 0.1             # mol/L
 
 n_acid = c_acid * V_acid
 V_eq = n_acid / c_base   # Äquivalenzpunkt
 V_half = V_eq / 2        # Halbäquivalenzpunkt
+
+ph_eq_meassured = 8.4
 
 Kw = 1e-14
 V_base_added = np.linspace(0, 0.022, 500)  # bis 22 mL NaOH
@@ -58,8 +60,8 @@ plt.scatter(V_half*1000, pKa, color="orange", zorder=5,
 plt.axvline(V_half*1000, color="orange", linestyle="--")
 
 # Äquivalenzpunkt markieren
-plt.scatter(V_eq*1000, 8.62, color="red", zorder=5,
-            label=f"Äquivalenzpunkt pH≈8.62")
+plt.scatter(V_eq*1000, ph_eq_meassured, color="red", zorder=5,
+            label=f"Äquivalenzpunkt pH≈{ph_eq_meassured}")
 plt.axvline(V_eq*1000, color="red", linestyle="--")
 
 # Achsen & Titel

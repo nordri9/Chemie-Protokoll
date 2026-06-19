@@ -181,86 +181,115 @@ Die Bürette wird mit \SI{0,1}{\frac{\mole}{l}} Natronlauge bis zur Nullmarke ge
 \subsubsection{Beobachtungen}
 Nach Zugabe von \SI{11,2}{ml} Natronlauge erfolgt ein Farbumschlag der zuvor farblosen Essigsäurelösung zu einer leicht violett/lila gefärbten Lösung.
 
+%\subsubsection{Auswertung}
+%
+%
+%Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge in \eqref{eq:Natronlauge-Stoffmenge} berechnet.
+%
+%\begin{equation}
+%    n(\ce{NaOH}) = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{011.2}{ml} = \SI{1.12}{\milli\mole}
+%    \label{eq:Natronlauge-Stoffmenge}
+%\end{equation}
+%
+%Da bei dieser Titration eine einprotonige Säure mit einer einprotonigen Base reagiert, liegt am Äquivalenzpunkt ein äquimolares Stoffmengenverhältnis vor. Somit sind die umgesetzten Stoffmengen von Essigsäure und Natronlauge identisch, wie in Gleichung \eqref{eq:n=n} quantifiziert wird.
+%\begin{equation}
+%    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{1.12}{\milli\mole}
+%    \label{eq:n=n}
+%\end{equation}
+%
+%Da nun die Stoffmenge und das Volumen der Essigsäure in der titrierten Lösung bekannt sind lässt sich die Konzentration mittels \eqref{eq:n_ges} berechnen.
+%
+%\begin{equation}
+%    c(\ce{CH3COOH}) =\frac{\SI{1.12}{\milli\mole}}{\SI{0,1}{l}} = \SI{11.2}{\frac{\milli\mole}{l}}
+%    \label{eq:n_ges}
+%\end{equation}
+%
+%Diese Konzentration bezieht sich auf die für die Titration verwendete auf 100 mL
+%verdünnte Analysenlösung.
+%Da lediglich \SI{25}{ml} der insgesamt auf \SI{100}{ml} aufgefüllten Lösung titriert wurden, ergibt  sich für die gesamte Lösung die vierfache Stoffmenge in \eqref{eq:4.48millimole}.
+%
+%\begin{equation}
+%    n_{\text{gesamt}} = 4 \cdot \SI{1.12}{\milli\mole} = \SI{4.48}{\milli\mole}
+%    \label{eq:4.48millimole}
+%\end{equation}
+%
+%Dieser wert entspricht in etwa dem Literaturwert, welcher \SI{4,5145}{\milli\mole} beträgt.
+%\newline
+%
+%
+%Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich Acetat-Ionen, welche in Wasser protolysieren. Dadurch entsteht eine basische Lösung, weshalb der pH-Wert am Äquivalenzpunkt größer als 7 ist. \cite{atkins_kurzlehrbuch_2020}
+%
+%Zur Berechnung der Acetat-Ionen-Konzentration am Äquivalenzpunkt wird \eqref{eq:c(AC)} verwendet.
+%
+%\begin{equation}
+%    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{1.12}{\milli\mole}}{\SI{.1}{l}} = \SI{11.2}{\frac{\milli\mole}{l}}
+%    \label{eq:c(AC)}
+%\end{equation}
+%
+%
+%
+%
+%\begin{align}
+%    \text{pH} & =14-\frac{1}{2}(14-\text{p}K_{\text{S}})-\log(c_{0})                                                   \\
+%              & =14-\frac{1}{2}\left(\left(14-4,75\right)-\log\left(10\frac{\text{mmol}}{\text{l}}\right)\right)=8,375
+%    \label{eq:phacet}
+%\end{align}
+%
+%
+%
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=1\textwidth]{python/titrationskurveverbessert.pdf}
+%    \caption{Titrationskurve von Essigsäure mit NaOH}
+%    \label{fig:titration}
+%\end{figure}
+
+
 \subsubsection{Auswertung}
 
-
-Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge in \eqref{eq:Natronlauge-Stoffmenge} berechnet.
+Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Maßlösung ermittelt. Aus dem am Äquivalenzpunkt abgelesenen Volumen von \SI{11,2}{ml} Natronlauge errechnet sich der Wert nach  \eqref{eq:Natronlauge-Stoffmenge}.
 
 \begin{equation}
-    n(\ce{NaOH}) = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{011.2}{ml} = \SI{1.12}{\milli\mole}
+    n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{11,2}{ml} = \SI{1,12}{\milli\mole}
     \label{eq:Natronlauge-Stoffmenge}
 \end{equation}
 
-Da bei dieser Titration eine einprotonige Säure mit einer einprotonigen Base reagiert, liegt am Äquivalenzpunkt ein äquimolares Stoffmengenverhältnis vor. Somit sind die umgesetzten Stoffmengen von Essigsäure und Natronlauge identisch, wie in Gleichung \eqref{eq:n=n} quantifiziert wird.
-\begin{equation}
-    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{1.12}{\milli\mole}
-    \label{eq:n=n}
-\end{equation}
-
-Da nun die Stoffmenge und das Volumen der Essigsäure in der titrierten Lösung bekannt sind lässt sich die Konzentration mittels \eqref{eq:n_ges} berechnen.
+Nach der Brønsted-Theorie reagiert die einprotonige Essigsäure mit der Natronlauge am Äquivalenzpunkt vollständig. Aufgrund des äquimolaren Verhältnisses sind die umgesetzten Stoffmengen von Säure und Base identisch, was in \eqref{eq:n_aequivalenz} formuliert wird.
 
 \begin{equation}
-    c(\ce{CH3COOH}) =\frac{\SI{1.12}{\milli\mole}}{\SI{0,1}{l}} = \SI{11.2}{\frac{\milli\mole}{l}}
-    \label{eq:n_ges}
+    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{1,12}{\milli\mole}
+    \label{eq:n_aequivalenz}
 \end{equation}
 
-Diese Konzentration bezieht sich auf die für die Titration verwendete auf 100 mL
-verdünnte Analysenlösung.
-Da lediglich \SI{25}{ml} der insgesamt auf \SI{100}{ml} aufgefüllten Lösung titriert wurden, ergibt  sich für die gesamte Lösung die vierfache Stoffmenge in \eqref{eq:4.48millimole}.
+Die untersuchte Probe von \SI{25}{ml} entspricht exakt einem Viertel der ursprünglich angesetzten Analysenlösung. Die Gesamtstoffmenge der ausgegebenen Essigsäure berechnet sich folglich durch Multiplikation mit dem Faktor vier gemäß  \eqref{eq:n_gesamt}.
 
 \begin{equation}
-    n_{\text{gesamt}} = 4 \cdot \SI{1.12}{\milli\mole} = \SI{4.48}{\milli\mole}
-    \label{eq:4.48millimole}
+    n_{\text{gesamt}} = 4 \cdot \SI{1,12}{\milli\mole} = \SI{4,48}{\milli\mole}
+    \label{eq:n_gesamt}
 \end{equation}
 
-Dieser wert entspricht in etwa dem Literaturwert, welcher \SI{4,5145}{\milli\mole} beträgt.
-\newline
+Dieser experimentell ermittelte Wert weist eine hohe Übereinstimmung mit dem Literaturwert von \SI{4,5145}{\milli\mole} auf.
 
-
-Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich Acetat-Ionen, welche in Wasser protolysieren. \cite{atkins_kurzlehrbuch_2020}
-
-Dadurch entsteht eine basische Lösung, weshalb der pH-Wert am Äquivalenzpunkt größer als 7 ist.
-
-Zur Berechnung wird die Konzentration der Acetat-Ionen am Äquivalenzpunkt verwendet.
+Am Äquivalenzpunkt liegt die Essigsäure nahezu vollständig als deprotonierte, konjugierte Base vor. Die Stoffmengenkonzentration der Acetat-Ionen wird näherungsweise über das Volumen vor der Titration von \SI{0,1}{l} in \eqref{eq:c_Acetat} berechnet.
 
 \begin{equation}
-    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{1.12}{\milli\mole}}{\SI{.1}{l}} = \SI{11.2}{\frac{\milli\mole}{l}}
+    c(\ce{CH3COO^-}) = \frac{n(\ce{CH3COOH})}{V_{\text{Probe}}} = \frac{\SI{1,12}{\milli\mole}}{\SI{0,1}{l}} = \SI{11,2}{\frac{\milli\mole}{l}}
+    \label{eq:c_Acetat}
 \end{equation}
 
-Mit dem Zusammenhang für schwache Basen aus \eqref{eq:phw} lässt sich der
+Da das Acetat-Ion in Wasser basisch reagiert, liegt der pH-Wert am Äquivalenzpunkt im alkalischen Bereich. Unter Berücksichtigung der in \eqref{eq:pkbpks} beschriebenen Beziehung zwischen Säure- und Basenkonstante wird der theoretische pH-Wert dieser schwachen Base über \eqref{eq:ph_aequiv} bestimmt.
 
-%\begin{equation}
-%    [\ce{OH^-}] = \sqrt{K_\mathrm{B} \cdot c}
-%\end{equation}
+\begin{align}
+    \text{pH} & = 14 - \frac{1}{2} \left( (14 - \text{p}K_{\text{S}}) - \log(c_0) \right) \notag \\
+              & = 14 - \frac{1}{2} \left( (14 - 4,75) - \log(0,0112) \right) = \SI{8.4}{}
+    \label{eq:ph_aequiv}
+\end{align}
 
-Mit der Formel lässt sich der $K_\mathrm{B}$ Wert berechnen \cite{nist_chemistry_webbook}.
-\[
-    K_\mathrm{B} = \frac{K_\mathrm{W}}{K_\mathrm{S}} \approx \frac{10^{-14}}{1{,}8 \cdot 10^{-5}} = 5{,}6 \cdot 10^{-10}
-\]
-
-Mithilfe des berechneten $K_\mathrm{B}$-Wertes und der Konzentration der Acetat-Ionen lässt sich die Hydroxidionenkonzentration am Äquivalenzpunkt bestimmen.
-
-\begin{equation}
-    [\ce{OH^-}] = \sqrt{5{,}6 \cdot 10^{-10} \cdot \SI{0,0309}{\frac{\mole}{l}}} = 4{,}16 \cdot 10^{-6}\,\si{\frac{\mole}{l}}
-\end{equation}
-
-Damit lässt sich der pOH-Wert berechnen.
-
-\begin{equation}
-    \mathrm{pOH} = -\log([\ce{OH^-}]) = 5{,}38
-\end{equation}
-
-und somit ergibt sich für den pH-Wert am Äquivalenzpunkt.
-
-\begin{equation}
-    \mathrm{pH} = 14 - \mathrm{pOH} = 14 - 5{,}38 = 8{,}62
-\end{equation}
-
-Der Äquivalenzpunkt liegt somit im basischen Bereich bei pH $= 8{,}62$.
+Dieser berechnete pH-Wert erklärt den bei der Durchführung beobachteten Farbumschlag. Der Wert liegt präzise im Umschlagsbereich des verwendeten Indikators Phenolphthalein. Der qualitative Verlauf der gesamten Titration ist zusätzlich grafisch in Abbildung \ref{fig:titration} visualisiert.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{python/titrationskurveverbessert.pdf}
+    \includegraphics[width=1\textwidth]{python/titrationskurve.pdf}
     \caption{Titrationskurve von Essigsäure mit NaOH}
     \label{fig:titration}
 \end{figure}
@@ -273,7 +302,9 @@ Weitere Abweichungen können durch das Ablesen der Bürette sowie durch kleine U
 Insgesamt ist die Übereinstimmung mit dem Literaturwert jedoch als sehr gut zu bewerten.
 
 
-\subsection{Berechnung einer Puffermischung}
+
+
+\subsection{Versuch 4: Berechnung einer Puffermischung}
 
 \subsubsection{Aufgabenstellung}
 
