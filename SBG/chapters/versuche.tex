@@ -182,63 +182,56 @@ Die Bürette wird mit \SI{0,1}{\frac{\mole}{l}} Natronlauge bis zur Nullmarke ge
 Nach Zugabe von \SI{11,2}{ml} Natronlauge erfolgt ein Farbumschlag der zuvor farblosen Essigsäurelösung zu einer leicht violett/lila gefärbten Lösung.
 
 \subsubsection{Auswertung}
-Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge berechnet.
+
+
+Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge in \eqref{eq:Natronlauge-Stoffmenge} berechnet.
 
 \begin{equation}
-    n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{0,0112}{l} = \SI{0,00112}{\mole}
-\end{equation}
-
-Die Neutralisationsreaktion verläuft nach Gleichung \eqref{eq:Neutralisationsreaktion CH3COOH + NaOH}.
-
-\begin{equation}
-    \ce{CH3COOH + NaOH -> CH3COO- + Na+ + H2O}
-    \label{eq:Neutralisationsreaktion CH3COOH + NaOH}
+    n(\ce{NaOH}) = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{011.2}{ml} = \SI{1.12}{\milli\mole}
+    \label{eq:Natronlauge-Stoffmenge}
 \end{equation}
 
 Da bei dieser Titration eine einprotonige Säure mit einer einprotonigen Base reagiert, liegt am Äquivalenzpunkt ein äquimolares Stoffmengenverhältnis vor. Somit sind die umgesetzten Stoffmengen von Essigsäure und Natronlauge identisch, wie in Gleichung \eqref{eq:n=n} quantifiziert wird.
 \begin{equation}
-    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{0,00112}{\mole}
+    n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{1.12}{\milli\mole}
     \label{eq:n=n}
 \end{equation}
 
-Die Konzentration der Essigsäure in der titrierten Lösung lässt sich mittels \eqref{eq:n_ges} berechnen.
+Da nun die Stoffmenge und das Volumen der Essigsäure in der titrierten Lösung bekannt sind lässt sich die Konzentration mittels \eqref{eq:n_ges} berechnen.
 
 \begin{equation}
-    c(\ce{CH3COOH}) = \frac{n}{V} = \frac{\SI{0,00112}{\mole}}{\SI{0,1}{l}} = \SI{0,0112}{\frac{\mole}{l}}
+    c(\ce{CH3COOH}) =\frac{\SI{1.12}{\milli\mole}}{\SI{0,1}{l}} = \SI{11.2}{\frac{\milli\mole}{l}}
     \label{eq:n_ges}
 \end{equation}
 
-Diese Konzentration bezieht sich auf die für die Titration verwendete, auf \SI{100}{ml} verdünnte Analysenlösung.
-
-Da lediglich \SI{25}{ml} der insgesamt auf \SI{100}{ml} aufgefüllten Lösung titriert wurden, ergibt sich für die gesamte Lösung die vierfache Stoffmenge.
+Diese Konzentration bezieht sich auf die für die Titration verwendete auf 100 mL
+verdünnte Analysenlösung.
+Da lediglich \SI{25}{ml} der insgesamt auf \SI{100}{ml} aufgefüllten Lösung titriert wurden, ergibt  sich für die gesamte Lösung die vierfache Stoffmenge in \eqref{eq:4.48millimole}.
 
 \begin{equation}
-    n_{\text{gesamt}} = 4 \cdot \SI{0,00112}{\mole} = \SI{0,00448}{\mole}
+    n_{\text{gesamt}} = 4 \cdot \SI{1.12}{\milli\mole} = \SI{4.48}{\milli\mole}
+    \label{eq:4.48millimole}
 \end{equation}
 
-Dies entspricht einer Stoffmenge von \SI{4,48}{\milli\mole}. Der Literaturwert beträgt \SI{4,5145}{\milli\mole}.
+Dieser wert entspricht in etwa dem Literaturwert, welcher \SI{4,5145}{\milli\mole} beträgt.
 \newline
 
 
 Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich Acetat-Ionen, welche in Wasser protolysieren. \cite{atkins_kurzlehrbuch_2020}
-
-\begin{equation}
-    \ce{CH3COO^- + H2O <=> CH3COOH + OH^-}
-\end{equation}
 
 Dadurch entsteht eine basische Lösung, weshalb der pH-Wert am Äquivalenzpunkt größer als 7 ist.
 
 Zur Berechnung wird die Konzentration der Acetat-Ionen am Äquivalenzpunkt verwendet.
 
 \begin{equation}
-    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{0,00112}{\mole}}{\SI{0,0362}{l}} = \SI{0,0309}{\frac{\mole}{l}}
+    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{0,00112}{\mole}}{\SI{0,0362}{l}} = \SI{0.0112}{\frac{\mole}{l}}
 \end{equation}
 
-Mit dem Zusammenhang für schwache Basen (aus der Theorie, Gleichung \ref{eq:schwache_saeure_nahe} analog für Basen) ergibt sich näherungsweise:
+Mit dem Zusammenhang für schwache Basen aus \eqref{eq:phw} lässt sich der
 
-\begin{equation}
-    [\ce{OH^-}] = \sqrt{K_\mathrm{B} \cdot c}
-\end{equation}
+%\begin{equation}
+%    [\ce{OH^-}] = \sqrt{K_\mathrm{B} \cdot c}
+%\end{equation}
 
 Mit der Formel lässt sich der $K_\mathrm{B}$ Wert berechnen \cite{nist_chemistry_webbook}.
 \[
