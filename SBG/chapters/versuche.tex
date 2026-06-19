@@ -106,7 +106,7 @@ Die experimentell bestimmten pH-Werte können durch mehrere Fehlerquellen beeinf
 Es sollen verschiedene Säure-Base-Indikatoren untersucht werden, um festzustellen, in welchem Bereich ihr Farbumschlag erfolgt.
 
 \subsubsection{Durchführung}
-In jeweils fünf Reagenzgläsern werden getrennt \SI{0,1}{\mole\per\liter} Salzsäure, Essigsäure, Ammoniaklösung und Natronlauge gefüllt, sodass insgesamt vier Reihen mit jeweils fünf Reagenzgläsern entstehen. Die pH-Werte der einzelnen Lösungen werden anschließend mit einem pH-Meter bestimmt.
+In jeweils fünf Reagenzgläsern werden getrennt \SI{0,1}{\frac{\mole}{l}} Salzsäure, Essigsäure, Ammoniaklösung und Natronlauge gefüllt, sodass insgesamt vier Reihen mit jeweils fünf Reagenzgläsern entstehen. Die pH-Werte der einzelnen Lösungen werden anschließend mit einem pH-Meter bestimmt.
 
 Anschließend wird jede der vier Lösungsreihen jeweils mit den Indikatorlösungen Methylorange (MO), Methylrot (MR), Bromthymolblau (BTB), Phenolphthalein (PT) sowie Universalindikator (UI) versetzt, wobei in jeder Reihe jedes Reagenzglas einen anderen Indikator enthält. Die dabei auftretenden Farben werden beobachtet und dokumentiert.
 
@@ -171,44 +171,46 @@ Primäre Fehlerquellen sind Kalibrierungsungenauigkeiten der pH-Elektrode sowie 
 
 \subsection{Versuch 3: Titration von Essigsäure}
 \subsubsection{Aufgabenstellung}
-Die Stoffmenge an Essigsäure in einer Lösung unbekannter Konzentration soll durch eine Säure-Base-Titration mit \SI{0,1}{\mole\per\liter} Natronlauge bestimmt werden.
+Die Stoffmenge an Essigsäure in einer Lösung unbekannter Konzentration soll durch eine Säure-Base-Titration mit \SI{0,1}{\frac{\mole}{l}} Natronlauge bestimmt werden.
 
 \subsubsection{Durchführung}
-Ein Analysenkolben mit der zu analysierenden Lösung wird mit demineralisiertem Wasser bis zur \SI{100}{\milli\liter}-Marke aufgefüllt und durchmischt. Mit einer Vollpipette werden \SI{25}{\milli\liter} dieser Lösung entnommen und in einen Erlenmeyerkolben überführt und erneut mit demineralisiertem Wasser auf \SI{100}{\milli\liter} aufgefüllt. Anschließend wird die Lösung mit wenigen Tropfen Phenolphthalein versetzt und erneut durch vorsichtiges Schwenken gemischt.
+Ein Analysenkolben mit der zu analysierenden Lösung wird mit demineralisiertem Wasser bis zur \SI{100}{ml}-Marke aufgefüllt und durchmischt. Mit einer Vollpipette werden \SI{25}{ml} dieser Lösung entnommen und in einen Erlenmeyerkolben überführt und erneut mit demineralisiertem Wasser auf \SI{100}{ml} aufgefüllt. Anschließend wird die Lösung mit wenigen Tropfen Phenolphthalein versetzt und erneut durch vorsichtiges Schwenken gemischt.
 
-Die Bürette wird mit \SI{0,1}{\mole\per\liter} Natronlauge bis zur Nullmarke gefüllt. Die Titration wird bis zum Farbumschlag von farblos nach leicht rosa durchgeführt, wobei der Erlenmeyerkolben kontinuierlich geschwenkt wird.
+Die Bürette wird mit \SI{0,1}{\frac{\mole}{l}} Natronlauge bis zur Nullmarke gefüllt. Die Titration wird bis zum Farbumschlag von farblos nach leicht rosa durchgeführt, wobei der Erlenmeyerkolben kontinuierlich geschwenkt wird.
 
 \subsubsection{Beobachtungen}
-Nach Zugabe von \SI{11,2}{\milli\liter} Natronlauge erfolgt ein Farbumschlag der zuvor farblosen Essigsäurelösung zu einer leicht violett/lila gefärbten Lösung.
+Nach Zugabe von \SI{11,2}{ml} Natronlauge erfolgt ein Farbumschlag der zuvor farblosen Essigsäurelösung zu einer leicht violett/lila gefärbten Lösung.
 
 \subsubsection{Auswertung}
 Zur Bestimmung der Stoffmenge an Essigsäure wird zunächst die bei der Titration verbrauchte Stoffmenge an Natronlauge berechnet.
 
 \begin{equation}
-    n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\mole\per\liter} \cdot \SI{0,0112}{\liter} = \SI{0,00112}{\mole}
+    n(\ce{NaOH}) = c \cdot V = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{0,0112}{l} = \SI{0,00112}{\mole}
 \end{equation}
 
-Die Neutralisationsreaktion verläuft nach folgender Gleichung:
+Die Neutralisationsreaktion verläuft nach Gleichung \eqref{eq:Neutralisationsreaktion CH3COOH + NaOH}.
 
 \begin{equation}
     \ce{CH3COOH + NaOH -> CH3COO- + Na+ + H2O}
+    \label{eq:Neutralisationsreaktion CH3COOH + NaOH}
 \end{equation}
 
-Am Äquivalenzpunkt gilt, da es eine einprotonige Säure ist die mit einer einprotonigen Base reagiert, ein Stoffmengenverhältnis von 1:1 zwischen Essigsäure und Natronlauge, sodass sich ergibt:
-
+Da bei dieser Titration eine einprotonige Säure mit einer einprotonigen Base reagiert, liegt am Äquivalenzpunkt ein äquimolares Stoffmengenverhältnis vor. Somit sind die umgesetzten Stoffmengen von Essigsäure und Natronlauge identisch, wie in Gleichung \eqref{eq:n=n} quantifiziert wird.
 \begin{equation}
     n(\ce{CH3COOH}) = n(\ce{NaOH}) = \SI{0,00112}{\mole}
+    \label{eq:n=n}
 \end{equation}
 
-Die Konzentration der Essigsäure in der titrierten Lösung lässt sich ebenfalls berechnen.
+Die Konzentration der Essigsäure in der titrierten Lösung lässt sich mittels \eqref{eq:n_ges} berechnen.
 
 \begin{equation}
-    c(\ce{CH3COOH}) = \frac{n}{V} = \frac{\SI{0,00112}{\mole}}{\SI{0,1}{\liter}} = \SI{0,0112}{\mole\per\liter}
+    c(\ce{CH3COOH}) = \frac{n}{V} = \frac{\SI{0,00112}{\mole}}{\SI{0,1}{l}} = \SI{0,0112}{\frac{\mole}{l}}
+    \label{eq:n_ges}
 \end{equation}
 
-Diese Konzentration bezieht sich auf die für die Titration verwendete, auf \SI{100}{\milli\liter} verdünnte Analysenlösung.
+Diese Konzentration bezieht sich auf die für die Titration verwendete, auf \SI{100}{ml} verdünnte Analysenlösung.
 
-Da lediglich \SI{25}{\milli\liter} der insgesamt auf \SI{100}{\milli\liter} aufgefüllten Lösung titriert wurden, ergibt sich für die gesamte Lösung die vierfache Stoffmenge.
+Da lediglich \SI{25}{ml} der insgesamt auf \SI{100}{ml} aufgefüllten Lösung titriert wurden, ergibt sich für die gesamte Lösung die vierfache Stoffmenge.
 
 \begin{equation}
     n_{\text{gesamt}} = 4 \cdot \SI{0,00112}{\mole} = \SI{0,00448}{\mole}
@@ -218,7 +220,7 @@ Dies entspricht einer Stoffmenge von \SI{4,48}{\milli\mole}. Der Literaturwert b
 \newline
 
 
-Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich Acetat-Ionen, welches mit Wasser protolysiert \cite{atkins_kurzlehrbuch_2020}:
+Am Äquivalenzpunkt liegt die Essigsäure vollständig als konjugierte Base (Acetat-Ion) vor. Somit enthält die Lösung hauptsächlich Acetat-Ionen, welche in Wasser protolysieren. \cite{atkins_kurzlehrbuch_2020}
 
 \begin{equation}
     \ce{CH3COO^- + H2O <=> CH3COOH + OH^-}
@@ -229,7 +231,7 @@ Dadurch entsteht eine basische Lösung, weshalb der pH-Wert am Äquivalenzpunkt 
 Zur Berechnung wird die Konzentration der Acetat-Ionen am Äquivalenzpunkt verwendet.
 
 \begin{equation}
-    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{0,00112}{\mole}}{\SI{0,0362}{\liter}} = \SI{0,0309}{\mole\per\liter}
+    c(\ce{CH3COO^-}) = \frac{n}{V_\text{ges}} = \frac{\SI{0,00112}{\mole}}{\SI{0,0362}{l}} = \SI{0,0309}{\frac{\mole}{l}}
 \end{equation}
 
 Mit dem Zusammenhang für schwache Basen (aus der Theorie, Gleichung \ref{eq:schwache_saeure_nahe} analog für Basen) ergibt sich näherungsweise:
@@ -246,7 +248,7 @@ Mit der Formel lässt sich der $K_\mathrm{B}$ Wert berechnen \cite{nist_chemistr
 Mithilfe des berechneten $K_\mathrm{B}$-Wertes und der Konzentration der Acetat-Ionen lässt sich die Hydroxidionenkonzentration am Äquivalenzpunkt bestimmen.
 
 \begin{equation}
-    [\ce{OH^-}] = \sqrt{5{,}6 \cdot 10^{-10} \cdot \SI{0,0309}{\mole\per\liter}} = 4{,}16 \cdot 10^{-6}\,\si{\mole\per\liter}
+    [\ce{OH^-}] = \sqrt{5{,}6 \cdot 10^{-10} \cdot \SI{0,0309}{\frac{\mole}{l}}} = 4{,}16 \cdot 10^{-6}\,\si{\frac{\mole}{l}}
 \end{equation}
 
 Damit lässt sich der pOH-Wert berechnen.
@@ -293,11 +295,11 @@ Die Berechnung erfolgt mithilfe der Henderson-Hasselbalch-Gleichung \ref{eq:hend
 \begin{equation}
     \begin{aligned}
         5{,}5
-            & = 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
+         & = 4{,}76 + \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
         0{,}74
-            & = \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right) \\
+         & = \log\left(\frac{[\ce{A^-}]}{[\ce{HA}]}\right)          \\
         \frac{[\ce{CH3COO^-}]}{[\ce{CH3COOH}]}
-            & = 10^{0{,}74} = 5{,}5
+         & = 10^{0{,}74} = 5{,}5
     \end{aligned}
 \end{equation}
 
@@ -309,9 +311,9 @@ Die Stoffmenge der eingesetzten Essigsäure wird nach Gleichung \ref{eq:essigsae
     \label{eq:essigsaeure_stoffmenge}
     \begin{aligned}
         n(\ce{CH3COOH})
-            & = c \cdot V \\
-            & = \SI{0,1}{\mole\per\liter} \cdot \SI{0,010}{\liter} \\
-            & = \SI{1,0e-3}{\mole}
+         & = c \cdot V                                     \\
+         & = \SI{0,1}{\frac{\mole}{l}} \cdot \SI{0,010}{l} \\
+         & = \SI{1,0e-3}{\mole}
     \end{aligned}
 \end{equation}
 
@@ -321,23 +323,23 @@ Aus dem zuvor berechneten Verhältnis von Acetat zu Essigsäure ergibt sich nach
     \label{eq:acetat_stoffmenge}
     \begin{aligned}
         n(\ce{CH3COO^-})
-            & = 5{,}5 \cdot n(\ce{CH3COOH}) \\
-            & = 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
-            & = \SI{5,5e-3}{\mole}
+         & = 5{,}5 \cdot n(\ce{CH3COOH})    \\
+         & = 5{,}5 \cdot \SI{1,0e-3}{\mole} \\
+         & = \SI{5,5e-3}{\mole}
     \end{aligned}
 \end{equation}
 
 Da Natriumacetat vollständig in Natrium- und Acetat-Ionen dissoziiert, entspricht die benötigte Stoffmenge an Natriumacetat der Stoffmenge an Acetat-Ionen.
 
-Bezogen auf das Gesamtvolumen von \SI{10}{\milli\liter} ergibt sich daraus die Konzentration:
+Bezogen auf das Gesamtvolumen von \SI{10}{ml} ergibt sich daraus die Konzentration:
 
 \begin{equation}
     \label{eq:natriumacetat_konzentration}
     \begin{aligned}
         c(\ce{CH3COONa})
-            & = \frac{n}{V} \\
-            & = \frac{\SI{5,5e-3}{\mole}}{\SI{0,010}{\liter}} \\
-            & = \SI{0,55}{\mole\per\liter}
+         & = \frac{n}{V}                              \\
+         & = \frac{\SI{5,5e-3}{\mole}}{\SI{0,010}{l}} \\
+         & = \SI{0,55}{\frac{\mole}{l}}
     \end{aligned}
 \end{equation}
 
@@ -347,9 +349,9 @@ Für die Einwaage von Natriumacetat-Trihydrat (\ce{CH3COONa * 3 H2O}) mit der mo
     \label{eq:einwaage_natriumacetat}
     \begin{aligned}
         m
-            & = n \cdot M \\
-            & = \SI{5,5e-3}{\mole} \cdot \SI{136,08}{\frac{\gram}{\mole}} \\
-            & = \SI{0,75}{\gram}
+         & = n \cdot M                                                 \\
+         & = \SI{5,5e-3}{\mole} \cdot \SI{136,08}{\frac{\gram}{\mole}} \\
+         & = \SI{0,75}{\gram}
     \end{aligned}
 \end{equation}
 
