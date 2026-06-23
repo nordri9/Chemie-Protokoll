@@ -1,7 +1,7 @@
 # Chemie-Protokoll
 
 ## Todo PSE:
-- [ ] Teorie
+- [x] Theorie
 - [ ] Versuch 1 (in progress Felix N.)
 - [ ] Versuch 2
 - [ ] Versuch 3
