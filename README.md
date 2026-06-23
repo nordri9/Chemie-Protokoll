@@ -2,9 +2,9 @@
 
 ## Todo PSE:
 - [x] Theorie
-- [ ] Versuch 1 (in progress Felix N.)
-- [ ] Versuch 2
-- [ ] Versuch 3
+- [x] Versuch 1
+- [x] Versuch 2
+- [ ] Versuch 3 (Quellen zu ergänzen)
 - [ ] Zusammenfassung
 
 ### Erstabgabe kontrollgelesen von:
