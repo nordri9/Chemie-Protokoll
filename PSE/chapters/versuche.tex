@@ -11,8 +11,9 @@ In drei Reagenzgläsern wurden Lösungen von Kaliumchlorid, Kaliumbromid und Kal
 %Bei Zugabe der konzentrierten Ammoniumcarbonatlösung löste sich der Silberchloridniederschlag teilweise auf. Der Silberbromidniederschlag zeigte nahezu keine Löslichkeit, während Silberiodid praktisch ungelöst blieb.
 %
 %Bei Zugabe konzentrierter Ammoniaklösung löste sich Silberchlorid vollständig auf. Silberbromid löste sich nur teilweise, während bei Silberiodid keine sichtbare Auflösung beobachtet werden konnte.
+Bei der Zugabe von Silbernitrat-Lösung zu den drei Halogenidsalzen bilden sich in allen Fällen trübe Niederschläge, die sich in ihrer Färbung unterscheiden. Bei Kaliumchlorid entsteht ein farblos-trüber Niederschlag, bei Kaliumbromid ein gelblicher und bei Kaliumiodid ein deutlich gelber Niederschlag. Bei der anschließenden Zugabe von Ammoniumcarbonat-Lösung klart lediglich die \ce{KCl}-Probe etwas auf, während die Niederschläge der \ce{KBr}- und \ce{KI}-Proben unverändert bleiben. Durch die Zugabe von Ammoniak-Lösung löst sich der Niederschlag der \ce{KCl}-Probe vollständig zu einer farblosen Lösung auf. Die \ce{KBr}-Probe klart hierbei nur etwas auf und der gelbe Niederschlag der \ce{KI}-Probe bleibt erneut völlig unverändert.
 
-Die Tabelle \ref{V1Beob} zeigt die Beobachtungen.
+Wie in Tabelle \ref{V1Beob} anschaulich dargestellt.
 
 \begin{table}[htbp]
     \centering
@@ -21,7 +22,7 @@ Die Tabelle \ref{V1Beob} zeigt die Beobachtungen.
         \hline
         Substanz & \ce{AgNO3}-Lösung & \ce{(NH4)2CO3}-Lösung & \ce{NH3}-Lösung \\
         \hline
-        \ce{KCl} & trüb, weiß        & etwas klarer          & farblos         \\
+        \ce{KCl} & trüb, farblos     & etwas klarer          & farblos         \\
         \ce{KBr} & trüb, gelblich    & unverändert           & etwas klarer    \\
         \ce{KI}  & trüb, gelb        & unverändert           & unverändert     \\
         \hline
@@ -33,17 +34,17 @@ Die Tabelle \ref{V1Beob} zeigt die Beobachtungen.
 Die Zugabe von Silbernitrat zu den Halogenidlösungen führt zur Bildung schwerlöslicher Silberhalogenide. Für die Fällungsreaktionen ergeben sich die in den Gleichungen \originaleqref{eq:agcl_fällung}, \originaleqref{eq:agbr_fällung} und \originaleqref{eq:agi_fällung} dargestellten Reaktionen.
 
 \begin{equation}
-    \ce{Ag^+_{(aq)} + Cl^-_{(aq)} -> AgCl_{(s)} v}
+    \ce{Ag^+_{(aq)} + Cl^-_{(aq)} <=> AgCl_{(s)} v}
     \label{eq:agcl_fällung}
 \end{equation}
 
 \begin{equation}
-    \ce{Ag^+_{(aq)} + Br^-_{(aq)} -> AgBr_{(s)} v}
+    \ce{Ag^+_{(aq)} + Br^-_{(aq)} <=> AgBr_{(s)} v}
     \label{eq:agbr_fällung}
 \end{equation}
 
 \begin{equation}
-    \ce{Ag^+_{(aq)} + I^-_{(aq)} -> AgI_{(s)} v}
+    \ce{Ag^+_{(aq)} + I^-_{(aq)} <=> AgI_{(s)} v}
     \label{eq:agi_fällung}
 \end{equation}
 
@@ -56,13 +57,103 @@ Die Auflösung der Niederschläge in Ammoniak beruht auf der Bildung des stabile
     \label{eq:diamminsilber}
 \end{equation}
 
-Durch die Komplexbildung wird die Konzentration freier Silberionen verringert, wodurch sich das Löslichkeitsgleichgewicht der Silberhalogenide nach dem Prinzip von Le Chatelier in Richtung Lösung verschiebt. Silberchlorid besitzt das größte Löslichkeitsprodukt der untersuchten Silberhalogenide und löst sich daher am leichtesten. Silberbromid zeigt eine geringere Löslichkeit, während Silberiodid aufgrund seines sehr kleinen Löslichkeitsproduktes praktisch unlöslich bleibt.
+Durch die Komplexbildung wird die Konzentration freier Silberionen verringert, wodurch sich das Löslichkeitsgleichgewicht der Silberhalogenide nach dem Prinzip von Le Chatelier in Richtung der Produkte verschiebt. Silberchlorid besitzt das größte Löslichkeitsprodukt der untersuchten Silberhalogenide und löst sich daher am leichtesten. Silberbromid zeigt eine geringere Löslichkeit, während Silberiodid aufgrund seines sehr kleinen Löslichkeitsproduktes praktisch unlöslich bleibt.
 
-Die beobachteten Löslichkeitsunterschiede spiegeln sich in den Löslichkeitsprodukten der Silberhalogenide wider. Diese betragen bei \SI{25}{\celsius} für Silberchlorid etwa $\SI{1.7e-10}{\frac{\mole^{2}}{l^{2}}}$, für Silberbromid etwa $\SI{5e-13}{\frac{\mole^{2}}{l^{2}}}$ und für Silberiodid etwa $\SI{8.5e-17}{\frac{\mole^{2}}{l^{2}}}$. \cite{noauthor_tabelle_nodate}
+Die beobachteten Löslichkeitsunterschiede spiegeln sich in den Löslichkeitsprodukten der Silberhalogenide wider welche in Tabelle \ref{lösAgHal} aufgezählt sind.
 
-Die abnehmenden Löslichkeitsprodukte in der Reihenfolge Silberchlorid $>$ Silberbromid $>$ Silberiodid spiegeln die zunehmende Stabilität der Feststoffe wider und erklären das beobachtete Löslichkeitsverhalten.
+\begin{table}[htbp]
+    \centering
+    \caption{Löslichkeitsprodukte der Silberhalogenide bei \SI{25}{\celsius}\cite{noauthor_tabelle_nodate}}
+    \begin{tabular}{|l|c|}
+        \hline
+        Silberhalogenid & Löslichkeitsprodukt                     \\
+        \hline
+        \ce{AgCl}       & $\SI{1.7e-10}{\frac{\mole^{2}}{l^{2}}}$ \\
+        \hline
+        \ce{AgBr}       & $\SI{5e-13}{\frac{\mole^{2}}{l^{2}}}$   \\
+        \hline
+        \ce{AgI}        & $\SI{8.5e-17}{\frac{\mole^{2}}{l^{2}}}$ \\
+        \hline
+    \end{tabular}
+    \label{lösAgHal}
+\end{table}
+
+Die Löslichkeitsprodukte welche in der Reihenfolge Silberchlorid, Silberbromid und Silberiodid abnehmen, spiegeln die zunehmende Stabilität der Feststoffe wider und erklären das beobachtete Löslichkeitsverhalten.
 
 Neben der Bildung schwerlöslicher Silbersalze besitzen die Halogene weitere charakteristische periodische Eigenschaften. Sie zeichnen sich durch eine hohe Elektronegativität aus, die innerhalb der Gruppe von Fluor zu Iod abnimmt. Darüber hinaus bilden alle Halogene bevorzugt einwertige Halogenidionen (\ce{F^-}, \ce{Cl^-}, \ce{Br^-} und \ce{I^-}). Eine weitere wichtige Eigenschaft ist die starke oxidierende Wirkung der elementaren Halogene, deren Stärke ebenfalls innerhalb der Gruppe von Fluor zu Iod abnimmt. Diese Gemeinsamkeiten beruhen auf der identischen Valenzelektronenkonfiguration aller Halogene mit sieben Valenzelektronen. \cite{skript}
+
+\subsubsection{Auswertung}
+Die Zugabe von Silbernitrat zu den Halogenidlösungen führt zur Bildung schwerlöslicher Silberhalogenide. Für die Fällungsreaktionen ergeben sich die in den Gleichungen \originaleqref{eq:agcl_fällung}, \originaleqref{eq:agbr_fällung} und \originaleqref{eq:agi_fällung} dargestellten Reaktionen.
+
+\begin{equation}
+    \ce{Ag^+_{(aq)} + Cl^-_{(aq)} <=> AgCl_{(s)} v}
+    \label{eq:agcl_fällung}
+\end{equation}
+
+\begin{equation}
+    \ce{Ag^+_{(aq)} + Br^-_{(aq)} <=> AgBr_{(s)} v}
+    \label{eq:agbr_fällung}
+\end{equation}
+
+\begin{equation}
+    \ce{Ag^+_{(aq)} + I^-_{(aq)} <=> AgI_{(s)} v}
+    \label{eq:agi_fällung}
+\end{equation}
+
+Die Auflösung der Niederschläge in Ammoniak beruht auf der Bildung des wasserlöslichen, stabilen Diamminsilber(I)-Komplexes nach \reqref{eq:diamminsilber}.
+
+\begin{equation}
+    \ce{Ag^+_{(aq)} + 2 NH3_{(aq)} <=> [Ag(NH3)2]^+_{(aq)}}
+    \label{eq:diamminsilber}
+\end{equation}
+
+Ob sich ein Niederschlag auflöst, hängt von der Konkurrenz zwischen dem Löslichkeitsprodukt des Silberhalogenids und der Komplexbildungskonstante des Diamminsilber(I)-Komplexes ab. Durch die Komplexbildung wird die Konzentration an freien Silberionen in der Lösung stark verringert. Damit sich der Niederschlag löst, muss die freie \ce{Ag+}-Konzentration durch die Komplexbildung so weit abgesenkt werden, dass das Ionenprodukt aus \ce{Ag+} und dem jeweiligen Halogenid das Löslichkeitsprodukt unterschreitet.
+
+Die beobachteten Löslichkeitsunterschiede spiegeln sich in den Löslichkeitsprodukten der Silberhalogenide wider, welche in Tabelle \ref{lösAgHal} aufgeführt sind.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Löslichkeitsprodukte der Silberhalogenide bei \SI{25}{\celsius}\cite{latscha_allgemeine_2011}}
+    \begin{tabular}{|l|c|}
+        \hline
+        Silberhalogenid & Löslichkeitsprodukt                     \\
+        \hline
+        \ce{AgCl}       & $\SI{1.7e-10}{\frac{\mole^{2}}{l^{2}}}$ \\
+        \hline
+        \ce{AgBr}       & $\SI{5e-13}{\frac{\mole^{2}}{l^{2}}}$   \\
+        \hline
+        \ce{AgI}        & $\SI{8.5e-17}{\frac{\mole^{2}}{l^{2}}}$ \\
+        \hline
+    \end{tabular}
+    \label{lösAgHal}
+\end{table}
+
+Der drastische Abfall der Löslichkeit von Chlorid zu Iodid lässt sich mit der zunehmenden Polarisierbarkeit der Halogenidionen sowie dem HSAB-Konzept \ref{sec:HSAB} erklären. Das Silberkation ist eine weiche Säure. Da der Ionenradius von Chlorid zu Iodid zunimmt, wird das Anion weicher und polarisierbarer. Folglich nimmt der kovalente Bindungscharakter der Silber-Halogen-Bindung vom Chlorid zum Iodid hin zu, was zu einer deutlich stabileren Feststoffstruktur und einer drastisch geringeren Löslichkeit in Wasser führt.
+
+Da Silberchlorid das größte Löslichkeitsprodukt aufweist, reicht bereits die Zugabe einer schwächeren \ce{NH3}-Konzentration, oder Ammoniumcarbonat, um das Ionenprodukt unter das Löslichkeitsprodukt zu senken, wodurch sich der Niederschlag löst. Beim schwerer löslichen Silberbromid wird eine deutlich höhere \ce{NH3}-Konzentration benötigt, um den Niederschlag teilweise zu lösen. Das Löslichkeitsprodukt von Silberiodid ist hingegen so klein, dass selbst konzentrierter Ammoniak die \ce{Ag+}-Konzentration nicht ausreichend absenken kann, um eine Lösung zu erzielen, wodurch der Niederschlag ungelöst bleibt.
+
+Neben der Bildung schwerlöslicher Silbersalze besitzen die Halogene weitere charakteristische periodische Eigenschaften. Sie zeichnen sich durch eine hohe Elektronegativität aus, die innerhalb der Gruppe von Fluor zu Iod abnimmt. Darüber hinaus bilden alle Halogene bevorzugt einwertige Halogenidionen (\ce{F^-}, \ce{Cl^-}, \ce{Br^-} und \ce{I^-}). Eine weitere wichtige Eigenschaft ist die starke oxidierende Wirkung der elementaren Halogene, deren Stärke ebenfalls innerhalb der Gruppe von Fluor zu Iod abnimmt. Diese Abnahme der Oxidationskraft lässt sich quantitativ an ihren Standardpotenzialen, welche in Tabelle \ref{stdPot} gelistet sind.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Standardpotenziale der Halogene \cite{holleman_wiberg}}
+    \begin{tabular}{|l|c|}
+        \hline
+        Halogen & Standardpotenzial \\
+        \hline
+        Fluor   & \SI{+2,87}{\volt} \\
+        \hline
+        Chlor   & \SI{+1,36}{\volt} \\
+        \hline
+        Brom    & \SI{+1,07}{\volt} \\
+        \hline
+        Iod     & \SI{+0,54}{\volt} \\
+        \hline
+    \end{tabular}
+    \label{stdPot}
+\end{table}
+
+Diese Gemeinsamkeiten beruhen auf der identischen Valenzelektronenkonfiguration aller Halogene mit sieben Valenzelektronen. \cite{skript}
 
 \subsubsection{Fehlerbetrachtung}
 Die beobachtete Löslichkeit der Silberhalogenide kann durch mehrere Faktoren beeinflusst worden sein. Bereits geringe Unterschiede bei der eingesetzten Stoffmenge der Kaliumhalogenide oder bei der Anzahl der zugesetzten Silbernitrattropfen führen zu Konzentrationsabweichungen und damit zu Veränderungen der Niederschlagsbildung.
