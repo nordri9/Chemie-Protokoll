@@ -266,16 +266,16 @@ Das gebildete Iod wird anschließend mit Thiosulfat titriert:
 \begin{align}
     \text{Red.:}\quad &
     \ce{\overset{\mathrm{0}}{\ce{I2}} + 2 e^-}
-    &\ce{->}&
-    \ce{2 \overset{\mathrm{-I}}{\ce{I^-}}} \\
-    \text{Ox.:}\quad &
+                      & \ce{->} &
+    \ce{2 \overset{\mathrm{-I}}{\ce{I^-}}}                                                                         \\
+    \text{Ox.:}\quad  &
     \ce{2 \overset{\mathrm{-I}}{\ce{S}} \overset{\mathrm{+V}}{\ce{S}} \overset{\mathrm{-II}}{\ce{O3^{2-}}}}
-    &\ce{->}&
+                      & \ce{->} &
     \ce{\overset{\mathrm{0}}{\ce{S2}} \overset{\mathrm{+V}}{\ce{S2}} \overset{\mathrm{-II}}{\ce{O6^{2-}}} + 2 e^-} \\
     \hline
     \text{Ges.:}\quad &
     \ce{I2 + 2 SO3^{2-}}
-    &\ce{->}&
+                      & \ce{->} &
     \ce{2 I^- + S4O6^{2-}}
 \end{align}
 
@@ -318,11 +318,11 @@ Der theoretische Wert beträgt \SI{3.288}{\milli\mole}. Die experimentell bestim
 % Erklärung: Zentrales S (sp3-hybridisiert) bildet einen Tetraeder.
 % Oxidationszahlen in Blau, Formalladungen in Schwarz.
 \chemfig{
-    \chemabove{S^{2+}}{\textcolor{blue}{+V}}
-    (-[2]\chemabove{O^{-}}{\textcolor{blue}{-II}})
-    (-[:-30]\chemabove{S^{-}}{\textcolor{blue}{-I}})
-    (<[:-115]\chembelow{O^{-}}{\textcolor{blue}{-II}})
-    (<:[:-160]\chembelow{O^{-}}{\textcolor{blue}{-II}})
+    \chemabove[2pt]{S^{2+}}{\textcolor{blue}{+V}}
+    (-[2]\chemabove[2pt]{O^{-}}{\textcolor{blue}{-II}})
+    (-[:-30]\chemabove[2pt]{S^{-}}{\textcolor{blue}{-I}})
+    (<[:-115]\chembelow[2pt]{O^{-}}{\textcolor{blue}{-II}})
+    (<:[:-160]\chembelow[2pt]{O^{-}}{\textcolor{blue}{-II}})
 }
 
 \vspace{1.5cm}
@@ -339,7 +339,16 @@ Der theoretische Wert beträgt \SI{3.288}{\milli\mole}. Die experimentell bestim
 -[:30]\chemabove{O^{-}}{\textcolor{blue}{-II}}
 }
 
-\vspace{0.5em}
+\chemfig{
+    \chembelow{O^{-}}{\textcolor{blue}{-II}}
+    -[:30]\chemabove{S}{\textcolor{blue}{+V}}(=[2]\chemabove{O}{\textcolor{blue}{-II}})(-[6]\chembelow{O^{-}}{\textcolor{blue}{-II}})
+    -[:-30]\chemabove{S}{\textcolor{blue}{0}}
+    -[:30]\chemabove{S}{\textcolor{blue}{0}}
+    -[:-30]\chemabove{S}{\textcolor{blue}{+V}}(=[2]\chemabove{O}{\textcolor{blue}{-II}})(-[6]\chembelow{O^{-}}{\textcolor{blue}{-II}})
+    -[:30]\chemabove{O^{-}}{\textcolor{blue}{-II}}
+}
+
+\vspace{1cm}
 
 Die Standardpotentiale der beteiligten Redoxpaare lauten:
 
