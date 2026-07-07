@@ -42,4 +42,5 @@
   "files.autoSave": "afterDelay",
   "cSpell.language": "en,de-de",
   "git.autofetch": "all",
+  "editor.fontSize": 16,
 }
